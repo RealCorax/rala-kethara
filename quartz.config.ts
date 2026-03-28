@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "Rala'kethara",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -16,8 +16,8 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    baseUrl: "RealCorax.github.io/rala-kethara",
+    ignorePatterns: ["private", "templates", ".obsidian", "99 Kel\u2019thara", "101 Kala\u2019ren", "scripts"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
