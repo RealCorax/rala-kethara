@@ -1,77 +1,75 @@
 ---
-title: "03 Veth'kela'shala | All the Lives That Are Not Ours"
-division: 03
+title: "Veth'kela'shala — All the Lives That Are Not Ours"
+cssclass: archive-index
+branch: 3
 section: "03"
-access: Visitor
-status: complete
+access: visitor
 type: index
-tags:
-  - 03-All-the-Lives-That-Are-Not-Ours
-  - Furling
-  - Athel'kin
-  - Keth'alis
-  - Alteran
-  - Asgard
-  - Nox
-  - Shal'kora
-  - Vethari
-  - Lumenari
-  - Aethen
-  - Kigal-Galaxy
-  - Four-Great-Races
-  - Uplift
-  - Athel'kin-Contact
-  - Keth'alis-War
-  - history
-  - biology
-  - language
-  - governance
-  - society
-  - knowledge
-  - peace
-  - connection
-  - community
-  - loss
-  - hope
-  - visitor-open
+tags: [Furling, Athel'kin, Alteran, Asgard, Nox, uplift, diplomacy, Four-Great-Races]
 ---
 
-# All the Lives That Are Not Ours
+```meta-bind-button
+label: "Speak"
+style: default
+actions:
+  - type: js
+    file: scripts/toggle-font.js
+```
 
-*Division compiled across many eras. Primary organisation by Vel'thara Oriskan, Era 71. Expanded substantially through Era 144. Final revision by Shala'vetha Kelisometh, Era 144.*
+<div class="room-header">
+<div class="rh-number">Branch 03</div>
+<h1><span class="furling-pin">Veth'kela'shala</span> | All the Lives That Are Not Ours</h1>
+<p class="rh-description">Every species we encountered arrived carrying a different answer to the question of what it means to be alive. A different body, a different history, a different way of understanding the same sky. We believed that each of these answers was worth knowing. This branch holds what we gathered across those encounters.</p>
+</div>
 
-The Furlings were never alone.
+<div class="guide-thread">
+<span class="gt-label">Suggested path</span>
+<span>Begin with</span> [[03.01 Vetha'rala'shala|the species index]]
+<span class="gt-sep">then</span> [[03.02 Oma'veth'shala|the diplomatic record]]
+<span class="gt-sep">then</span> [[03.04 Rala'veth'shala|how others speak]]
+<span class="gt-sep">then</span> [[03.03 Shala'vel'veth|what we learned by comparing]]
+</div>
 
-This is the most important fact this division records not as a comfort, though it is one, but as a plain statement of what the archive holds. In 150,000 thara'keth of spacefaring history, the Furlings encountered hundreds of species. They worked alongside four of them as near-equals in a great alliance. They helped dozens more reach their own potential. They watched others from a careful distance, not yet ready for contact. And they lived through the catastrophe of one encounter that went profoundly, irreversibly wrong.
+<div class="section-grid">
 
-All of it is here.
+<div class="section-card">
+<div class="sc-label">03.01</div>
+<div class="sc-title">[[03.01 Vetha'rala'shala|Vetha'rala'shala]]</div>
+<div class="sc-desc">The Voices of Living Things — species catalogue. Every people we encountered, recorded. Biology, history, society, technology. The master list of all known species, living and extinct.</div>
+</div>
 
-This division is not the Furling story. It is the story of every people the Furlings knew. Their biologies, their histories, their languages, their art, the private words of individuals whose civilisations are now distant or silent. The Furlings believed that every mind capable of asking questions deserved to have its record preserved. They held to that belief even when the keeping of it was painful.
+<div class="section-card">
+<div class="sc-label">03.02</div>
+<div class="sc-title">[[03.02 Oma'veth'shala|Oma'veth'shala]]</div>
+<div class="sc-desc">The Wisdom of Making Peace Between Lives — diplomatic record. First contacts, uplift programmes, treaties, alliances. The Four Great Races and what we built together.</div>
+</div>
 
-For visitors who have come to Nibiru not knowing what lies beyond their own world: this division is an answer to the question you may not yet have known how to ask. You are not alone either. The galaxy is full of lives. Some of them will welcome you. One of them, right now, should be approached with great care.
+<div class="section-card">
+<div class="sc-label">03.03</div>
+<div class="sc-title">[[03.03 Shala'vel'veth|Shala'vel'veth]]</div>
+<div class="sc-desc">The Wisdom Found in Comparing Lives — comparative studies. The patterns we found by looking across species rather than within any single one. What all peoples share. What makes each people singular.</div>
+</div>
 
-The records are organised into five branches.
+<div class="section-card">
+<div class="sc-label">03.04</div>
+<div class="sc-title">[[03.04 Rala'veth'shala|Rala'veth'shala]]</div>
+<div class="sc-desc">The Wisdom of How Others Speak — languages. Every language we have documented, with full records where contact was sustained. Translation tools. The few we heard but could not fully decode.</div>
+</div>
 
-The first, *[Vetha'rala'shala](obsidian://open?vault=Rala'Kethara&file=03%20Veth'kela'shala%2F03.01%20The%20Voices%20of%20Living%20Things%2F03.01%20The%20Voices%20of%20Living%20Things)*, holds the species catalogue everything known about every people the Furlings encountered, from their biology inward to their history, society, technology, and personal records.
+<div class="section-card">
+<div class="sc-label">03.05</div>
+<div class="sc-title">[[03.05 Rala'vel'veth|Rala'vel'veth]]</div>
+<div class="sc-desc">The Private Words of Other Peoples — personal records from non-Furling sources. Journals, correspondence, eyewitness accounts. Including the Athel'kin pre-transformation personal archive, preserved here.</div>
+</div>
 
-The second, *Oma'veth'shala*, holds the diplomatic record every first contact, every uplift mission, every treaty, and the record of the Four Great Races alliance.
+</div>
 
-The third, *Thara'veth'shala*, holds comparative knowledge -- the patterns that appear across different species and what they reveal about life itself.
+> [!arc-note] On the Athel'kin
+> The Athel'kin appear in this branch in two places: a visitor-level profile in 03.01 recording who they were when we knew them, and a deeper record held at Student access covering what they became. We have not merged these records. They are different things. The people we knew and loved as the ancient children were not the people who made war on us. Both deserve their own entry, kept separate.
 
-The fourth, *Rala'veth'shala*, holds linguistic records -- every language the Furlings studied, the tools they built for crossing between them.
+> [!connections] Connected Branches
+> [[02 Athela'shala]] — our own civilisation, for comparison
+> [[04 Meva'shala]] — including cross-species medicine and teaching
+> [[06 Vara'oma'shala]] — the art and mythology other peoples made, held here also
 
-The fifth, *Rala'vel'veth*, holds the personal records of individuals from other peoples.
-
-## The Five Branches
-
-*Vetha'rala'shala* -- [[03.01 The Voices of Living Things]] -- Species catalogue
-
-*Oma'veth'shala* -- [[03.02 The Wisdom of Making Peace Between Lives]] -- Diplomatic record
-
-*Thara'veth'shala* -- [[03.03 The Wisdom Found in Comparing Lives]] -- Comparative knowledge
-
-*Rala'veth'shala* -- [[03.04 The Wisdom of How Others Speak]] -- Languages
-
-*Rala'vel'veth* -- [[03.05 The Private Words of Other Peoples]] -- Personal records
-
-*Rala'Kethara Archive -- Division 03 -- Access: Visitor*
+*Rala'kethara Archive · Veth'kela'shala · Access: Visitor*

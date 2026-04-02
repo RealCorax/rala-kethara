@@ -1,52 +1,76 @@
 ---
-title: "04 Meva'shala | Wisdom Made Into Use"
-division: 04
+title: "Meva'shala — Wisdom Made Into Use"
+cssclass: archive-index
+branch: 4
 section: "04"
-access: Visitor
-status: complete
+access: visitor
 type: index
-tags:
-  - 04-Wisdom-Made-Into-Use
-  - Furling
-  - Nibiru
-  - Mira
-  - Kigal-Galaxy
-  - technology
-  - medicine
-  - architecture
-  - bio-organic
-  - crystal-lattice
-  - portal-network
-  - food
-  - knowledge
-  - teaching
-  - gift
-  - life
-  - community
-  - home
-  - visitor-open
+tags: [technology, medicine, portal-network, architecture, Furling, Nibiru]
 ---
 
-# 04 Meva'shala | Wisdom Made Into Use
+```meta-bind-button
+label: "Speak"
+style: default
+actions:
+  - type: js
+    file: scripts/toggle-font.js
+```
 
-*Division compiled by Vel'shala Kemiran, Era 79. Expanded substantially through Era 144.*
+<div class="room-header">
+<div class="rh-number">Branch 04</div>
+<h1><span class="furling-pin">Meva'shala</span> | Wisdom Made Into Use</h1>
+<p class="rh-description">A discovery that was never shared, a technique that was never taught, a medicine that was never given to those who needed it: these were not knowledge at all. They were hoarding. Everything in this branch was built to be given. The portals were built so that distance would not prevent meeting. The healing arts were built so that suffering would not persist when relief was possible.</p>
+</div>
 
-Knowledge that cannot be used is still knowledge -- it belongs in other divisions of this archive. What belongs here is the application: the actual methods, tools, structures, medicines, growing techniques, and teaching approaches the Furlings developed and used across 150,000 thara'keth of civilised life.
+<div class="guide-thread">
+<span class="gt-label">Suggested path</span>
+<span>Begin with</span> [[04.01.01 Vel'thevan'shala|why we build the way we do]]
+<span class="gt-sep">then</span> [[04.01.06a Thevan'skela'vel|how to use a portal]]
+<span class="gt-sep">then</span> [[04.02 Vetha'meva'shala|medicine]]
+<span class="gt-sep">then</span> [[04.03 Skela'meva'shala|how we built this city]]
+<span class="gt-sep">then</span> [[04.05.01 Vel'shala'meva|why teaching is the deepest gift]]
+</div>
 
-This division exists because Nibiru was built to be useful, not merely informative. A visitor who needs healing can find the medical records here. A visitor who needs to eat can find the agricultural knowledge. A visitor trying to understand why the city around them works the way it does can find the architectural and engineering records. A visitor who wants to teach what they know, or learn how to receive what is being offered, can find the pedagogy.
+<div class="section-grid">
 
-This is the most immediately practical division in the archive. It was designed that way.
+<div class="section-card">
+<div class="sc-label">04.01</div>
+<div class="sc-title">[[04.01 Thevan'shala|Thevan'shala]]</div>
+<div class="sc-desc">The Wisdom of Making — technology and engineering. Why we build with living things. Crystal-lattice memory. The portal network, how it works, and how to use one. Includes the complete 35-symbol portal reference.</div>
+</div>
 
-## The Five Branches
+<div class="section-card">
+<div class="sc-label">04.02</div>
+<div class="sc-title">[[04.02 Vetha'meva'shala|Vetha'meva'shala]]</div>
+<div class="sc-desc">The Wisdom of Giving Life Back to the Living — medicine and healing. From foundational principles through to cross-species treatment, emergency care, and the understanding of mental health as equal to physical health.</div>
+</div>
 
-*Thevan'shala* -- [[04.01 The Wisdom of Making]] -- Technology and engineering
+<div class="section-card">
+<div class="sc-label">04.03</div>
+<div class="sc-title">[[04.03 Skela'meva'shala|Skela'meva'shala]]</div>
+<div class="sc-desc">The Wisdom of Building Places to Belong — construction and architecture. How we grew Nibiru from the living rock. The principles behind bio-organic design. Materials: crystal, mycelium, and the living walls themselves.</div>
+</div>
 
-*Vetha'meva'shala* -- [[04.02 The Wisdom of Giving Life Back to the Living]] -- Medicine and healing
+<div class="section-card">
+<div class="sc-label">04.04</div>
+<div class="sc-title">[[04.04 Mira'meva'shala|Mira'meva'shala]]</div>
+<div class="sc-desc">The Wisdom of What the Earth Gives — agriculture, food, and ecology. How we fed ourselves and others across different worlds and species. The hydroponic systems of Nibiru. Recipes held alongside the science.</div>
+</div>
 
-*Skela'meva'shala* -- [[04.03 The Wisdom of Building Places to Belong]] -- Architecture and habitat
+<div class="section-card">
+<div class="sc-label">04.05</div>
+<div class="sc-title">[[04.05 Shala'meva'shala|Shala'meva'shala]]</div>
+<div class="sc-desc">Wisdom Given Freely to the World — teaching and knowledge transfer. How to give knowledge in ways each kind of mind can receive. The philosophy behind the uplift programme. Why we considered teaching the highest form of giving.</div>
+</div>
 
-*Mira'meva'shala* -- [[04.04 The Wisdom of What the Earth Gives]] -- Agriculture and food
+</div>
 
-*Shala'meva'vel* -- [[04.05 Wisdom Given Freely to the World]] -- Teaching and knowledge transfer
+> [!arc-note] On the portal network
+> Section 04.01 includes three pages dedicated to the portal network: the engineering record, a practical guide for first-time users, and the full 35-symbol reference. If you need to travel between worlds and are unfamiliar with the portal system, begin with [[04.01.06a Thevan'skela'vel|the user guide]].
 
-*Rala'Kethara Archive -- Division 04 -- Access: Visitor*
+> [!connections] Connected Branches
+> [[01 Thrala'shala]] — the science that underlies what this branch builds
+> [[02 Athela'shala]] — including Furling daily life and food in the civilisation record
+> [[03 Veth'kela'shala]] — cross-species teaching and medicine draw on what we learned there
+
+*Rala'kethara Archive · Meva'shala · Access: Visitor*

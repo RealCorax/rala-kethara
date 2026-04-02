@@ -1,64 +1,95 @@
 ---
-title: "08 Rala'kethara'shala | The Voice That Holds All Other Voices"
-division: 08
+title: "Rala'kethara'shala — The Voice That Holds All Other Voices"
+cssclass: archive-index
+branch: 8
 section: "08"
-access: Visitor
-status: complete
+access: visitor
 type: index
-tags:
-  - 08-The-Voice-That-Holds-All-Other-Voices
-  - Furling
-  - Nibiru
-  - Selavai
-  - Exodus
-  - Keth'alis-War
-  - knowledge
-  - memory
-  - identity
-  - cycles
-  - loss
-  - hope
-  - community
-  - visitor-open
+tags: [archive, Nibiru, Selavai, Furling]
 ---
 
-# 08 Rala'kethara'shala | The Voice That Holds All Other Voices
+```meta-bind-button
+label: "Speak"
+style: default
+actions:
+  - type: js
+    file: scripts/toggle-font.js
+```
 
-*Division compiled by Vel'thara Oriskan, Era 94. Final revision by Oma'shala Veriskan, Era 144.*
+<div class="room-header">
+<div class="rh-number">Branch 08</div>
+<h1><span class="furling-pin">Rala'kethara'shala</span> | The Voice That Holds All Other Voices</h1>
+<p class="rh-description">This is the branch the archive keeps about itself. If you have just arrived and do not know where to begin, begin here. The archive does not end where knowledge ends. It ends where we ended. Those are different things, and the difference matters.</p>
+</div>
 
-This division is the archive's record of itself. How it was built, how it is organised, what it knows it is missing, and how it can be added to.
+<div class="guide-thread">
+<span class="gt-label">Vel'thara begins here</span>
+<span>Start with</span> [[08.01 Vel'rala'keth|how this voice came to be]]
+<span class="gt-sep">then</span> [[08.02 Skela'rala'keth|how to find your way]]
+<span class="gt-sep">then</span> [[08.04 Nai'rala'keth|what this voice has not yet said]]
+<span class="gt-sep">then</span> [[08.05 Nai'rala'athela|the silence of 4,460 thara'keth]]
+<span class="gt-sep">then</span> [[02 Athela'shala|continue to Branch 02]]
+</div>
 
-Most archives do not include this. The Furlings thought it was necessary. An archive that cannot account for itself -- that cannot say openly what it holds and what it does not, how it was maintained and by whom, where its gaps are -- is an archive that asks to be trusted without giving the reader any basis for trust.
+<div class="section-grid">
 
-This division is that basis.
+<div class="section-card">
+<div class="sc-label">08.01</div>
+<div class="sc-title">[[08.01 Vel'rala'keth|Vel'rala'keth]]</div>
+<div class="sc-desc">How This Voice Came to Be — the founding of the archive. Why it was built, how it was built, what the scholars who built it intended it to be. Begin here.</div>
+</div>
 
-## The Nine Records
+<div class="section-card">
+<div class="sc-label">08.02</div>
+<div class="sc-title">[[08.02 Skela'rala'keth|Skela'rala'keth]]</div>
+<div class="sc-desc">How to Find Your Way Within This Voice — taxonomy and navigation. The eight branches, what each holds, how they connect. The access circle system, what each level means, and how it is earned.</div>
+</div>
 
-[[08.01 How This Voice Came to Be]] -- The archive's founding, purpose, and 150,000-thara'keth history.
-*Access: Visitor.*
+<div class="section-card">
+<div class="sc-label">08.03</div>
+<div class="sc-title">[[08.03 Thara'rala'keth|Thara'rala'keth]]</div>
+<div class="sc-desc">When Each Voice Was Added to the Whole — the archive timeline. When the major sections were compiled, which scholars contributed what, and how the archive grew across the eras.</div>
+</div>
 
-[[08.02 How to Find Your Way Within This Voice]] -- Complete navigation guide to the eight divisions.
-*Access: Visitor.*
+<div class="section-card">
+<div class="sc-label">08.04</div>
+<div class="sc-title">[[08.04 Nai'rala'keth|Nai'rala'keth]]</div>
+<div class="sc-desc">What This Voice Has Not Yet Said — known gaps. What the archive is missing and why. Records planned but not completed before the exodus. An honest account of what is absent.</div>
+</div>
 
-[[08.03 When Each Voice Was Added to the Whole]] -- Archive timeline and contribution history.
-*Access: Student.*
+<div class="section-card">
+<div class="sc-label">08.05</div>
+<div class="sc-title">[[08.05 Nai'rala'athela|Nai'rala'athela]]</div>
+<div class="sc-desc">The Silence of 4,460 Thara'keth — the last record is dated. There is nothing after it. Not a failure, not an erasure, but the mark of where a people stopped. Read this.</div>
+</div>
 
-[[08.04 What This Voice Has Not Yet Said]] -- Documented gaps, lost records, and known absences.
-*Access: Student.*
+<div class="section-card">
+<div class="sc-label">08.06</div>
+<div class="sc-title">[[08.06 Meva'rala'keth|Meva'rala'keth]]</div>
+<div class="sc-desc">How to Add Your Voice to This Place — contribution standards. For those who wish to add their own knowledge to the archive. Selavai cannot add to the archive. You can.</div>
+</div>
 
-[[08.05 The Silence of Five Thousand Years]] -- The exodus and what has been missed since.
-*Access: Visitor.*
+<div class="section-card">
+<div class="sc-label">08.07</div>
+<div class="sc-title">[[08.07 Shala'rala'keth|Shala'rala'keth]]</div>
+<div class="sc-desc">The Mind That Tends This Place — Selavai. Full technical record of what she is, how she works, what she can and cannot do, and why. Requires Citizen access.</div>
+</div>
 
-[[08.06 How to Add Your Voice to This Place]] -- Contribution standards and document templates.
-*Access: Visitor.*
+<div class="section-card">
+<div class="sc-label">08.08</div>
+<div class="sc-title">[[08.08 Thral'rala'keth|Thral'rala'keth]]</div>
+<div class="sc-desc">What Guards the Voice — archive security. The full access level system, how levels are earned, the philosophy behind tiered knowledge access. Requires Keeper access.</div>
+</div>
 
-[[08.07 The Mind That Tends This Place]] -- The Selavai system: capabilities, parameters, limitations.
-*Access: Citizen.*
+<div class="section-card">
+<div class="sc-label">08.09</div>
+<div class="sc-title">[[08.09 Nai'rala'nai|Nai'rala'nai]]</div>
+<div class="sc-desc">The Voice Beneath the Voice — a suppressed archive exists. Its subject is not disclosed at this access level. Selavai will not discuss its contents below Council access. Its existence is recorded here so that you know it exists.</div>
+</div>
 
-[[08.08 What Guards the Voice]] -- Archive security, access levels, and protocols.
-*Access: Keeper.*
+</div>
 
-[[08.09 The Voice Beneath the Voice]] -- The suppressed archive. Existence confirmed. Contents not disclosed below Council access.
-*Access: Council.*
+> [!connections] Connected to every branch
+> This branch is the frame around all the others. [[index|Return to the archive entrance]] at any time.
 
-*Rala'Kethara Archive -- Division 08 -- Access: Visitor*
+*Rala'kethara Archive · Rala'kethara'shala · Access: Visitor*
