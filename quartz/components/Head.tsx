@@ -97,6 +97,7 @@ export default (() => {
             return resource
           }
         })}
+      <script src="/static/font-toggle.js"></script>
       </head>
     )
   }

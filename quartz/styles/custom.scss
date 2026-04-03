@@ -1191,3 +1191,58 @@ article[class*="archive-"],
   --arc-text: #2a2018;
   --arc-link: #2a7a84;
 }
+
+/* Hide meta-bind button blocks in Quartz */
+.block-language-meta-bind-button {
+  display: none !important;
+}
+
+pre.meta-bind-button {
+  display: none !important;
+}
+
+.markdown-rendered pre:has(code.language-meta-bind-button) {
+  display: none !important;
+}
+
+/* Hide tags on pages */
+.tags {
+  display: none !important;
+}
+
+/* Hide meta-bind code blocks */
+pre:has(.language-meta-bind-button),
+.highlight:has(.language-meta-bind-button) {
+  display: none !important;
+}
+
+/* Hide meta-bind blocks */
+pre[data-language="meta-bind-button"] { display: none !important; }
+figure:has(pre[data-language="meta-bind-button"]) { display: none !important; }
+
+/* Hide tags */
+ul.tags { display: none !important; }
+
+/* Furling pin — always Furling font */
+.furling-pin { font-family: 'Furling' !important; }
+
+/* Hide Quartz footer */
+.page-footer {
+  display: none !important;
+}
+
+/* Hide footer */
+footer {
+  display: none !important;
+}
+
+/* Graph and backlinks headings follow font toggle — target via JS instead */
+
+/* Hide auto-generated page title and date/read-time */
+.article-title {
+  display: none !important;
+}
+
+.content-meta {
+  display: none !important;
+}
