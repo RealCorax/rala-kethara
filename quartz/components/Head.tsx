@@ -97,7 +97,7 @@ export default (() => {
             return resource
           }
         })}
-      <script src="/static/font-toggle.js"></script>
+      <script src="/rala-kethara/static/load-toggle.js" defer></script>
       </head>
     )
   }
