@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "RealCorax.github.io/rala-kethara",
+    baseUrl: "realcorax.github.io/rala-kethara",
     ignorePatterns: ["private", "templates", ".obsidian", "99 Kel\u2019thara", "101 Kala\u2019ren", "scripts"],
     defaultDateType: "modified",
     theme: {
