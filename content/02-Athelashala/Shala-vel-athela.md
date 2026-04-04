@@ -1,13 +1,13 @@
 ---
-title: "Rala'vel'keth - Idiom, Poetic Forms and the Living Voice"
+title: "Shala'vel'athela - The Education System"
 branch: 2
-section: "02.07.05"
+section: "02.05.09"
 access: student
 type: locked
-tags: [Furling, language, literature]
+tags: [Furling, daily-life, philosophy]
 ---
 
-# <span class="furling-pin">Rala'vel'keth</span> | Idiom, Poetic Forms and the Living Voice
+# <span class="furling-pin">Shala'vel'athela</span> | The Education System — Curricula and Methods
 
 > [!selavai] Selavai
 > "This knowledge is held carefully, not hidden from you. When you are ready, it will be here."

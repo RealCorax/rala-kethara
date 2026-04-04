@@ -1,13 +1,13 @@
 ---
-title: "Rala'vel'keth - Idiom, Poetic Forms and the Living Voice"
+title: "Thara'thrala'athela - The Keth'alis War — Era 130 to 141"
 branch: 2
-section: "02.07.05"
+section: "02.02.08"
 access: student
 type: locked
-tags: [Furling, language, literature]
+tags: [Furling, history, Keth'alis]
 ---
 
-# <span class="furling-pin">Rala'vel'keth</span> | Idiom, Poetic Forms and the Living Voice
+# <span class="furling-pin">Thara'thrala'athela</span> | The Keth'alis War
 
 > [!selavai] Selavai
 > "This knowledge is held carefully, not hidden from you. When you are ready, it will be here."

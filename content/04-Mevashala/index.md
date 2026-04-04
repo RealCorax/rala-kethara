@@ -1,68 +1,66 @@
 ---
-title: "Meva'shala — Wisdom Made Into Use"
+title: "Meva'shala — Applied Knowledge"
 cssclass: archive-index
 branch: 4
 section: "04"
 access: visitor
 type: index
-tags: [technology, medicine, portal-network, architecture, Furling, Nibiru]
+tags: [technology, portal, medicine, architecture, philosophy]
 ---
 
 <div class="room-header">
 <div class="rh-number">Branch 04</div>
 <h1><span class="furling-pin">Meva'shala</span> | Wisdom Made Into Use</h1>
-<p class="rh-description">A discovery that was never shared, a technique that was never taught, a medicine that was never given to those who needed it: these were not knowledge at all. They were hoarding. Everything in this branch was built to be given. The portals were built so that distance would not prevent meeting. The healing arts were built so that suffering would not persist when relief was possible.</p>
+<p class="rh-description">Knowledge that does not reach into the world is only half-finished. This branch holds everything we built, grew, healed, taught, and tended — the places where understanding became practice, where a principle became a tool in a hand. If you want to know how we crossed the dark between stars, how we grew living walls, how we healed a species we had never met before, how we fed a city sealed underground: this is where to look.</p>
 </div>
 
 <div class="guide-thread">
 <span class="gt-label">Suggested path</span>
 <span>Begin with</span> <a href="./Vel-thevan-shala" class="internal">why we build the way we do</a>
+<span class="gt-sep">then</span> <a href="./Thevan-vetha-shala" class="internal">what bio-organic technology actually is</a>
 <span class="gt-sep">then</span> <a href="./Thevan-skela-vel" class="internal">how to use a portal</a>
-<span class="gt-sep">then</span> <a href="./Vetha-meva-shala" class="internal">medicine</a>
-<span class="gt-sep">then</span> <a href="./Skela-meva-shala" class="internal">how we built this city</a>
-<span class="gt-sep">then</span> <a href="./Vel-shala-meva" class="internal">why teaching is the deepest gift</a>
 </div>
 
 <div class="section-grid">
 
 <div class="section-card">
 <div class="sc-label">04.01</div>
-<div class="sc-title"><a href="./Thevan-shala" class="internal">Thevan'shala</a></div>
-<div class="sc-desc">The Wisdom of Making — technology and engineering. Why we build with living things. Crystal-lattice memory. The portal network, how it works, and how to use one. Includes the complete 35-symbol portal reference.</div>
+<div class="sc-title"><a href="./Vel-thevan-shala" class="internal">Thevan'shala</a></div>
+<div class="sc-desc">The Wisdom of Making — technology and engineering. From the philosophy behind our tools to the portal network that spans the galaxy. Visitor-level pages cover the principles and practical use; deeper layers hold engineering specifications.</div>
 </div>
 
 <div class="section-card">
 <div class="sc-label">04.02</div>
-<div class="sc-title"><a href="./Vetha-meva-shala" class="internal">Vetha'meva'shala</a></div>
-<div class="sc-desc">The Wisdom of Giving Life Back to the Living — medicine and healing. From foundational principles through to cross-species treatment, emergency care, and the understanding of mental health as equal to physical health.</div>
+<div class="sc-title"><a href="./Vel-vetha-meva" class="internal">Vetha'meva'shala</a></div>
+<div class="sc-desc">The Wisdom of Giving Life Back to the Living — medicine and healing across species. Includes foundations, general practice, emergency care, and the philosophy of a healing system built for those who are not like us.</div>
 </div>
 
 <div class="section-card">
 <div class="sc-label">04.03</div>
-<div class="sc-title"><a href="./Skela-meva-shala" class="internal">Skela'meva'shala</a></div>
-<div class="sc-desc">The Wisdom of Building Places to Belong — construction and architecture. How we grew Nibiru from the living rock. The principles behind bio-organic design. Materials: crystal, mycelium, and the living walls themselves.</div>
+<div class="sc-title"><a href="./Vel-skela-meva" class="internal">Skela'meva'shala</a></div>
+<div class="sc-desc">The Wisdom of Building a Place to Live — architecture and city-making. How we grew structures rather than constructed them, and what that meant for the worlds we built on.</div>
 </div>
 
 <div class="section-card">
 <div class="sc-label">04.04</div>
-<div class="sc-title"><a href="./Mira-meva-shala" class="internal">Mira'meva'shala</a></div>
-<div class="sc-desc">The Wisdom of What the Earth Gives — agriculture, food, and ecology. How we fed ourselves and others across different worlds and species. The hydroponic systems of Nibiru. Recipes held alongside the science.</div>
+<div class="sc-title"><a href="./Vel-mira-meva" class="internal">Mira'meva'shala</a></div>
+<div class="sc-desc">The Wisdom of Growing — agriculture, ecology, and the preparation of food. Includes recipes for multiple species. The section most likely to make you hungry.</div>
 </div>
 
 <div class="section-card">
 <div class="sc-label">04.05</div>
-<div class="sc-title"><a href="./Shala-meva-shala" class="internal">Shala'meva'shala</a></div>
-<div class="sc-desc">Wisdom Given Freely to the World — teaching and knowledge transfer. How to give knowledge in ways each kind of mind can receive. The philosophy behind the uplift programme. Why we considered teaching the highest form of giving.</div>
+<div class="sc-title"><a href="./Vel-shala-meva" class="internal">Shala'meva'shala</a></div>
+<div class="sc-desc">The Wisdom of Teaching — how to help another mind grow without bending it to your own shape. The philosophy and practice of uplift. The hardest thing we ever tried to do well.</div>
 </div>
 
 </div>
 
-> [!arc-note] On the portal network
-> Section 04.01 includes three pages dedicated to the portal network: the engineering record, a practical guide for first-time users, and the full 35-symbol reference. If you need to travel between worlds and are unfamiliar with the portal system, begin with [[Thevan-skela-vel|the user guide]].
+> [!arc-note] A Note on Access
+> Most of what you need at Visitor level is open to you. Technology specifications, engineering principles, medical protocols for complex situations, and the full portal destination catalogue are held at deeper access levels — not out of distrust, but because some knowledge requires a foundation beneath it before it is safe to use. Explore what is open. The rest will come.
 
 > [!connections] Connected Branches
-> [[01-Thralashala/index|Thrala'shala]] — the science that underlies what this branch builds
-> [[02-Athelashala/index|Athela'shala]] — including Furling daily life and food in the civilisation record
-> [[03-Vethkelashala/index|Veth'kela'shala]] — cross-species teaching and medicine draw on what we learned there
+> [[01-Thralashala/index|Thrala'shala]] — the science that underlies the technology
+> [[02-Athelashala/index|Athela'shala]] — the philosophy these tools grew from
+> [[03-Vethkelashala/index|Veth'kela'shala]] — the species this knowledge was built to serve
 
 *Rala'kethara Archive · Meva'shala · Access: Visitor*

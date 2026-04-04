@@ -1,13 +1,13 @@
 ---
-title: "Rala'vel'keth - Idiom, Poetic Forms and the Living Voice"
+title: "Thara'nai'athela - The Discovery and the Break — Era 125 to 130"
 branch: 2
-section: "02.07.05"
+section: "02.02.07"
 access: student
 type: locked
-tags: [Furling, language, literature]
+tags: [Furling, history, Athel'kin, Keth'alis]
 ---
 
-# <span class="furling-pin">Rala'vel'keth</span> | Idiom, Poetic Forms and the Living Voice
+# <span class="furling-pin">Thara'nai'athela</span> | The Discovery and the Break
 
 > [!selavai] Selavai
 > "This knowledge is held carefully, not hidden from you. When you are ready, it will be here."

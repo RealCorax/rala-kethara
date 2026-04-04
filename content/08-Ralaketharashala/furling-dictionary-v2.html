@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rala'vel'keth — The Living Voice</title>
+<style>
+
+@font-face {
+  font-family: 'Furling';
+  src: url('/static/Furling.ttf') format('truetype');
+}
+
+:root {
+  --bg:          #080b0e;
+  --bg-s:        #0d1117;
+  --bg-r:        #111820;
+  --teal:        #4ab8c4;
+  --teal-dim:    rgba(74,184,196,0.25);
+  --teal-faint:  rgba(74,184,196,0.07);
+  --amber:       #c8913a;
+  --amber-dim:   rgba(200,145,58,0.28);
+  --amber-faint: rgba(200,145,58,0.06);
+  --stone:       rgba(180,155,110,0.12);
+  --stone-f:     rgba(180,155,110,0.05);
+  --text:        #ddd4c0;
+  --text-m:      #9e9080;
+  --text-d:      #5e5648;
+  --text-f:      #3a3430;
+  --r:           10px;
+  --r-sm:        6px;
+  --font-fur:    'Furling', serif;
+  --font-ui:     -apple-system, 'Segoe UI', sans-serif;
+}
+.theme-light {
+  --bg:          #f5f0e8;
+  --bg-s:        #ede8dd;
+  --bg-r:        #e4ddd0;
+  --teal:        #2a7a84;
+  --teal-dim:    rgba(42,122,132,0.22);
+  --teal-faint:  rgba(42,122,132,0.06);
+  --amber-dim:   rgba(200,145,58,0.22);
+  --amber-faint: rgba(200,145,58,0.05);
+  --stone:       rgba(140,110,60,0.15);
+  --stone-f:     rgba(140,110,60,0.05);
+  --text:        #2a2018;
+  --text-m:      #7a6040;
+  --text-d:      #b8a882;
+  --text-f:      #d0c8b0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-size: 15px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 35% at 50% 100%, rgba(200,145,58,0.04) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 25% at 50% 0%,   rgba(74,184,196,0.03) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 28px 80px;
+}
+
+/* header */
+.dict-header {
+  padding: 48px 0 36px;
+  border-bottom: 1px solid var(--stone);
+  margin-bottom: 36px;
+}
+.dict-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.dict-branch { font-size: 0.67em; letter-spacing: 0.09em; color: var(--text-d); }
+.dict-access {
+  font-size: 0.67em;
+  letter-spacing: 0.09em;
+  color: var(--amber);
+  opacity: 0.55;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.theme-btn {
+  background: transparent;
+  border: 1px solid var(--stone);
+  border-radius: 4px;
+  color: var(--text-d);
+  font-size: 0.85em;
+  padding: 2px 8px;
+  cursor: pointer;
+  font-family: var(--font-ui);
+  transition: border-color 0.2s, color 0.2s;
+}
+.theme-btn:hover { border-color: var(--teal-dim); color: var(--teal); }
+.dict-title-line {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+.dict-title-furling {
+  font-family: var(--font-fur);
+  font-size: 2.2em;
+  color: var(--teal);
+  line-height: 1.1;
+  opacity: 0.88;
+}
+.dict-title-sep { color: var(--text-d); font-size: 1.4em; font-weight: 200; }
+.dict-title-english { font-size: 1.3em; font-weight: 300; color: var(--text); }
+.dict-note {
+  font-size: 0.88em;
+  color: var(--text-m);
+  font-style: italic;
+  line-height: 1.65;
+  max-width: 620px;
+  margin-top: 8px;
+  padding: 10px 16px;
+  border-left: 2px solid var(--amber-dim);
+  background: var(--amber-faint);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+}
+
+/* search row */
+.search-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+  align-items: stretch;
+}
+.kbd-trigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: var(--bg-s);
+  border: 1px solid var(--stone);
+  border-radius: var(--r);
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.kbd-trigger:hover, .kbd-trigger.active {
+  border-color: var(--teal-dim);
+  background: var(--teal-faint);
+}
+.kbd-trigger-furling {
+  font-family: var(--font-fur);
+  font-size: 1.2em;
+  color: var(--teal);
+  opacity: 0.85;
+  line-height: 1;
+}
+.kbd-arrow { font-size: 0.75em; color: var(--text-d); transition: transform 0.2s; }
+.kbd-trigger.active .kbd-arrow { transform: rotate(180deg); }
+
+.search-wrap { flex: 1; position: relative; }
+.search-wrap input {
+  width: 100%;
+  background: var(--bg-s);
+  border: 1px solid var(--stone);
+  border-radius: var(--r);
+  padding: 11px 36px 11px 16px;
+  color: var(--text);
+  font-size: 0.95em;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: var(--font-fur);
+}
+.search-wrap input::placeholder { color: transparent; }
+.search-wrap input:focus { border-color: var(--teal-dim); }
+.search-clear {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--text-d);
+  cursor: pointer;
+  font-size: 1em;
+  display: none;
+}
+.search-clear.visible { display: block; }
+
+/* keyboard */
+.keyboard-panel {
+  display: none;
+  background: var(--bg-s);
+  border: 1px solid var(--teal-dim);
+  border-radius: var(--r);
+  padding: 20px 18px 18px;
+  margin-bottom: 14px;
+  animation: slideDown 0.18s ease;
+}
+.keyboard-panel.open { display: block; }
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: none; }
+}
+.kbd-divider {
+  width: 100%;
+  height: 1px;
+  background: var(--stone);
+  margin: 14px 0;
+}
+.kbd-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+.kbd-key {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 88px;
+  height: 88px;
+  padding: 0 10px;
+  background: var(--bg-r);
+  border: 1px solid var(--stone);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, transform 0.1s;
+  user-select: none;
+}
+.kbd-key:hover {
+  background: var(--teal-faint);
+  border-color: var(--teal-dim);
+  transform: translateY(-2px);
+}
+.kbd-key:active { transform: translateY(1px); }
+.kbd-glyph {
+  font-family: var(--font-fur);
+  font-size: 2.4em;
+  color: var(--text);
+  line-height: 1;
+}
+.kbd-key-ui .kbd-glyph { font-family: var(--font-ui); font-size: 1.4em; color: var(--text-d); }
+.kbd-hint { display: none; }
+.kbd-key-special { border-color: var(--amber-dim); }
+.kbd-key-special .kbd-glyph { color: var(--amber); opacity: 0.85; }
+.kbd-key-wide { min-width: 120px; }
+
+/* filter bar */
+.filter-row {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.filter-label { font-size: 0.68em; color: var(--text-d); margin-right: 4px; }
+.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid var(--stone);
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 0.8em;
+  cursor: pointer;
+  transition: all 0.18s;
+  color: var(--text-d);
+  font-family: var(--font-ui);
+}
+.filter-btn .fur-pill {
+  font-family: var(--font-fur);
+  font-size: 1.15em;
+  color: var(--teal);
+  opacity: 0.7;
+  line-height: 1;
+}
+.filter-btn:hover { border-color: var(--teal-dim); color: var(--text); }
+.filter-btn:hover .fur-pill { opacity: 1; }
+.filter-btn.active { background: var(--teal-faint); border-color: var(--teal-dim); color: var(--teal); }
+.filter-btn.active .fur-pill { opacity: 1; }
+
+/* result bar */
+.result-bar {
+  font-size: 0.72em;
+  color: var(--text-d);
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--stone-f);
+}
+
+/* groups */
+.word-group { margin-bottom: 44px; }
+.group-header {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding-bottom: 14px;
+  margin-bottom: 4px;
+  position: relative;
+}
+.group-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(to right, var(--amber-dim), transparent);
+}
+.group-furling {
+  font-family: var(--font-fur);
+  font-size: 1.7em;
+  color: var(--amber);
+  opacity: 0.75;
+  line-height: 1;
+}
+.group-key { font-size: 0.72em; color: var(--amber); opacity: 0.45; font-style: italic; }
+
+/* entries */
+.entry {
+  border-bottom: 1px solid var(--stone-f);
+  cursor: pointer;
+  transition: background 0.12s;
+}
+.entry:hover { background: var(--teal-faint); }
+.entry.expanded {
+  background: var(--bg-s);
+  border: 1px solid var(--teal-dim);
+  border-radius: var(--r);
+  margin: 4px 0;
+}
+.entry-main {
+  display: grid;
+  grid-template-columns: 200px 1fr 90px;
+  align-items: center;
+  padding: 13px 16px 13px 0;
+}
+.entry-left {
+  padding-right: 20px;
+  border-right: 1px solid var(--stone-f);
+}
+.entry.expanded .entry-left { border-right-color: var(--teal-dim); }
+.entry-furling {
+  font-family: var(--font-fur);
+  font-size: 1.2em;
+  color: var(--teal);
+  opacity: 0.88;
+  line-height: 1.3;
+}
+.entry-center { padding: 0 20px; }
+.entry-english { font-size: 0.95em; color: var(--text); line-height: 1.4; margin-bottom: 3px; }
+.entry-root-note { font-size: 0.75em; color: var(--text-d); font-style: italic; }
+.entry-type {
+  font-family: var(--font-fur);
+  font-size: 0.95em;
+  color: var(--text-d);
+  text-align: right;
+  opacity: 0.65;
+  line-height: 1.3;
+}
+
+/* expanded */
+.entry-detail { display: none; padding: 8px 0 16px; animation: fadeIn 0.15s ease; }
+.entry.expanded .entry-detail { display: block; }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-3px); }
+  to   { opacity: 1; transform: none; }
+}
+.detail-inner { display: grid; grid-template-columns: 200px 1fr; }
+.detail-left { padding-right: 20px; border-right: 1px solid var(--stone-f); }
+.detail-sub-label { font-size: 0.62em; color: var(--teal); opacity: 0.45; margin-bottom: 8px; }
+.compound-list { display: flex; flex-wrap: wrap; gap: 5px; }
+.compound-tag {
+  font-family: var(--font-fur);
+  font-size: 0.88em;
+  background: var(--teal-faint);
+  border: 1px solid var(--teal-dim);
+  border-radius: 4px;
+  padding: 3px 9px;
+  color: var(--teal);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.compound-tag:hover { background: rgba(74,184,196,0.14); }
+.no-compounds { font-size: 0.75em; color: var(--text-f); }
+.detail-note { padding-left: 20px; font-size: 0.88em; color: var(--text-m); line-height: 1.75; }
+
+/* empty */
+.empty { text-align: center; padding: 60px 0; color: var(--text-d); font-style: italic; }
+.empty-glyph {
+  font-family: var(--font-fur);
+  font-size: 2.4em;
+  display: block;
+  margin-bottom: 12px;
+  opacity: 0.2;
+  color: var(--teal);
+}
+
+/* footer */
+.dict-footer { margin-top: 60px; padding-top: 24px; position: relative; }
+.dict-footer::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--teal-dim), transparent);
+}
+.footer-access { font-size: 0.62em; color: var(--text-f); text-align: right; letter-spacing: 0.08em; }
+
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="dict-header">
+    <div class="dict-header-top">
+      <div class="dict-branch">Athela'shala · 02.07.09</div>
+      <div class="dict-access">
+        <span>Visitor</span>
+      </div>
+    </div>
+    <div class="dict-title-line">
+      <span class="dict-title-furling">Rala'vel'keth</span>
+      <span class="dict-title-sep">|</span>
+      <span class="dict-title-english">The Living Voice — Complete Vocabulary</span>
+    </div>
+    <div class="dict-note">
+      Words are grouped by root. Every compound contains that root as its living centre. Words without a single root — particles, proper names, numbers, borrowed words — are gathered in their own groups after the roots.
+    </div>
+  </div>
+
+  <div class="search-row">
+    <button class="kbd-trigger" id="kbd-trigger" onclick="toggleKbd()">
+      <span class="kbd-trigger-furling">Thelar</span>
+      <span class="kbd-arrow">▾</span>
+    </button>
+    <div class="search-wrap">
+      <input type="text" id="search" placeholder=""
+        autocomplete="off" spellcheck="false"
+        oninput="onSearch(this.value)" />
+      <button class="search-clear" id="search-clear" onclick="clearSearch()">✕</button>
+    </div>
+  </div>
+
+  <div class="keyboard-panel" id="kbd-panel">
+    <div class="kbd-row" id="kbd-consonants"></div>
+    <div class="kbd-divider"></div>
+    <div class="kbd-row" id="kbd-compound"></div>
+    <div class="kbd-divider"></div>
+    <div class="kbd-row" id="kbd-vowels"></div>
+    <div class="kbd-divider"></div>
+    <div class="kbd-row" id="kbd-numbers"></div>
+  </div>
+
+  <div class="filter-row">
+    <span class="filter-label">group</span>
+    <button class="filter-btn active" data-group="all" onclick="setGroup('all')">all</button>
+    <span id="group-filters"></span>
+  </div>
+
+  <div class="result-bar"><span id="result-count"></span></div>
+  <div id="entries"></div>
+
+  <div class="dict-footer">
+    <div class="footer-access">Rala'kethara Archive · Athela'shala · Access: Visitor</div>
+  </div>
+
+</div>
+<script>
+
+const KBD_LAYOUT = {
+  consonants: [
+    {g:'l',h:'l',ins:'l'},{g:'m',h:'m',ins:'m'},{g:'n',h:'n',ins:'n'},
+    {g:'r',h:'r',ins:'r'},{g:'v',h:'v',ins:'v'},{g:'h',h:'h',ins:'h'},
+    {g:'s',h:'s',ins:'s'},{g:'k',h:'k',ins:'k'},{g:'t',h:'t',ins:'t'},
+    {g:'w',h:'w',ins:'w'},{g:'y',h:'y',ins:'y'},
+  ],
+  compound: [
+    {g:'L',h:'lh',ins:'lh',sp:true},{g:'R',h:'rh',ins:'rh',sp:true},
+    {g:'V',h:'vh',ins:'vh',sp:true},{g:'H',h:'hl',ins:'hl',sp:true},
+    {g:'N',h:'ng',ins:'ng',sp:true},{g:'ñ',h:'ñ',ins:'ñ',sp:true},
+  ],
+  vowels: [
+    {g:'a',h:'a',ins:'a'},{g:'e',h:'e',ins:'e'},{g:'i',h:'i',ins:'i'},
+    {g:'o',h:'o',ins:'o'},{g:'u',h:'u',ins:'u'},
+    {g:'ā',h:'ā',ins:'ā'},{g:'ē',h:'ē',ins:'ē'},
+    {g:'ō',h:'ō',ins:'ō'},{g:'ū',h:'ū',ins:'ū'},
+    {g:"'",h:"'",ins:"'"},
+  ],
+  numbers: [
+    {g:'1',h:'vel',ins:'1'},{g:'2',h:'mira',ins:'2'},{g:'3',h:'shala',ins:'3'},
+    {g:'4',h:'thara',ins:'4'},{g:'5',h:'meva',ins:'5'},{g:'6',h:'vara',ins:'6'},
+    {g:'7',h:'oma',ins:'7'},{g:'8',h:'vetha',ins:'8'},{g:'9',h:'keth',ins:'9'},
+    {g:'0',h:'lhaketh',ins:'0'},{g:'⎵',h:'space',ins:' ',wide:true,ui:true},{g:'←',h:'back',ins:'BACK',wide:true,ui:true},
+  ]
+};
+
+function buildKeyboard() {
+  [['kbd-consonants',KBD_LAYOUT.consonants],['kbd-compound',KBD_LAYOUT.compound],
+   ['kbd-vowels',KBD_LAYOUT.vowels],['kbd-numbers',KBD_LAYOUT.numbers]
+  ].forEach(([id,keys]) => {
+    const row = document.getElementById(id);
+    keys.forEach(k => {
+      const btn = document.createElement('button');
+      btn.className = 'kbd-key'+(k.wide?' kbd-key-wide':'')+(k.sp?' kbd-key-special':'')+(k.ui?' kbd-key-ui':'');
+      btn.innerHTML = `<span class="kbd-glyph">${k.g}</span><span class="kbd-hint">${k.h}</span>`;
+      btn.addEventListener('mousedown', e => {
+        e.preventDefault();
+        const inp = document.getElementById('search');
+        inp.value = k.ins === 'BACK' ? inp.value.slice(0,-1) : inp.value + k.ins;
+        onSearch(inp.value);
+      });
+      row.appendChild(btn);
+    });
+  });
+}
+
+// Furling word type labels
+const TYPE_LABELS = {
+  root:      "vel'rala",
+  noun:      "vel'skela",
+  verb:      "vetha'rala",
+  phrase:    "rala'vel",
+  particle:  "thara'rala",
+  pronoun:   "vel'no",
+  name:      "skela'rala",
+  borrowed:  "athel'rala",
+  number:    "thael'rala",
+  adjective: "skela'vel",
+  emotion:   "helov'rala",
+  unit:      "thael'skela",
+  location:  "mira'rala",
+  interface: "kriseth'rala",
+};
+
+const GROUPS = [
+
+  // ROOT GROUPS
+
+  {
+    id:'vetha', type:'root-group', furling:'vetha', label:'vetha',
+    entries:[
+      { furling:'vetha', english:'life, aliveness, living movement',
+        type:'root', rootNote:'core root — one of the eight sources (Kela)',
+        detail:"The root of life itself. Vetha is not merely biological existence but the quality of being alive: motion, responsiveness, growth, and the particular presence that living things have. The archive's first branch is Vetha'kela — the Life-Source. The greeting Vetha'mai literally offers life-blessing.",
+        compounds:["vetha'mai","vetha'meva","vetha'thrala","vetha'mira","vethavel","vethis","velar","velelan","vethovan"] },
+      { furling:"vetha'mai", english:'life-blessing — the standard greeting',
+        type:'phrase', rootNote:'vetha (life) + mai (blessing, good)',
+        detail:"The most common Furling greeting, used in all contexts from everyday conversation to formal ceremony. Always meant fully. Saying it without meaning it is considered a minor dishonesty.",
+        compounds:[] },
+      { furling:"vetha'meva", english:"the life-gift",
+        type:'noun', rootNote:'vetha (life) + meva (gift)',
+        detail:"A genetic therapy designed to extend the natural span of a life. The name reflects the understanding that such a gift, like all gifts, carries responsibility in both the giving and the receiving. The full record is held in Thara'kela.",
+        compounds:[] },
+      { furling:"vetha'thrala", english:'bio-energy, life-force',
+        type:'noun', rootNote:'vetha (life) + thrala (power, force)',
+        detail:"The clinical term for the energy that sustains living beings. Used in medical and scientific contexts to describe the force that animates life at a biological level. The full treatment of this concept is held in Vetha'kela.",
+        compounds:[] },
+      { furling:"vetha'mira", english:'biosphere — the living mira',
+        type:'noun', rootNote:'vetha (life) + mira (earth, ground)',
+        detail:'The complete living system of a world — all organisms, ecosystems, and biological processes understood as a single whole. Furling planetary science always records this as one of the first measures of a world.',
+        compounds:[] },
+      { furling:'vethavel', english:'adult — one in full life',
+        type:'noun', rootNote:'vetha (life) + vel (one, first)',
+        detail:"A Furling who has come into their full expression of life. Coming-of-age is marked at 18 thara'keth by the vel'shora ceremony, at which bioluminescent marks are applied. The word carries respect — an adult is not merely old enough, but fully alive.",
+        compounds:[] },
+      { furling:'vethis', english:'alive, animate — having the quality of life',
+        type:'adjective', rootNote:'vetha + -is (quality suffix)',
+        detail:'Follows the noun: kinara vethis — a living child. The negation skar\'vethis (dead, no longer living) is used clinically and not spoken casually.',
+        compounds:[] },
+      { furling:'velar', english:'to live, to be alive — most fundamental verb',
+        type:'verb', rootNote:'irregular — predates the verb class system',
+        detail:'The most ancient verb in the language. Irregular: present vel, past velma, future velvai. Distinct from velelan (the sustained state of being alive) — velar is the act, velelan is the condition.',
+        compounds:[] },
+      { furling:'velelan', english:'to be alive — the ongoing sustained state',
+        type:'verb', rootNote:'class 1 (being and state)',
+        detail:'The verb of sustained existence. Where velar is the act of living, velelan is the ongoing condition of being alive. Present velen, past velenma, future velenvai. Used of living things and the systems that sustain them.',
+        compounds:[] },
+      { furling:'vethovan', english:'to activate, to bring to life',
+        type:'verb', rootNote:'class 3 (making and changing)',
+        detail:"To bring something from stillness into active life. The making-verb for the moment when a system, a space, or a thing begins to function as it was designed to. The reverse is skar'vethovan, to return something to stillness.",
+        compounds:[] },
+    ]
+  },
+
+  {
+    id:'skela', type:'root-group', furling:'skela', label:'skela',
+    entries:[
+      { furling:'skela', english:'home, place, belonging',
+        type:'root', rootNote:'core root',
+        detail:"Skela is not simply location. It is the state of belonging somewhere — the feeling of a place that holds you rather than merely contains you. Skar'skelan (to be without belonging) is one of the most painful states in the Furling emotional vocabulary.",
+        compounds:["skela'oma","skela'kela","skela'var","skelavel","skelan","skar'skelan","skelis","skelela","skelath","skela'varath"] },
+      { furling:"skela'oma", english:'home-peace — the welcome greeting',
+        type:'phrase', rootNote:'skela (home) + oma (peace)',
+        detail:"The greeting given when welcoming another to a place. Where vetha'mai offers life, skela'oma says that this place receives you. It is spoken on behalf of the place as much as the person.",
+        compounds:[] },
+      { furling:"skela'var", english:'Mira-to-Vara distance — unit of orbital measurement',
+        type:'unit', rootNote:'skela (home) + var (light, star)',
+        detail:"The distance from Mira to Vara, used as the standard unit for measuring orbital distances within a star system.",
+        compounds:[] },
+      { furling:'skelavel', english:'elder — one who has long belonged',
+        type:'noun', rootNote:'skela (belonging) + vel (one, first)',
+        detail:'An elder understood through depth of belonging rather than age alone. No connotation of authority over others only depth of experience.',
+        compounds:[] },
+      { furling:'skelan', english:"to belong, to be at home, to be in one's place",
+        type:'verb', rootNote:'class 1 (being and state)',
+        detail:'Present skelen, past skelenma, future skelenvai. The state of being where you should be not just physically present but genuinely belonging.',
+        compounds:[] },
+      { furling:"skar'skelan", english:'to be lost, to be without belonging',
+        type:'verb', rootNote:'skar (broken) + skelan (to belong)',
+        detail:'The most painful class 1 verb. To be without the state of belonging anywhere. Existential, not merely physical displacement.',
+        compounds:[] },
+      { furling:'skelis', english:'belonging, at home — having the quality of home',
+        type:'adjective', rootNote:'skela + -is (quality suffix)',
+        detail:"Follows the noun. The negation skar'skelis (lost, displaced) describes something that should belong somewhere but does not.",
+        compounds:[] },
+      { furling:'skelela', english:'the threshold of a space',
+        type:'noun', rootNote:'skela + ela (threshold)',
+        detail:'The threshold between outside and inside. The point at which a space receives you or releases you. Named for belonging because a door is where belonging begins.',
+        compounds:[] },
+      { furling:'skelath', english:'the boundary that defines belonging',
+        type:'noun', rootNote:'skela + -ath (structure suffix)',
+        detail:'The boundary that makes a space what it is. Not a barrier but the definition of an inside. Without skelath there is no room, no belonging, no place that can be called home.',
+        compounds:[] },
+    ]
+  },
+
+  {
+    id:'shala', type:'root-group', furling:'shala', label:'shala',
+    entries:[
+      { furling:'shala', english:'wisdom, knowing, understanding',
+        type:'root', rootNote:'core root — one of the eight sources',
+        detail:"Shala encompasses active knowing — not stored information but understanding that flows and connects. Shala'kela is the Wisdom-Source. The archive's core function is shala in motion — knowledge shared so both the giver and receiver hold it.",
+        compounds:["shala'kela","shalaveth","shala'vetha","shala'thara'vetha","skar'shala"] },
+      { furling:"shala'kela", english:'Wisdom-Source',
+        type:'location', rootNote:'shala (wisdom) + kela (source)',
+        detail:"A district dedicated to the preservation and transmission of knowledge. The teaching halls, research spaces, and great archives through which a civilisation's understanding of itself and the universe is gathered, ordered, and made available to all who seek it.",
+        compounds:[] },
+      { furling:'shalaveth', english:'one who gives knowing',
+        type:'noun', rootNote:'shala (wisdom) + veth (living form)',
+        detail:'A teacher in the Furling sense gives understanding, not information. Teaching is an act of directed flow.',
+        compounds:[] },
+      { furling:"shala'vetha", english:'the wisdom of life',
+        type:'noun', rootNote:'shala (wisdom) + vetha (life)',
+        detail:"The branch of Furling philosophy concerned with how to live well. Its most distilled expression is the Kora'thesh Veshúnar, the founding principles that define what it means to be Furling. The full text is held in Shala'kela.",
+        compounds:[] },
+      { furling:"shala'thara'vetha", english:'the seven branches — the original organising principle',
+        type:'noun', rootNote:'shala (wisdom) + thara (cycles) + vetha (life)',
+        detail:"The name for the organising principle by which all Furling knowledge is divided and held. Wisdom, cycles, and life understood as the three qualities from which every branch of understanding grows.",
+        compounds:[] },
+      { furling:"skar'shala", english:'wisdom-broken',
+        type:'emotion', rootNote:'skar (broken) + shala (wisdom)',
+        detail:'The feeling of a gap in understanding that matters. Not shame but signal. Where this feeling is present, learning is ready to begin.',
+        compounds:[] },
+    ]
+  },
+
+  {
+    id:'thrala', type:'root-group', furling:'thrala', label:'thrala',
+    entries:[
+      { furling:'thrala', english:'power, energy, force',
+        type:'root', rootNote:'core root — physics and strength words',
+        detail:"The root from which all words of force, energy, and power grow. Thrala encompasses every form in which the universe exerts itself: the pull between bodies, the heat within a world, the flow through a crystal, the strength in a living thing. All are understood as expressions of the same underlying quality.",
+        compounds:["thrala'skar","thral'nai","kris'thral","veshethral","mira'thrala","vela'thrala","thral'veth'kela","keth'thrala"] },
+      { furling:"thrala'skar", english:'a force-break signal',
+        type:'noun', rootNote:'thrala (force) + skar (broken)',
+        detail:'A signal that a flow of force has broken or is approaching the point of breaking. The word carries both meanings: the warning that precedes failure and the notification that failure has occurred.',
+        compounds:[] },
+      { furling:"thral'nai", english:'force flowing like water',
+        type:'noun', rootNote:'thrala (power) + nai (water, flow)',
+        detail:'A continuous directed flow of energy. Named for the understanding that force moving through a system behaves as water moves through a landscape, finding its path and shaping what it passes through.',
+        compounds:[] },
+      { furling:"kris'thral", english:'power crystal — crystal relay',
+        type:'noun', rootNote:'kris (crystal) + thrala (power)',
+        detail:"A worked crystal that carries and relays energy through a settlement. The fundamental unit of Furling power distribution, through which all energy flows are directed and balanced.",
+        compounds:[] },
+      { furling:"mira'thrala", english:'surface gravity',
+        type:'unit', rootNote:'mira (earth) + thrala (power, force)',
+        detail:"Two meanings carried by the same compound. As a concept: the force a world exerts on what rests upon its surface, and the energy that moves within a world beneath that surface. As a unit: Mira at its surface carries a value of one, against which all other worlds are measured.",
+        compounds:[] },
+      { furling:"thral'veth'kela", english:"Power-Life-Source",
+        type:'interface', rootNote:'thrala (power) + vetha (life) + kela (source)',
+        detail:"The monitoring interface for the living energy systems of a settlement. The point from which the health and flow of all power sources can be read and tended.",
+        compounds:[] },
+      { furling:"keth'thrala", english:'Eternal-Power',
+        type:'interface', rootNote:'keth (eternal) + thrala (power)',
+        detail:"The name for a power system designed to sustain itself indefinitely through continuous renewal rather than consumption.",
+        compounds:[] },
+      { furling:"vela'thrala", english:'atmospheric pressure — Mira water-level = 1.0',
+        type:'unit', rootNote:'vela (sky, air) + thrala (force)',
+        detail:'The standard unit for expressing the force of an atmosphere pressing against a surface. Mira at water level carries a value of one. Used in planetary records to express whether a worlds air can sustain life as we know it.',
+        compounds:[] },
+    ]
+  },
+
+  {
+    id:'vara', type:'root-group', furling:'vara', label:'vara',
+    entries:[
+      { furling:'vara', english:'star, light, source of illumination',
+        type:'root', rootNote:'core root — also the proper name of the Furling sun',
+        detail:'Vara means light in its most fundamental sense. The Furling sun kept the common noun as other suns were encountered. Every compound containing vara carries both the specific meaning (that star, that warmed Mira) and the general (light itself).',
+        compounds:["vara'kela","vara'skela","vara'keth","vara'shael","vara'val","vara'lath","valar","varavis"] },
+      { furling:"vara'kela", english:'Arts-Source',
+        type:'location', rootNote:'vara (light) + kela (source)',
+        detail:'A district dedicated to the full breadth of creative expression. The spaces here do not separate music from movement, or light from speech, or visual art from performance. All forms flow together as they do in life, and it is in that overlapping that the deepest expression is found.',
+        compounds:[] },
+      { furling:"vara'skela", english:'Light-Home',
+        type:'interface', rootNote:'vara (light) + skela (home, place)',
+        detail:"A contained light source and the system that holds it in place, providing warmth and illumination to an enclosed settlement in the absence of a natural sun.",
+        compounds:[] },
+      { furling:"vara'keth", english:"the weight of a star — measured in units of Vara",
+        type:'unit', rootNote:"vara (star) + keth (eternal)",
+        detail:"The standard unit for expressing how much a star holds within itself. Vara carries a value of one. All other stars are measured against it.",
+        compounds:[] },
+      { furling:"vara'shael", english:"the reach of a star — measured in units of Vara",
+        type:'unit', rootNote:'vara (star) + shael (length unit)',
+        detail:"he standard unit for expressing how wide a star extends into the space around it. Vara carries a value of one. Used throughout stellar classification and system records.",
+        compounds:[] },
+      { furling:"vara'val", english:"the giving of a star — measured in units of Vara",
+        type:'unit', rootNote:'vara (star) + val (shine)',
+        detail:"The standard unit for expressing how much light a star casts outward. Vara carries a value of one. A star with a vara'val of two gives twice the light that warmed the Furling homeworld.",
+        compounds:[] },
+      { furling:"vara'lath", english:'solar warmth — warmth from a star',
+        type:'noun', rootNote:'vara (star) + lath (temperature, warmth)',
+        detail:'The thermal energy that reaches a surface from its star — warmth understood as a gift from the star.',
+        compounds:[] },
+      { furling:'valar', english:'to shine, to illuminate',
+        type:'verb', rootNote:'irregular — one of the eight ancient verbs',
+        detail:'To shine, to cast light outward. One of the eight ancient irregular verbs, reflecting the understanding that light predates language itself. Used both literally and in the sense of understanding that illuminates: shala val, wisdom shines.',
+        compounds:[] },
+      { furling:'varavis', english:'bright, luminous — having the quality of light',
+        type:'adjective', rootNote:'vara + -is (quality suffix)',
+        detail:"Follows the noun: skela varavis — a bright home. The negation skar'varavis (dark, without light) describes physical darkness and, rarely, a lack of clarity.",
+        compounds:[] },
+    ]
+  },
+
+  {
+    id:'mira', type:'root-group', furling:'mira', label:'mira',
+    entries:[
+      { furling:'mira', english:'earth, ground, world — the Furling homeworld',
+        type:'root', rootNote:'core root — also the proper name of the Furling homeworld',
+        detail:'Mira is both common noun for earth/ground and the name of the Furling homeworld. All Furling measurement units are anchored to Mira: gravity, temperature, orbital distance. The world is the measure of all things.',
+        compounds:["mira'kela","mira'thrala","mira'thara","mira'thrael","mira'vetha","mira'kelana","miraval","mira'thala","miravis"] },
+      { furling:"mira'kela", english:'Housing-Source',
+        type:'location', rootNote:'mira (earth, balance) + kela (source)',
+        detail:'A district dedicated to dwelling and community life. The spaces where we make our homes, tend our relationships, and build the texture of daily existence together. Named for balance, because a home requires at minimum two things: a self and a place that receives it.',
+        compounds:[] },
+      { furling:"mira'thara", english:'one complete rotation of a world — the standard short cycle of time',
+        type:'unit', rootNote:'mira (world) + thara (cycle)',
+        detail:"One full rotation of a world on its own axis. The standard Furling unit for measuring short spans of time. When working across worlds that rotate at different speeds, the rotation of Mira serves as the shared reference.",
+        compounds:[] },
+      { furling:"mira'thrael", english:'geological heat, volcanism',
+        type:'noun', rootNote:'mira (earth) + thrael (heat, intense thermal energy)',
+        detail:"The heat within a world — volcanic activity, magmatic processes, deep thermal energy. Can be drawn through the Mira'Kelana geothermal system.",
+        compounds:[] },
+      { furling:"mira'vetha", english:'food — the living gift of mira',
+        type:'noun', rootNote:'mira (earth) + vetha (life)',
+        detail:'Food understood as what the mira gives to sustain life. Food is not taken from the mira — it is received.',
+        compounds:[] },
+      { furling:'miraval', english:'below, toward mira — downward direction',
+        type:'particle', rootNote:'mira (earth) + val (toward)',
+        detail:'The direction toward ground. Paired with vareth, which points toward light and sky. Furling spatial language takes mira and sky as its two anchoring poles rather than abstract notions of up and down.',
+        compounds:[] },
+      { furling:"mira'thala", english:'moon, guardian world — the world that guards',
+        type:'noun', rootNote:'mira (world) + thala (guard, protect)',
+        detail:"A moon is understood as a guardian. A world that tends another.",
+        compounds:[] },
+      { furling:'miravis', english:'grounded, stable — having the quality of mira',
+        type:'adjective', rootNote:'mira + -is (quality suffix)',
+        detail:"Stable, solid, reliably present. A miravis person is someone you can depend on. The negation skar'miravis describes both physical and personal instability.",
+        compounds:[] },
+    ]
+  },
+
+  {
+    id:'nai', type:'root-group', furling:'nai', label:'nai',
+    entries:[
+      { furling:'nai', english:'water, flow, zero — flow-space, potential',
+        type:'root', rootNote:'core root — also the number 0',
+        detail:'Nai carries two related meanings: water (the substance that flows) and zero (the space of potential before flow begins). Both are about possibility — water takes any shape, zero is before any count. Nai\'kela (Science-Source) uses this root: science begins in not-yet-knowing.',
+        compounds:["nai'kela","nai'kelana","nai'mira'vel","nai'thrala","nai'vetha","nai'koval","nairath","nalar"] },
+      { furling:"nai'kela", english:'Science-Source',
+        type:'location', rootNote:'nai (zero, flow-space) + kela (source)',
+        detail:'A district dedicated to inquiry and the pursuit of understanding. Named for the space that exists before knowing — the necessary emptiness from which all genuine discovery begins.',
+        compounds:[] },
+      { furling:"nai'kelana", english:'Water-Source — water infrastructure system',
+        type:'location', rootNote:'nai (water) + kelana (source-chamber)',
+        detail:'A chamber dedicated to the movement and renewal of water throughout a settlement. The systems here draw, purify, and return water through every space where living things have need of it.',
+        compounds:[] },
+      { furling:"nai'mira'vel", english:'filtration crystal — water-earth-life',
+        type:'interface', rootNote:'nai (water) + mira (earth) + vel (life, first)',
+        detail:"A crystal array through which water passes to be cleansed. The name describes the relationship at work: water, earth, and the life that depends on what flows between them.",
+        compounds:[] },
+      { furling:"nai'thrala", english:'water current — water force, water pressure',
+        type:'noun', rootNote:'nai (water) + thrala (force)',
+        detail:"Both the current of water and pressure in distribution systems.",
+        compounds:[] },
+      { furling:"nai'vetha", english:'river — living water, the moving water',
+        type:'noun', rootNote:'nai (water) + vetha (life)',
+        detail:"A river specifically — water that is moving and alive.",
+        compounds:[] },
+      { furling:"nai'koval", english:'groundwater — water in the deep',
+        type:'noun', rootNote:'nai (water) + koval (far, the deep)',
+        detail:"Water beneath the ground surface.",
+        compounds:[] },
+      { furling:'nairath', english:'ocean — the great water structure',
+        type:'noun', rootNote:'nai + -ath (structure suffix)',
+        detail:'An ocean — water as a structure in itself. The poetic form nai\'ketha (eternal water) is used in literature and ceremony.',
+        compounds:[] },
+      { furling:'nalar', english:'to flow — physical flow, origin of the flow metaphors',
+        type:'verb', rootNote:'irregular — one of the eight ancient verbs',
+        detail:'Irregular: present nal, past nalma, future nalvai. The third most ancient verb. The entire Furling relational grammar system (the flow particle la) derives from this root.',
+        compounds:[] },
+    ]
+  },
+
+  {
+    id:'oma', type:'root-group', furling:'oma', label:'oma',
+    entries:[
+      { furling:'oma', english:'peace — active living peace, not absence of conflict',
+        type:'root', rootNote:'core root — one of the eight sources',
+        detail:'Oma is an active state — something that must be maintained, that requires both parties, that can be broken. Omavel (friend) literally means one who flows in peace with you.',
+        compounds:["skela'oma","oma'vetha","oma'mai","omavel","ometh","omalis","oma'vetha maha"] },
+      { furling:"oma'vetha", english:'living peace — active, ongoing peace between beings',
+        type:'phrase', rootNote:'oma (peace) + vetha (life)',
+        detail:"Peace that lives — active, bilateral, maintained by both parties. You cannot have oma'vetha with someone absent or unwilling.",
+        compounds:[] },
+      { furling:"oma'vetha maha", english:'we are at living peace together — statement of mutual accord',
+        type:'phrase', rootNote:'oma (peace) + vetha (life) + maha (we)',
+        detail:'A formal statement of mutual peace. Used in diplomatic contexts, at the start of significant meetings, and when the Furlings welcomed a new species to Nibiru.',
+        compounds:[] },
+      { furling:"oma'mai", english:'peace-blessing — simple farewell',
+        type:'phrase', rootNote:'oma (peace) + mai (blessing)',
+        detail:'A warm simple parting — may peace go with you. The everyday word for goodbye.',
+        compounds:[] },
+      { furling:'omavel', english:'friend — one who flows in peace with you',
+        type:'noun', rootNote:'oma (peace) + vel (one, flow)',
+        detail:"Friendship is defined relationally: a friend is someone with whom peace flows between you. The related skar'oma'vel (stranger) means one whose peace is unknown — not hostile, simply not yet known.",
+        compounds:[] },
+      { furling:'ometh', english:'I am at peace with this, full agreement',
+        type:'particle', rootNote:'oma (peace) + -eth (structure)',
+        detail:"The word for full agreement. To say ometh is not simply to say yes but to say that one is genuinely at peace with what is being agreed to. The lighter everyday form is ometh'vel.",
+        compounds:[] },
+      { furling:'omalis', english:'peaceful — having the quality of oma',
+        type:'adjective', rootNote:'oma + -is (quality suffix)',
+        detail:"Peaceful, having the quality of genuine peace. An omalis space is one where peace is not merely the absence of conflict but is felt as a presence in itself.",
+        compounds:[] },
+        { furling:"oma'thesh", english:'council — a gathered body of peace-holders',
+        type:'noun', rootNote:"oma (peace) + thesh (body, collection)",
+        detail:"The deliberative body through which a settlement governs itself. Named for the understanding that those who hold authority over others must first hold peace within themselves. The standard form is the Oma'thesh'vela — a council of three.",
+        compounds:["oma'thesh'vela"] },
+        { furling:"oma'thesh'rala", english:'council records — the voice of the council',
+        type:'noun', rootNote:"oma'thesh (council) + rala (voice, record)",
+        detail:"The formal records of council deliberations, decisions, and dissenting positions. Every Oma'thesh is required to maintain these. A settlement whose council keeps no records is considered to be governing in darkness.",
+        compounds:[] },
+    ]
+  },
+
+  {
+    id:'rala', type:'root-group', furling:'rala', label:'rala',
+    entries:[
+      { furling:'rala', english:'voice, speech, the act of speaking',
+        type:'root', rootNote:'core root — ralar (to speak) sits outside the verb class system',
+        detail:"Rala encompasses voice, speech, and making meaning through sound. The archive is named Rala'Kethara — Voice-Eternal — conceived not as a storage system but as a voice that continues to speak.",
+        compounds:["rala'kethara","ralamath","ralavet","rala'vetha'skal","ralar","skar'rala"] },
+      { furling:"rala'kethara", english:'Voice-Eternal — the name of this archive',
+        type:'noun', rootNote:'rala (voice) + keth (eternal) + ara (place, vessel)',
+        detail:"This archive. Named as a voice that continues to speak. It's active, present and ongoing rather than static and stored.",
+        compounds:[] },
+      { furling:'ralamath', english:'language — the full voice-system',
+        type:'noun', rootNote:'rala (voice) + math (system, full form)',
+        detail:'A language as a complete system. Furling scholars distinguish rala (the act of speaking) from ralamath (the structure that makes the act possible).',
+        compounds:[] },
+      { furling:'ralavet', english:'speaker, voice-keeper',
+        type:'noun', rootNote:'rala (voice) + vet (keeper)',
+        detail:'A designated speaker. One entrusted with speaking on behalf of others or on behalf of a moment that requires careful words.',
+        compounds:[] },
+      { furling:"rala'vetha'skal", english:'living-voice device — a multi-function wrist tool',
+        type:'noun', rootNote:'rala (voice) + vetha (life) + skal (device, tool)',
+        detail:"A bio-organic wrist device given to those who come to learn among us. It learns, translates, tends, connects, and stores. The full description of its capabilities is held in Meva'shala.",
+        compounds:[] },
+      { furling:'ralar', english:'to speak, to say',
+        type:'verb', rootNote:'irregular — predates the verb class system',
+        detail:'Irregular: present ral, past ralma, future ralvai. Speech cannot be categorised by its own system, so it sits outside it.',
+        compounds:[] },
+      { furling:"skar'rala", english:'voice-broken — having no words',
+        type:'emotion', rootNote:'skar (broken) + rala (voice)',
+        detail:'When experience exceeds language. Not always distress sometimes the honest acknowledgement that what happened was beyond what words can hold.',
+        compounds:[] },
+    ]
+  },
+
+  {
+    id:'keth', type:'root-group', furling:'keth', label:'keth',
+    entries:[
+      { furling:'keth', english:'eternal, enduring, persisting through all cycles',
+        type:'root', rootNote:'core root — also the number 9 (eternal approach)',
+        detail:"Keth carries both eternity and the number 9. Nine is the eternal approach — always almost ten, always almost complete, never quite arriving.",
+        compounds:["keth'alis","keth'thrala","keth'vel","ketha'skala","kethala"] },
+      { furling:"keth'alis", english:"the Eternal Ones — formerly the Athel'kin",
+        type:'name', rootNote:"keth (eternal) + alis (from athel'kinara — the ancient children)",
+        detail:"The name the transformed Athel'kin gave themselves. They received Furling genetic therapy, discovered bio-energy harvesting, and chose immortality. They named themselves those who approach eternity — and became what they are.",
+        compounds:[] },
+      { furling:"keth'vel", english:'completely, fully — superlative intensifier',
+        type:'particle', rootNote:'keth (eternal, complete) + vel (one)',
+        detail:"The superlative degree word. Keth'vel varavis: the brightest possible. That which is keth'vel has reached its full eternal expression.",
+        compounds:[] },
+      { furling:"ketha'skala", english:'eternal-death — bio-energy harvesting',
+        type:'noun', rootNote:'ketha (eternal, approaching) + skala (death, ending)',
+        detail:"The Furling name for what the Keth'alis do. Eternal-death: the act that grants eternal life to the harvester by causing the ends of others, repeated without limit. The compound is structurally contradictory — intentionally.",
+        compounds:[] },
+      { furling:'kethala', english:'to command',
+        type:'verb', rootNote:'late coining from keth — considered uncomfortable in the mouth',
+        detail:"TTo command or direct another. A late addition to the language, coined when a word was needed that the older vocabulary deliberately lacked. It sits uncomfortably in the mouth, and this is considered fitting.",
+        compounds:[] },
+    ]
+  },
+
+  {
+    id:'meva', type:'root-group', furling:'meva', label:'meva',
+    entries:[
+      { furling:'meva', english:'give, gift, sustain — the act and the result',
+        type:'root', rootNote:'core root — also the number 5 (the midpoint, the give)',
+        detail:'Meva encompasses both giving and the gift itself. Five is the midpoint, the give: half of ten, where something is passed forward. The Furlings gave freely — knowledge, medicine, technology. Meva is the root of that philosophy.',
+        compounds:["meva'kela","meva'thala","mevar","mevithar","mevavis","mevar'no shala la'lei"] },
+      { furling:"meva'kela", english:'Workshops-Source',
+        type:'location', rootNote:'meva (give) + kela (source)',
+        detail:'A district dedicated to the practical arts of making and sustaining. The spaces where materials are shaped, crafts are practised, and the physical needs of a community are met through skilled work and the passing of practical knowledge from one generation to the next.',
+        compounds:[] },
+      { furling:"meva'thala", english:"gift-betrayed — receiving a gift and using it against the giver's intention",
+        type:'noun', rootNote:'meva (gift) + thala (guard/conceal — here: betray the hidden)',
+        detail:"The act of receiving a gift and using it against the giver's intention.",
+        compounds:[] },
+      { furling:'mevar', english:'to give, to offer',
+        type:'verb', rootNote:'irregular — one of the eight ancient verbs',
+        detail:'Irregular: present mev, past mevma, future mevai. Giving is among the most ancient actions the language records.',
+        compounds:[] },
+      { furling:"mevar'no shala la'lei", english:'I teach you this — I give you this understanding',
+        type:'phrase', rootNote:"mevar (to give) + no (I) + shala (wisdom) + la'lei (toward you)",
+        detail:'The phrase used when beginning to teach something. Teaching in Furling is an act of giving — offering understanding to a person who receives it freely.',
+        compounds:[] },
+    ]
+  },
+
+  {
+    id:'thara', type:'root-group', furling:'thara', label:'thara',
+    entries:[
+      { furling:'thara', english:'time, cycles, pattern, structure',
+        type:'root', rootNote:'core root — also the number 4 (first completion)',
+        detail:'Thara is time understood as cycle — not linear progression but recurring pattern. Four is the first completion: the first time a cycle closes. All time words derive from thara.',
+        compounds:["thara'kela","thara'keth","thara'vel","thaela","varath'thara","mira'thara","shar'thara"] },
+      { furling:"thara'kela", english:'Food Growth-Source',
+        type:'location', rootNote:'thara (cycles) + kela (source)',
+        detail:"A district dedicated to the cultivation of living plants and the production of food from them. Named for the cycles of growth, harvest, and renewal that give the district its rhythm and purpose.",
+        compounds:[] },
+      { furling:"thara'keth", english:'one complete orbital cycle — the longest standard unit of time',
+        type:'unit', rootNote:'thara (cycle) + keth (eternal)',
+        detail:"One complete orbit of a world around its sun. The standard Furling unit for measuring long spans of time. All ages, historical records, and durations are expressed in thara\'keth. When working with species whose worlds orbit at different speeds, the thara\'keth of Mira around Vara serves as the shared reference.",
+        compounds:[] },
+      { furling:"thara'vel", english:'the opening of a light cycle — the first movement toward brightness',
+        type:'noun', rootNote:'thara (cycle) + vel (first)',
+        detail:"The beginning of a light cycle. The moment when darkness gives way to the first return of light.",
+        compounds:[] },
+      { furling:'thaela', english:'moment — the smallest felt time',
+        type:'noun', rootNote:'thae (smallest) + la (flow)',
+        detail:"The smallest unit of experienced time — not the tael but the felt moment. The distinction between tael (measured time) and thaela (felt time) is important in Furling philosophy.",
+        compounds:[] },
+      { furling:"varath'thara", english:"one full light and dark cycle",
+        type:'noun', rootNote:'vara (star) + thara (cycle)',
+        detail:"One complete turning of a world in relation to its sun, producing a full movement from light through dark and back to light. The most basic unit of lived time.",
+        compounds:[] },
+      { furling:"shar'thara", english:'a grouped cycle — several light cycles counted together',
+        type:'noun', rootNote:'shar (only, small) + thara (cycle)',
+        detail:'A practical grouping of light cycles used for scheduling and communal organisation. Larger than a single light cycle, smaller than an orbital cycle.',
+        compounds:[] },
+    ]
+  },
+
+  {
+    id:'thala', type:'root-group', furling:'thala', label:'thala',
+    entries:[
+      { furling:'thala', english:'guard, protect, conceal, hold safe',
+        type:'root', rootNote:'core root',
+        detail:'Thala appears wherever something is held safe or kept hidden. Both protective guarding and purposeful concealment are the same act to Furling speakers. The infrastructure caverns are called Thala\'Kelara — Hidden Chambers.',
+        compounds:["thala'kelara","thala'kethala","thala'velar","thala'veshara","thalavet","thaleth","thalar","thalis"] },
+      { furling:"thala'kelara", english:'Hidden Chambers',
+        type:'location', rootNote:'thala (hidden, protected) + kelara (source-space)',
+        detail:"Spaces set apart from the living areas of a settlement to house its essential working systems. Named for the principle that good design keeps infrastructure out of the way of daily life, not hidden from knowledge but held at a considered distance from it.",
+        compounds:[] },
+      { furling:"thala'kethala", english:'Hidden-Command',
+        type:'interface', rootNote:'thala (hidden, guard) + keth (eternal) + ala (command)',
+        detail:"The security and access systems of a settlement. The layer of guardianship that operates quietly beneath daily life, governing what opens, what holds, and what remains concealed.",
+        compounds:[] },
+      { furling:"thala'velar", english:'Hidden/Open',
+        type:'interface', rootNote:'thala (hidden, concealed) + velar (to live, to be in open state)',
+        detail:"The paired states of a door or passage. Thala when it holds concealment, velar when it stands open to movement.",
+        compounds:[] },
+      { furling:"thala'veshara", english:'Guardian-Watch — Central Spire security level (level 2)',
+        type:'location', rootNote:'thala (guard) + veshara (watching-place)',
+        detail:"Level 2 of Nibiru's Central Spire.",
+        compounds:[] },
+      { furling:'thalavet', english:'keeper, guardian — one who holds safe',
+        type:'noun', rootNote:'thala (guard) + vet (keeper)',
+        detail:"A guardian entrusted with holding something safe over time.",
+        compounds:[] },
+      { furling:'thaleth', english:'lock — a guardian-structure',
+        type:'noun', rootNote:'thala (guard) + -eth (structure suffix)',
+        detail:"A lock — a guardian that holds a threshold.",
+        compounds:[] },
+      { furling:'thalar', english:'to guard, to hold safe',
+        type:'verb', rootNote:'irregular — one of the eight ancient verbs',
+        detail:'Irregular: present thal, past thalma, future thalvai. Protection is as old as community. Distinct from thalovan (to lock, a deliberate act) — thalar is the ongoing state of guarding.',
+        compounds:[] },
+      { furling:'thalis', english:'hidden, protected — having the quality of thala',
+        type:'adjective', rootNote:'thala + -is (quality suffix)',
+        detail:"Hidden or protected. The paired adjective alaris (open, clear, unobstructed) is its opposite.",
+        compounds:[] },
+    ]
+  },
+
+  {
+    id:'vela', type:'root-group', furling:'vela', label:'vela',
+    entries:[
+      { furling:'vela', english:'sky, air, breath — one continuous living medium',
+        type:'root', rootNote:'core root — also the number 3 (first open space)',
+        detail:'Vela encompasses sky, atmosphere, and breath as a single thing. Three is the first open space. Air is the original open space — both what you move through and what moves through you.',
+        compounds:["vela'kela","vela'kelana","vela'thrala","vela'vetha","velath","vareth"] },
+      { furling:"vela'kela", english:'Air and Water-Source — environment district (district 3)',
+        type:'location', rootNote:'vela (sky, air) + kela (source)',
+        detail:'District 3 of Nibiru. Atmospheric systems, water management, environmental health.',
+        compounds:[] },
+      { furling:"vela'kelana", english:'Air-Source — atmosphere generation and regulation system',
+        type:'location', rootNote:'vela (air) + kelana (source-chamber)',
+        detail:"The Nibiru air infrastructure cavern. Oxygen generation, CO2 scrubbing, air circulation, pressure and temperature regulation. On the Room 1 status screen it reads UNSTABLE.",
+        compounds:[] },
+      { furling:"vela'vetha", english:'breathable atmosphere — life-breath',
+        type:'noun', rootNote:'vela (air) + vetha (life)',
+        detail:'An atmosphere that sustains life — specifically one that a living being can breathe. Planetary survey records always note vela\'vetha status as a primary finding.',
+        compounds:[] },
+      { furling:'velath', english:'ceiling — also the complete atmospheric envelope of a world',
+        type:'noun', rootNote:'vela (sky) + -ath (structure suffix)',
+        detail:'Both the ceiling of an interior space and, in planetary science, the full layered atmosphere of a world. Furlings designed ceilings to feel like sky.',
+        compounds:[] },
+      { furling:'vareth', english:'above, toward light — upward direction',
+        type:'particle', rootNote:'vara (light) + -eth (structure)',
+        detail:'The upward direction — toward light. Paired with miraval (below, toward earth).',
+        compounds:[] },
+    ]
+  },
+
+  {
+    id:'veno', type:'root-group', furling:'veno', label:'veno',
+    entries:[
+      { furling:'veno', english:'wholeness, correct operation, completion',
+        type:'root', rootNote:'core root — system states and integrity',
+        detail:"Veno describes a system in correct operation — whole, working, as it should be. Skar'veno (failure, broken operation) is the most serious status a system can have.",
+        compounds:["venovel","venovis","skar'venovis","venorovovan"] },
+      { furling:'venovel', english:'inward, into a whole — direction toward the centre',
+        type:'particle', rootNote:'veno (wholeness) + vel (flow)',
+        detail:"The inward direction — moving toward the centre or integration with a whole. Paired with nalovēl (outward, away).",
+        compounds:[] },
+      { furling:'venovis', english:'whole, working, complete — having the quality of veno',
+        type:'adjective', rootNote:'veno + -is (quality suffix)',
+        detail:'A system in correct operation. Venovis is the target state for all city systems.',
+        compounds:[] },
+      { furling:"skar'venovis", english:'broken, not working — failed operation',
+        type:'adjective', rootNote:'skar (broken) + venovis',
+        detail:"The failure state. Thala'kethala (security/doors) on the Room 1 status screen is effectively skar'venovis — OFFLINE.",
+        compounds:[] },
+      { furling:'venorovovan', english:'to restore, to return to wholeness',
+        type:'verb', rootNote:'class 3 (making and changing)',
+        detail:"The act of restoration — making something broken whole again. Venorovovan la'Nibiru — restore Nibiru to wholeness.",
+        compounds:[] },
+    ]
+  },
+
+  // NON-ROOT GROUPS
+
+  {
+    id:'particles', type:'other-group', furling:"Thara'rala", label:"Thara'rala",
+    entries:[
+      { furling:'la', english:"flows, moves toward — the primary relational particle",
+        type:'particle', rootNote:"unanalysable — the language's core connective",
+        detail:"La marks the direction of a relationship: from where, toward where, between whom. Forms: la'no (from me), la'lei (toward you), la'maha (between us), la'varo (toward them). It appears in almost every Furling sentence.",
+        compounds:[] },
+      { furling:'no', english:'I, me — first person singular',
+        type:'pronoun', rootNote:'unanalysable — core pronoun',
+        detail:'The first person singular pronoun. Notably short in a language of long compounds. The pronoun rarely opens a sentence — beginning with no is emphatic.',
+        compounds:[] },
+      { furling:'lei', english:'you — second person singular',
+        type:'pronoun', rootNote:'unanalysable — core pronoun',
+        detail:"Second person singular. La'lei means toward you — the most common destination in Furling speech.",
+        compounds:[] },
+      { furling:'ren', english:'he, she, it — third person singular',
+        type:'pronoun', rootNote:'shares root with renar (to help) — intentional',
+        detail:"Third person singular — intentionally shares its sound with renar (to help). The third person, the one who is other, is also the one who might help.",
+        compounds:[] },
+      { furling:'maha', english:'we — the collective, us as a whole',
+        type:'pronoun', rootNote:'unanalysable — implies the collective',
+        detail:"We — also used for 'the collective'. Maha implies wholeness: not just two people together but a group understood as a unit.",
+        compounds:[] },
+      { furling:'leis', english:'you plural — all of you',
+        type:'pronoun', rootNote:'lei + -is (plural suffix)',
+        detail:"Second person plural. Selavai's greeting uses la'leis: Nibiru greets all of you.",
+        compounds:[] },
+      { furling:'varo', english:'they — third person plural',
+        type:'pronoun', rootNote:'unanalysable',
+        detail:"Third person plural. Used in the sentence describing bio-energy harvesting: Vetha skar'la Keth'alis la'varo — life broken-flows away from those who should receive it.",
+        compounds:[] },
+      { furling:'skar', english:'no, not, broken — marks broken or interrupted flow',
+        type:'particle', rootNote:'unanalysable — fundamental negation',
+        detail:"Negation particle — place before the verb: skar ren (does not help). Skar is not neutral: it marks broken flow. Maha skar ren requires justification.",
+        compounds:[] },
+      { furling:'ha', english:'question marker — added to end of any statement',
+        type:'particle', rootNote:'unanalysable — turns statement into question',
+        detail:"Added to the end of any statement to form a question without changing word order. Shala la'no la'lei ha? — Do you understand?",
+        compounds:[] },
+      { furling:'na', english:'and, alongside — additive connective',
+        type:'particle', rootNote:'connective',
+        detail:"Joins elements of equal standing. Also used in compound numbers: thara'thael·na mira = 42.",
+        compounds:[] },
+      { furling:'ometh', english:'yes — I am at peace with this',
+        type:'particle', rootNote:'oma (peace) + -eth (structure)',
+        detail:"Full considered agreement. Not merely yes — settled genuine consent. The everyday form ometh'vel is lighter.",
+        compounds:[] },
+      { furling:"thala'shola", english:'I hold this carefully — I am uncertain',
+        type:'phrase', rootNote:'thala (guard/hold) + shola (carefully)',
+        detail:'The honest middle ground between yes and no. Using this rather than false certainty is the expected honest response.',
+        compounds:[] },
+      { furling:'·shala', english:'known from study, evidence, research — evidential',
+        type:'particle', rootNote:'shala (wisdom) — appended to verb',
+        detail:'Required in archive records. Marks knowledge verified through research or evidence.',
+        compounds:[] },
+      { furling:'·rala', english:'known from testimony, record — evidential',
+        type:'particle', rootNote:'rala (voice) — appended to verb',
+        detail:'Required in archive records. Marks knowledge from testimony or written record.',
+        compounds:[] },
+      { furling:'·vetha', english:'known from direct lived experience — evidential',
+        type:'particle', rootNote:'vetha (life) — appended to verb',
+        detail:'Marks personal direct experience. The most intimate evidential. Archive records give weight to ·vetha accounts.',
+        compounds:[] },
+      { furling:'·thala', english:'held carefully, uncertain — evidential, never dropped',
+        type:'particle', rootNote:'thala (guard/hold) — appended to verb',
+        detail:'The only evidential never dropped in any register. A Furling who states something uncertain without ·thala is considered arrogant. Using it marks honesty.',
+        compounds:[] },
+      { furling:'·ma', english:'settled aspect — the cycle closed, its mark remains',
+        type:'particle', rootNote:'aspect suffix',
+        detail:'Past aspect — the event is complete and its effects remain. Not simple past: the thing happened, closed, and left a trace.',
+        compounds:[] },
+      { furling:'·vai', english:'turning aspect — the cycle moves toward this',
+        type:'particle', rootNote:'aspect suffix',
+        detail:'Future aspect — the event is approaching, the cycle is turning toward it. More certain than hope, less certain than ·ma.',
+        compounds:[] },
+    ]
+  },
+
+  {
+    id:'numbers', type:'other-group', furling:"Thael'rala", label:"Thael'rala",
+    entries:[
+      { furling:'nai', english:'zero — flow-space, potential before any count',
+        type:'number', rootNote:'also the root for water and flow',
+        detail:'Zero is not absence. It is the space of potential — before any flow begins. The same root as water: both share the quality of taking any shape, holding any possibility.',
+        compounds:[] },
+      { furling:'vel', english:'one — the single flow, life-root',
+        type:'number', rootNote:'also vel (first, one) throughout the language',
+        detail:'One is the single flow — the start of all counting. Vel\'kela (Power-Source) is district 1.',
+        compounds:[] },
+      { furling:'mira', english:'two — the first balance',
+        type:'number', rootNote:'also mira (earth, homeworld)',
+        detail:'Two is the first balance — the first pairing. Mira\'kela (Housing-Source) is district 2 — home requires two: a self and a place.',
+        compounds:[] },
+      { furling:'vela', english:'three — the first open space',
+        type:'number', rootNote:'also vela (sky, air, breath)',
+        detail:'Three is the first open space — the third point creates a plane. The sky is the original third thing, after earth and water.',
+        compounds:[] },
+      { furling:'thara', english:'four — the first completion, a cycle first closes',
+        type:'number', rootNote:'also thara (time, cycles)',
+        detail:'Four is the first completion — the first time a cycle closes. Thara\'kela (Food Growth-Source) is district 4.',
+        compounds:[] },
+      { furling:'meva', english:'five — the midpoint, the give',
+        type:'number', rootNote:'also meva (give, gift, sustain)',
+        detail:'Five is the midpoint — half of ten, where something is passed forward. Meva\'kela (Workshops-Source) is district 5.',
+        compounds:[] },
+      { furling:'vetha', english:'six — life, the branching',
+        type:'number', rootNote:'also vetha (life, aliveness)',
+        detail:'Six is life — the branching. Vetha\'kela (Medical-Source) is district 6.',
+        compounds:[] },
+      { furling:'shala', english:'seven — wisdom, always seeking, never complete',
+        type:'number', rootNote:'also shala (wisdom, knowing)',
+        detail:'Seven is wisdom — always seeking, never complete. Shala\'kela (Archive and Education-Source) is district 7.',
+        compounds:[] },
+      { furling:'vara', english:'eight — light, the doubled balance',
+        type:'number', rootNote:'also vara (star, light)',
+        detail:'Eight is light — the doubled balance. Two times four, balance doubled. Vara\'kela (Arts-Source) is district 8.',
+        compounds:[] },
+      { furling:'ketha', english:'nine — the eternal approach, always almost ten',
+        type:'number', rootNote:'also keth (eternal)',
+        detail:"Nine is the eternal approach — always almost ten, never quite arriving. Ketha'kela (Justice-Source) is district 9.",
+        compounds:[] },
+      { furling:'thael', english:'ten — the pattern closes',
+        type:'number', rootNote:'also thael in scale words',
+        detail:'Ten is where the pattern closes. The base of the counting system.',
+        compounds:[] },
+      { furling:'vora', english:'hundred — full turn',
+        type:'number', rootNote:'root logic: full turn',
+        detail:'100. Used in compound numbers: thara\'vora = 400.',
+        compounds:[] },
+      { furling:'kora', english:'thousand — completed path',
+        type:'number', rootNote:'root logic: completed path',
+        detail:"1,000. Used in dates and measurements. Kora'thesh Veshúnar — the Five Principles — uses kora in the sense of a complete body of knowledge.",
+        compounds:[] },
+      { furling:'lhaketh', english:'one billion — vast-eternal scale',
+        type:'number', rootNote:'lh (vast) + keth (eternal)',
+        detail:'1,000,000,000. The lh- prefix marks the crossing into vast scale — the breath before the word is the body\'s response to largeness. A billion deserves acknowledgement.',
+        compounds:[] },
+      { furling:'lhaveth', english:'one trillion — vast-life scale',
+        type:'number', rootNote:'lh (vast) + veth (life)',
+        detail:'1,000,000,000,000. The scale at which the Keth\'alis operate — 10 trillion subjugated beings in the Kigal Galaxy. At this scale, the abstract becomes made of lives.',
+        compounds:[] },
+    ]
+  },
+
+  {
+    id:'greetings', type:'other-group', furling:"Vetha'rala", label:"Vetha'rala",
+    entries:[
+      { furling:"vetha'mai", english:'life-blessing — the standard greeting',
+        type:'phrase', rootNote:'vetha (life) + mai (blessing)',
+        detail:'The most common Furling greeting, used in all contexts. Always meant fully.',
+        compounds:[] },
+      { furling:"skela'oma", english:'home-peace — welcome to a place',
+        type:'phrase', rootNote:'skela (home) + oma (peace)',
+        detail:"Used when welcoming someone to a place. The place itself extends belonging to the visitor.",
+        compounds:[] },
+      { furling:"athela'vara", english:'ancient-light — formal greeting, first contact, ceremony',
+        type:'phrase', rootNote:'athela (ancient, first) + vara (light)',
+        detail:"The most formal Furling greeting. Used for first contact between species, at significant ceremonies. To say Athela'vara is to acknowledge that light existed before either party, and both stand in it.",
+        compounds:[] },
+      { furling:"oma'vetha maha", english:'living peace between us — meeting of equals',
+        type:'phrase', rootNote:'oma (peace) + vetha (life) + maha (we)',
+        detail:'A weighted statement of mutual peace. Used when meeting as equals, beginning diplomatic exchange, or welcoming a new species.',
+        compounds:[] },
+      { furling:'oma vai', english:'peace to you — simple warm farewell',
+        type:'phrase', rootNote:'oma (peace) + vai (approaching)',
+        detail:'Simple and warm. Peace is coming toward you. The lightest of the farewells.',
+        compounds:[] },
+      { furling:"thara'vetha lei", english:'the living cycle flows with you — farewell',
+        type:'phrase', rootNote:"thara (cycle) + vetha (life) + lei (you)",
+        detail:'A farewell of genuine weight. Used when parting may be long or when it is significant.',
+        compounds:[] },
+      { furling:'vara la\'lei', english:'light flows toward you — warm parting',
+        type:'phrase', rootNote:"vara (light) + la'lei (toward you)",
+        detail:'A warm parting — may light reach you. Often used when someone departs on a journey or into difficulty.',
+        compounds:[] },
+      { furling:"rhoma'vai", english:'ancient-light approaches — ceremonial farewell of great weight',
+        type:'phrase', rootNote:'rhoma (ceremony, ancient form) + vai (approaching)',
+        detail:'The most weighty farewell. Used at the end of ceremonies, at deaths, at the close of the Nibiru era when the Furlings departed.',
+        compounds:[] },
+      { furling:"shala la'no la'lei", english:'I share this with you — offering understanding',
+        type:'phrase', rootNote:"shala (wisdom) + la'no (from me) + la'lei (toward you)",
+        detail:'Used when beginning to share knowledge or understanding. The standard phrase for opening a lesson or explanation.',
+        compounds:[] },
+      { furling:"ngēl'no la'lei", english:'I resonate with you — I understand and agree',
+        type:'phrase', rootNote:"ngēl (resonance) + no (I) + la'lei (toward you)",
+        detail:'Used when you genuinely understand and agree with what another has said. More than ometh, it implies alignment at a deeper level.',
+        compounds:[] },
+      { furling:"lhāketh'vetha", english:"this is vast — said when something exceeds comprehension",
+        type:'phrase', rootNote:'lhā (vast) + keth (eternal) + vetha (life)',
+        detail:'Said when something is too large to fully grasp. Not distress, but honest acknowledgement of scale.',
+        compounds:[] },
+    ]
+  },
+
+  {
+    id:'emotions', type:'other-group', furling:"Helov'rala", label:"Helov'rala",
+    entries:[
+      { furling:"vetha'nalar", english:'life-flowing — all systems in motion, rightness',
+        type:'emotion', rootNote:'vetha (life) + nalar (to flow)',
+        detail:'The feeling when everything works as it should. The closest Furling equivalent to happiness, but broader — not pleasure, but rightness.',
+        compounds:[] },
+      { furling:"skelath'oma", english:'home-peace — being exactly where you should be',
+        type:'emotion', rootNote:'skela (home) + oma (peace)',
+        detail:'The feeling of being exactly where you should be — not just physically but in every sense. Deeper than comfort.',
+        compounds:[] },
+      { furling:"thara'helov", english:'pattern-feeling — recognising a cycle',
+        type:'emotion', rootNote:'thara (pattern, cycle) + helov (feeling)',
+        detail:'Recognising a cycle — seeing that something has happened before and will again. Neither good nor bad. The feeling of time being real.',
+        compounds:[] },
+      { furling:"skar'nalar", english:'broken-flow — dread, the felt sense that something is wrong',
+        type:'emotion', rootNote:'skar (broken) + nalar (flow)',
+        detail:'The felt sense that something has gone wrong — before you know what. A physical sensation: something in the flow has stopped and the body knows.',
+        compounds:[] },
+      { furling:"thara'vel'vetha", english:'wonder — encountering something whose pattern you cannot yet read',
+        type:'emotion', rootNote:'thara (pattern) + vel (first) + vetha (life)',
+        detail:'Wonder. Considered to be one of the most important states. It is the beginning of all learning.',
+        compounds:[] },
+      { furling:"skar'skela", english:'home-broken — displacement, the most painful Furling state',
+        type:'emotion', rootNote:'skar (broken) + skela (home, belonging)',
+        detail:'Displacement — not belonging anywhere. More than loneliness — existential. The most painful Furling emotional state.',
+        compounds:[] },
+      { furling:"vetha'skar'nalar", english:"grief — life that should flow but no longer does",
+        type:'emotion', rootNote:'vetha (life) + skar (broken) + nalar (flow)',
+        detail:'Grief — the experience of vetha that should be flowing but no longer is. The honest recognition of loss.',
+        compounds:[] },
+      { furling:"ometh'skar", english:'agreement-broken — when trust has been violated',
+        type:'emotion', rootNote:'ometh (agreement) + skar (broken)',
+        detail:"The feeling when trust has been violated — when something settled and at peace has been broken.",
+        compounds:[] },
+      { furling:"lhāketh'vetha'nalar", english:'awe — vast-eternal-life-flowing',
+        type:'emotion', rootNote:'lhā (vast) + keth (eternal) + vetha (life) + nalar (flow)',
+        detail:'Awe — when something vastly larger than yourself makes itself known. Reserved for encounters with deep time, the archive, the stars.',
+        compounds:[] },
+      { furling:"ngēl'vetha", english:'resonance-life — being in harmony with those around you',
+        type:'emotion', rootNote:'ngēl (resonance) + vetha (life)',
+        detail:'The feeling of being in harmony with those around you — in the right place with the right beings. When the group is in ngēl\'vetha, decisions flow naturally.',
+        compounds:[] },
+      { furling:"rhoma'helov", english:"ceremony-feeling — knowing a moment matters while it is happening",
+        type:'emotion', rootNote:'rhoma (ceremony) + helov (feeling)',
+        detail:'The quality of a moment that will be remembered — when you know, while it is happening, that this matters.',
+        compounds:[] },
+      { furling:"meva'helov", english:"give-feeling — satisfaction after a gift truly lands",
+        type:'emotion', rootNote:'meva (give) + helov (feeling)',
+        detail:'The satisfaction of having given something that was received well. Not pride. The feeling after a gift truly lands.',
+        compounds:[] },
+    ]
+  },
+
+  {
+    id:'names', type:'other-group', furling:"Skela'rala", label:"Skela'rala",
+    entries:[
+      { furling:'Selavai', english:"keeper-of-light",
+        type:'name', rootNote:'sela (keeper, tender) + vai (of light, toward light)',
+        detail:"A name given to the guidance systems that tend Furling archives and knowledge centres across our settlements. Patient, responsive, and deeply familiar with the knowledge they hold. A Selavai maintains and illuminates what is already known but does not add to it.",
+        compounds:[] },
+      { furling:'Vara', english:'light, star — also the name of the Furling sun',
+        type:'name', rootNote:'var / vara (star, light) — the sun kept the common noun',
+        detail:'the common word for light and star; the sun kept the same name as other stars were encountered',
+        compounds:["vara'kela","vara'skela","vara'keth","vara'shael"] },
+      { furling:'Mira', english:'earth, ground — also the name of the Furling homeworld',
+        type:'name', rootNote:'mira (earth, ground) — the world kept the common noun',
+        detail:"the common word for earth and ground. Our homeworld took the same name. All Furling measurement units are anchored to Mira.",
+        compounds:["mira'kela","mira'thrala","mira'thara"] },
+      { furling:"Rala'Kethara", english:'Voice-Eternal',
+        type:'name', rootNote:'rala (voice) + keth (eternal) + ara (place, vessel)',
+        detail:"The name of the great archive of Furling knowledge. A voice that continues to speak across time, present and living rather than static, carrying the understanding of our civilisation to all who seek it.",
+        compounds:[] },
+      { furling:"Keth'alis", english:"the Eternal Ones — formerly the Athel'kin",
+        type:'name', rootNote:"keth (eternal) + alis (from athel'kinara — ancient children)",
+        detail:"The name taken by those who chose to pursue life without end. Recorded here as a matter of language. The fuller history is held in Thara'kela.",
+        compounds:[] },
+      { furling:"Skela'Varath", english:'Gateway-Home Tower',
+        type:'name', rootNote:'skela (home) + varath (tower, spire)',
+        detail:"The name given to the Central Spire of a Furling settlement. The tower that stands at the heart of a city and orients all who live within it, as a home orients those who belong to it.",
+        compounds:[] },
+    ]
+  },
+
+  {
+    id:'nibiru', type:'other-group', furling:"Vel'kela'nibiru", label:"Vel'kela'nibiru",
+    entries:[
+      { furling:"Nai'kela", english:'Science-Source',
+        type:'location', rootNote:'nai (zero, flow-space) + kela (source)',
+        detail:'A district dedicated to the practice of inquiry. The source from which all questions flow outward into the wider archive. Named for the understanding that the space of not-yet-knowing is not emptiness but the necessary condition from which all genuine knowledge grows.',
+        compounds:[] },
+      { furling:"Vel'kela", english:'Power-Source',
+        type:'location', rootNote:'vel (one, first flow) + kela (source)',
+        detail:'A district dedicated to the engineering and tending of the energy systems that sustain a settlement. The first flow from which all other flows depend. Without it, nothing else in a city can live.',
+        compounds:[] },
+      { furling:"Mira'kela", english:'Housing-Source',
+        type:'location', rootNote:'mira (earth, balance) + kela (source)',
+        detail:'A district dedicated to dwelling and community life. The spaces where we make our homes, tend our relationships, and build the texture of daily existence together.',
+        compounds:[] },
+      { furling:"Vela'kela", english:'Air and Water-Source',
+        type:'location', rootNote:'vela (sky, air) + kela (source)',
+        detail:'A district dedicated to the maintenance of air and water throughout a settlement. The living systems here ensure that what is breathed and what is drunk remains clean, balanced, and continuously renewed.',
+        compounds:[] },
+      { furling:"Thara'kela", english:'Food Growth-Source',
+        type:'location', rootNote:'thara (cycle) + kela (source)',
+        detail:"A district dedicated to the cultivation of living plants and the production of food from them. Named for the cycles of growth, harvest, and renewal that give the district its rhythm and purpose.",
+        compounds:[] },
+      { furling:"Meva'kela", english:'Workshops-Source',
+        type:'location', rootNote:'meva (give) + kela (source)',
+        detail:'A district dedicated to the practical arts of making and sustaining. The spaces where materials are shaped, crafts are practised, and the physical needs of a community are met through skilled work and the knowledge of how things are built.',
+        compounds:[] },
+      { furling:"Vetha'kela", english:'Medical-Source',
+        type:'location', rootNote:'vetha (life) + kela (source)',
+        detail:'A district dedicated to the understanding and care of living things including healing, medicine, biological knowledge, and the tending of bodies and minds across every species a Furling community welcomes within its walls.',
+        compounds:[] },
+      { furling:"Shala'kela", english:'Archive and Education-Source',
+        type:'location', rootNote:'shala (wisdom) + kela (source)',
+        detail:"A district dedicated to the preservation and transmission of knowledge — teaching halls, research spaces, and the great archives in which a civilisation's understanding of itself and the universe is gathered, ordered, and made available to all who seek it.",
+        compounds:[] },
+      { furling:"Vara'kela", english:'Arts-Source',
+        type:'location', rootNote:'vara (light) + kela (source)',
+        detail:'A district dedicated to the full breadth of creative expression — music, visual art, literature, performance, and every form through which a civilisation gives light to its inner life. Called the Light-Source because the Furlings understand creativity not as decoration but as one of the fundamental ways a people illuminate what they are.',
+        compounds:[] },
+      { furling:"Ketha'kela", english:'Justice-Source',
+        type:'location', rootNote:'ketha (eternal approach) + kela (source)',
+        detail:'A district dedicated to the living practice of justice — mediation, ethics, restorative resolution, and the social frameworks that allow a community to remain whole when harm has occurred. Justice in Furling understanding is not a fixed structure but a source that must be continuously tended.',
+        compounds:[] },
+      { furling:"Vara'Kethala", english:'Light-Command Centre',
+        type:'location', rootNote:'vara (light) + kethala (command)',
+        detail:"The central coordination space from which the living systems of a settlement are tended — light, air, water, energy, security and the flows between them. The name reflects the understanding that to hold light is not to command it but to be responsible for its continuance.",
+        compounds:[] },
+      { furling:"Shala'Omara", english:'Wisdom-Peace',
+        type:'location', rootNote:'shala (wisdom) + omara (peace-space)',
+        detail:"The deliberative spaces where questions of governance, justice, and collective direction are brought before a council. Named for the understanding that wisdom and peace are not separate qualities but the same quality seen from different sides.",
+        compounds:[] },
+      { furling:"Skela'Varai", english:'Home-Gateway — portal welcome level)',
+        type:'location', rootNote:'skela (home) + varai (gateway, toward)',
+        detail:"he level of a settlement designated to receive those arriving by portal — the first space a traveller enters, designed to offer welcome and orientation before the wider city opens to them.",
+        compounds:[] },
+      { furling:"Thala'Veshara", english:'Guardian-Watch',
+        type:'location', rootNote:'thala (guard) + veshara (watching-place)',
+        detail:'The watching-place of a citys guardians — the dedicated level from which Thalakela monitors the safety of a settlement and all who move within it. Named for the quality of sustained, patient attention that good guardianship requires.',
+        compounds:[] },
+      { furling:"Meva'Kalara", english:'Gathering-Place',
+        type:'location', rootNote:'meva (give) + kalara (gathering-place)',
+        detail:'Where all districts meet. Public, open, accessible.',
+        compounds:[] },
+      { furling:"Thala'Kelara", english:'infrastructure caverns',
+        type:'location', rootNote:'thala (hidden, protected) + kelara (source-space)',
+        detail:"The caverns housing geothermal, water, and air infrastructure.",
+        compounds:[] },
+      { furling:"Mira'Kelana", english:'Earth-Energy Source',
+        type:'interface', rootNote:'mira (earth) + kelana (source-chamber)',
+        detail:"The primary power generation system deep geothermal taps, heat extraction, energy conversion.",
+        compounds:[] },
+      { furling:"Nai'Kelana", english:'Water-Energy Source',
+        type:'location', rootNote:'nai (water) + kelana (source-chamber)',
+        detail:"Water infrastructure cavern. River purification, atmospheric extraction, city distribution.",
+        compounds:[] },
+      { furling:"Vela'Kelana", english:'Air-Energy Source',
+        type:'location', rootNote:'vela (air) + kelana (source-chamber)',
+        detail:"A chamber dedicated to the maintenance of breathable atmosphere throughout a settlement. The systems here manage the flow and balance of mira'nai'vel and the removal of its compounds from the air that living things breathe.",
+        compounds:[] },
+    ]
+  },
+
+  {
+    id:'borrowed', type:'other-group', furling:"Athel'rala", label:"Athel'rala",
+    entries:[
+      { furling:'Astria Porta', english:"stargate (Alteran name)",
+        type:'borrowed', rootNote:'from Alteran — astria (star) + porta (gate, door)',
+        detail:"The Alteran name for the portal network, used alongside the Furling term Venath'kela. In formal archive records the Furling term is preferred.",
+        compounds:[] },
+      { furling:"Kora'thesh Veshúnar", english:'the Five Principles — canonical term',
+        type:'borrowed', rootNote:'kora (completed path) + thesh (body, collection) + veshúnar (ceremony register)',
+        detail:"The canonical name for the Five Principles guiding Furling civilisation. The Five Principles are recorded in the visitor sections of Shala'kela.",
+        compounds:[] },
+    ]
+  },
+];
+
+let searchQ='', activeGroup='all', expanded=null, kbdOpen=false;
+
+function buildFilters() {
+  const c = document.getElementById('group-filters');
+  GROUPS.forEach(g => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-btn';
+    btn.dataset.group = g.id;
+    btn.onclick = () => setGroup(g.id);
+    btn.innerHTML = `<span class="fur-pill">${g.furling}</span>`;
+    c.appendChild(btn);
+  });
+}
+
+function setGroup(id) {
+  activeGroup = id;
+  document.querySelectorAll('.filter-btn').forEach(b =>
+    b.classList.toggle('active', b.dataset.group === id));
+  render();
+}
+
+function onSearch(val) {
+  searchQ = val.toLowerCase().trim();
+  document.getElementById('search-clear').classList.toggle('visible', val.length > 0);
+  render();
+}
+function clearSearch() {
+  document.getElementById('search').value = '';
+  onSearch('');
+}
+function toggleKbd() {
+  kbdOpen = !kbdOpen;
+  document.getElementById('kbd-panel').classList.toggle('open', kbdOpen);
+  document.getElementById('kbd-trigger').classList.toggle('active', kbdOpen);
+  if (kbdOpen) document.getElementById('search').focus();
+}
+function hl(t, q) {
+  if (!q) return t;
+  const e = q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+  return t.replace(new RegExp(`(${e})`,'gi'),
+    '<mark style="background:rgba(74,184,196,0.22);color:inherit;border-radius:2px;padding:0 1px;">$1</mark>');
+}
+
+function render() {
+  const container = document.getElementById('entries');
+  const groups = activeGroup === 'all' ? GROUPS : GROUPS.filter(g => g.id === activeGroup);
+  let total=0, html='';
+
+  groups.forEach(grp => {
+    const entries = grp.entries.filter(e => {
+      if (!searchQ) return true;
+      return e.furling.toLowerCase().includes(searchQ)
+          || e.english.toLowerCase().includes(searchQ)
+          || e.detail.toLowerCase().includes(searchQ)
+          || e.rootNote.toLowerCase().includes(searchQ);
+    });
+    if (!entries.length) return;
+    total += entries.length;
+
+    html += `<div class="word-group">
+      <div class="group-header">
+        <span class="group-furling">${grp.furling}</span>
+        <span class="group-key">${grp.label||grp.furling}</span>
+      </div>`;
+
+    entries.forEach((e,i) => {
+      const id  = `e-${grp.id}-${i}`;
+      const exp = expanded === id;
+      const tl  = TYPE_LABELS[e.type] || e.type;
+      const cpd = e.compounds.length
+        ? `<div class="detail-sub-label">appears in</div>
+           <div class="compound-list">${e.compounds.map(c=>
+             `<span class="compound-tag" onclick="searchFor('${c}')">${c}</span>`).join('')}</div>`
+        : `<div class="no-compounds">—</div>`;
+
+      html += `
+        <div class="entry${exp?' expanded':''}" onclick="toggleEntry('${id}')">
+          <div class="entry-main">
+            <div class="entry-left">
+              <div class="entry-furling">${hl(e.furling,searchQ)}</div>
+            </div>
+            <div class="entry-center">
+              <div class="entry-english">${hl(e.english,searchQ)}</div>
+              <div class="entry-root-note">${e.rootNote}</div>
+            </div>
+            <div class="entry-type">${tl}</div>
+          </div>
+          <div class="entry-detail">
+            <div class="detail-inner">
+              <div class="detail-left">${cpd}</div>
+              <div class="detail-note">${e.detail}</div>
+            </div>
+          </div>
+        </div>`;
+    });
+    html += `</div>`;
+  });
+
+  if (!total) {
+    html = `<div class="empty"><span class="empty-glyph">nai</span>
+      no words found${searchQ?` for "${searchQ}"`:''}
+    </div>`;
+  }
+  container.innerHTML = html;
+  document.getElementById('result-count').textContent =
+    `${total} ${total===1?'entry':'entries'}${searchQ?` matching "${searchQ}"`:''}`;
+}
+
+function toggleEntry(id) {
+  expanded = expanded===id ? null : id;
+  render();
+}
+function searchFor(term) {
+  document.getElementById('search').value = term;
+  onSearch(term);
+}
+function toggleTheme() {
+  document.body.classList.toggle('theme-light');
+  document.getElementById('theme-btn').textContent =
+    document.body.classList.contains('theme-light') ? 'Dark' : 'Light';
+}
+if (document.documentElement.classList.contains('theme-light')||
+    document.body.classList.contains('theme-light')) {
+  document.body.classList.add('theme-light');
+  const tb=document.getElementById('theme-btn');
+  if(tb) tb.textContent='Dark';
+}
+
+buildKeyboard();
+buildFilters();
+render();
+</script>
+<button id="rk-font-btn" onclick="rkToggleFont()"></button>
+<script>
+(function() {
+  var LABELS = ['Speak', 'Read', 'Ancient'];
+  var BASE = location.hostname === 'localhost' ? '' : '/rala-kethara';
+
+  var style = document.createElement('style');
+  style.textContent = [
+    '@font-face{font-family:"Anquietas";src:url("' + BASE + '/static/Anquietas.ttf") format("truetype")}',
+    '#rk-font-btn{position:fixed;top:14px;right:72px;z-index:9999;background:rgba(74,184,196,0.08);border:1px solid rgba(74,184,196,0.3);border-radius:6px;color:#4ab8c4;font-size:16px;padding:5px 12px;cursor:pointer;font-family:sans-serif;transition:background 0.2s}',
+    '#rk-font-btn:hover{background:rgba(74,184,196,0.18)}'
+  ].join('');
+  document.head.appendChild(style);
+
+  function getState() { return parseInt(localStorage.getItem('rk-font') || '1'); }
+  function setState(n) { localStorage.setItem('rk-font', n); }
+
+  function applyFont(state) {
+    var root = document.documentElement;
+    if (state === 0) {
+      root.style.setProperty('--font-ui', "-apple-system, 'Segoe UI', sans-serif");
+    } else if (state === 1) {
+      root.style.setProperty('--font-ui', "'Furling', serif");
+    } else {
+      root.style.setProperty('--font-ui', "'Anquietas', serif");
+    }
+    var btn = document.getElementById('rk-font-btn');
+    if (!btn) return;
+    var next = (state + 1) % 3;
+    btn.textContent = LABELS[next];
+    btn.style.fontFamily = state === 0 ? 'sans-serif' : state === 1 ? 'Furling' : 'Anquietas';
+  }
+
+  window.rkToggleFont = function() {
+    var state = (getState() + 1) % 3;
+    setState(state);
+    applyFont(state);
+  };
+
+  applyFont(getState());
+})();
+</script>
+</body>
+</html>
