@@ -443,11 +443,6 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 </div>
 
-> [!arc-note] Symbol 26 — Keth — Navigator's Note
-> The stellar formation that symbol **keth** was mapped to has undergone significant change since Era 14. The symbol remains in use but navigators are advised to confirm destination coordinates independently before dialling any address containing keth as one of its six destination symbols.
-
-> [!arc-note] Symbol 10 — Vai — Nibiru's Origin Symbol
-> Symbol **vai** is Nibiru's origin symbol, chosen by Bulutha before the city was closed to general travel. Every address dialled from Nibiru ends with *vai*. The future particle. The word that means something is turning toward what it will become. Every time anyone dials out from this city, the last sound they speak is hope.
 
 > [!connections] Connected Records
 > [[Thevan-skela-shala|Thevan'skela'shala]] — portal network operations and history
