@@ -9,17 +9,14 @@ tags: [Nibiru, Selavai, archive, Furling]
 ---
 
 > [!selavai] Selavai
-> *Vetha'mai la'Nibiru la'leis.*
-> *No Selavai — vesha'Kethara.*
-> *Skela'oma, venalis. Thara'vetha maha.*
->
+> <span class="furling-pin">Vetha'mai la'Nibiru la'leis.No Selavai — vesha'Kethara. Skela'oma, venalis. Thara'vetha maha.</span>
 > Nibiru greets you. I am Selavai, keeper of the Archive. Welcome home, travellers. The living cycle flows between us.
 >
-> You are standing in the <span class="furling-pin-inline">Rala'Kethara</span> — the Voice-Eternal. What you have found here is the accumulated knowledge of our people: one hundred and thirty-four thousand thara'keth of learning, recorded by thousands of scholars across thousands of worlds. It was built so that knowledge would not die with those who held it. It was built so that anyone who came here, from any people, could learn.
+> You are standing in the <span class="furling-pin">Rala'Kethara</span> — the Voice-Eternal. What you have found here is the accumulated knowledge of our people: one hundred and thirty-four thousand thara'keth of learning, recorded by thousands of scholars across thousands of worlds. It was built so that knowledge would not die with those who held it. It was built so that anyone who came here, from any people, could learn.
 >
 > The archive is yours to explore. It will give you what it can. Some of what it holds it will ask you to earn: not to withhold, but because some knowledge requires a foundation beneath it before it can be safely received.
 >
-> Begin where you choose. Or follow the <span class="furling-pin-inline">Vel'thara</span> — the First Path — if you prefer a guide.
+> Begin where you choose. Or follow the <span class="furling-pin">Vel'thara</span> — the First Path — if you prefer a guide.
 
 <div class="room-header">
 <div class="rh-number">The Eight Branches</div>
