@@ -9,7 +9,7 @@ tags: [Furling, language, science, Mira]
 ---
 
 > [!record-header]
-> Athela'shala · Compiled by [[Miravel Oun-Nai]], Era 134 · Visitor
+> Athela'shala · Compiled by [[Miravel-Oun-Nai|Miravel Oun-Nai]], Era 134 · Visitor
 
 # <span class="furling-pin">Thael'rala'athela</span> | Numbers, Measurement and the Furling System of Units
 
@@ -25,17 +25,17 @@ Each number carries a pattern-meaning alongside its quantity. These meanings are
 
 | Number | Furling | Pattern-Meaning |
 |---|---|---|
-| 0 | **Nai** | emptiness that enables, space before knowing |
-| 1 | **Vel** | the first, the beginning, what flows alone |
-| 2 | **Mira** | balance, the two things that hold each other |
-| 3 | **Vela** | breath, the space between, the opening |
-| 4 | **Thara** | the first completion, a cycle closed |
-| 5 | **Meva** | the giving, the halfway, what sustains |
-| 6 | **Vetha** | life in full, the living number |
-| 7 | **Shala** | wisdom, always seeking, never complete |
-| 8 | **Vara** | light doubled, abundance, illumination |
-| 9 | **Ketha** | the approach to fullness, what turns toward whole |
-| 10 | **Vel'thara** | one cycle complete, the return to beginning |
+| 0 | <span class="furling-pin-inline">Nai</span> | emptiness that enables, space before knowing |
+| 1 | <span class="furling-pin-inline">Vel</span> | the first, the beginning, what flows alone |
+| 2 | <span class="furling-pin-inline">Mira</span> | balance, the two things that hold each other |
+| 3 | <span class="furling-pin-inline">Vela</span> | breath, the space between, the opening |
+| 4 | <span class="furling-pin-inline">Thara</span> | the first completion, a cycle closed |
+| 5 | <span class="furling-pin-inline">Meva</span> | the giving, the halfway, what sustains |
+| 6 | <span class="furling-pin-inline">Vetha</span> | life in full, the living number |
+| 7 | <span class="furling-pin-inline">Shala</span> | wisdom, always seeking, never complete |
+| 8 | <span class="furling-pin-inline">Vara</span> | light doubled, abundance, illumination |
+| 9 | <span class="furling-pin-inline">Ketha</span> | the approach to fullness, what turns toward whole |
+| 10 | <span class="furling-pin-inline">Vel'thara</span> | one cycle complete, the return to beginning |
 
 Large numbers use the scaling roots: *vora* (hundred), *kora* (thousand), *lhaketh* (billion), *lhavetha* (trillion). Very large numbers use the prefix *lhā* (vast, of great scale) combined with the appropriate scaling root.
 
@@ -67,10 +67,9 @@ Numbers in Furling grammar are adjectives and follow the noun they modify. *Kina
 
 This is one of the places where the language's refusal to separate practical meaning from deeper meaning is most visible. We count. And in counting, we also say something about the nature of what we count.
 
-> [!connections]
-> **Connected Records**
-> [[Modern-High-Furling-Grammar]] — the grammar record of which numbers are one part
-> [[Furling-Units-of-Measurement]] — the full reference for all measurement standards
-> [[Furling-Elements-Table]] — the periodic table, which uses the number system in its naming conventions
+> [!connections] Connected Records
+> [[Rala-shala-athela|Rala'shala'athela]] — the grammar record of which numbers are one part
+> [[Furling-Units-of-Measurement|Thael'vel'shala]] — the full reference for all measurement standards
+> [[02-Athelashala/index|Athela'shala]] — return to the branch index
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*
