@@ -1620,21 +1620,24 @@ render();
   function getState() { return parseInt(localStorage.getItem('rk-font') || '1'); }
   function setState(n) { localStorage.setItem('rk-font', n); }
 
-  function applyFont(state) {
-    var root = document.documentElement;
-    if (state === 0) {
-      root.style.setProperty('--font-ui', "-apple-system, 'Segoe UI', sans-serif");
-    } else if (state === 1) {
-      root.style.setProperty('--font-ui', "'Furling', serif");
-    } else {
-      root.style.setProperty('--font-ui', "'Anquietas', serif");
-    }
-    var btn = document.getElementById('rk-font-btn');
-    if (!btn) return;
-    var next = (state + 1) % 3;
-    btn.textContent = LABELS[next];
-    btn.style.fontFamily = state === 1 ? 'Furling' : state === 2 ? 'Anquietas' : 'sans-serif';
+function applyFont(state) {
+  var root = document.documentElement;
+  if (state === 0) {
+    root.style.setProperty('--font-ui', "-apple-system, 'Segoe UI', sans-serif");
+    root.style.setProperty('--font-fur', "'Furling', serif");
+  } else if (state === 1) {
+    root.style.setProperty('--font-ui', "'Furling', serif");
+    root.style.setProperty('--font-fur', "'Furling', serif");
+  } else {
+    root.style.setProperty('--font-ui', "'Anquietas', serif");
+    root.style.setProperty('--font-fur', "'Anquietas', serif");
   }
+  var btn = document.getElementById('rk-font-btn');
+  if (!btn) return;
+  var next = (state + 1) % 3;
+  btn.textContent = LABELS[next];
+  btn.style.fontFamily = state === 1 ? 'Furling' : state === 2 ? 'Anquietas' : 'sans-serif';
+}
 
   window.rkToggleFont = function() {
     var state = (getState() + 1) % 3;
