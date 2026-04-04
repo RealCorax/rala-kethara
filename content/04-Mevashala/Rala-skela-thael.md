@@ -110,7 +110,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">01</div>
-<img src="/star-symbols/1.svg" alt="Symbol vel">
+<img src="/static/star-symbols/1.svg" alt="Symbol vel">
 <div class="symbol-sound">vel</div>
 <div class="symbol-pronunciation">vehl</div>
 <div class="symbol-meaning">life, living</div>
@@ -119,7 +119,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">02</div>
-<img src="/star-symbols/2.svg" alt="Symbol om">
+<img src="/static/star-symbols/2.svg" alt="Symbol om">
 <div class="symbol-sound">om</div>
 <div class="symbol-pronunciation">ohm</div>
 <div class="symbol-meaning">peace, undisturbed harmony</div>
@@ -128,7 +128,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">03</div>
-<img src="/star-symbols/3.svg" alt="Symbol sha">
+<img src="/static/star-symbols/3.svg" alt="Symbol sha">
 <div class="symbol-sound">sha</div>
 <div class="symbol-pronunciation">shah</div>
 <div class="symbol-meaning">wisdom, knowing</div>
@@ -137,7 +137,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">04</div>
-<img src="/star-symbols/4.svg" alt="Symbol mir">
+<img src="/static/star-symbols/4.svg" alt="Symbol mir">
 <div class="symbol-sound">mir</div>
 <div class="symbol-pronunciation">meer</div>
 <div class="symbol-meaning">earth, home ground</div>
@@ -146,7 +146,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">05</div>
-<img src="/star-symbols/5.svg" alt="Symbol eth">
+<img src="/static/star-symbols/5.svg" alt="Symbol eth">
 <div class="symbol-sound">eth</div>
 <div class="symbol-pronunciation">ehth</div>
 <div class="symbol-meaning">life at its eternal edge</div>
@@ -155,7 +155,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">06</div>
-<img src="/star-symbols/6.svg" alt="Symbol kel">
+<img src="/static/star-symbols/6.svg" alt="Symbol kel">
 <div class="symbol-sound">kel</div>
 <div class="symbol-pronunciation">kehl</div>
 <div class="symbol-meaning">source, origin point</div>
@@ -164,7 +164,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">07</div>
-<img src="/star-symbols/7.svg" alt="Symbol ven">
+<img src="/static/star-symbols/7.svg" alt="Symbol ven">
 <div class="symbol-sound">ven</div>
 <div class="symbol-pronunciation">vehn</div>
 <div class="symbol-meaning">living flow</div>
@@ -173,7 +173,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">08</div>
-<img src="/star-symbols/8.svg" alt="Symbol tha">
+<img src="/static/star-symbols/8.svg" alt="Symbol tha">
 <div class="symbol-sound">tha</div>
 <div class="symbol-pronunciation">thah</div>
 <div class="symbol-meaning">time, pattern</div>
@@ -182,7 +182,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">09</div>
-<img src="/star-symbols/9.svg" alt="Symbol ren">
+<img src="/static/star-symbols/9.svg" alt="Symbol ren">
 <div class="symbol-sound">ren</div>
 <div class="symbol-pronunciation">rehn</div>
 <div class="symbol-meaning">help, movement toward</div>
@@ -191,7 +191,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">10</div>
-<img src="/star-symbols/10.svg" alt="Symbol vai">
+<img src="/static/star-symbols/10.svg" alt="Symbol vai">
 <div class="symbol-sound">vai</div>
 <div class="symbol-pronunciation">vah-ee</div>
 <div class="symbol-meaning">toward, becoming</div>
@@ -200,7 +200,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">11</div>
-<img src="/star-symbols/11.svg" alt="Symbol shu">
+<img src="/static/star-symbols/11.svg" alt="Symbol shu">
 <div class="symbol-sound">shu</div>
 <div class="symbol-pronunciation">shoo</div>
 <div class="symbol-meaning">deep wisdom</div>
@@ -209,7 +209,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">12</div>
-<img src="/star-symbols/12.svg" alt="Symbol nai">
+<img src="/static/star-symbols/12.svg" alt="Symbol nai">
 <div class="symbol-sound">nai</div>
 <div class="symbol-pronunciation">nah-ee</div>
 <div class="symbol-meaning">water, living landscape</div>
@@ -227,7 +227,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">13</div>
-<img src="/star-symbols/13.svg" alt="Symbol ath">
+<img src="/static/star-symbols/13.svg" alt="Symbol ath">
 <div class="symbol-sound">ath</div>
 <div class="symbol-pronunciation">ahth</div>
 <div class="symbol-meaning">ancient, originary</div>
@@ -236,7 +236,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">14</div>
-<img src="/star-symbols/14.svg" alt="Symbol mor">
+<img src="/static/star-symbols/14.svg" alt="Symbol mor">
 <div class="symbol-sound">mor</div>
 <div class="symbol-pronunciation">mohr</div>
 <div class="symbol-meaning">voiced peace, speaking harmony</div>
@@ -245,7 +245,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">15</div>
-<img src="/star-symbols/15.svg" alt="Symbol sel">
+<img src="/static/star-symbols/15.svg" alt="Symbol sel">
 <div class="symbol-sound">sel</div>
 <div class="symbol-pronunciation">sehl</div>
 <div class="symbol-meaning">keeper, tender</div>
@@ -254,7 +254,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">16</div>
-<img src="/star-symbols/16.svg" alt="Symbol veth">
+<img src="/static/star-symbols/16.svg" alt="Symbol veth">
 <div class="symbol-sound">veth</div>
 <div class="symbol-pronunciation">vehth</div>
 <div class="symbol-meaning">life at its boundary</div>
@@ -263,7 +263,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">17</div>
-<img src="/star-symbols/17.svg" alt="Symbol kor">
+<img src="/static/star-symbols/17.svg" alt="Symbol kor">
 <div class="symbol-sound">kor</div>
 <div class="symbol-pronunciation">kohr</div>
 <div class="symbol-meaning">completion, full path</div>
@@ -272,7 +272,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">18</div>
-<img src="/star-symbols/18.svg" alt="Symbol mev">
+<img src="/static/star-symbols/18.svg" alt="Symbol mev">
 <div class="symbol-sound">mev</div>
 <div class="symbol-pronunciation">mehv</div>
 <div class="symbol-meaning">gift, sustaining</div>
@@ -281,7 +281,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">19</div>
-<img src="/star-symbols/19.svg" alt="Symbol rha">
+<img src="/static/star-symbols/19.svg" alt="Symbol rha">
 <div class="symbol-sound">rha</div>
 <div class="symbol-pronunciation">rhah</div>
 <div class="symbol-meaning">deep time, ceremonial weight</div>
@@ -290,7 +290,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">20</div>
-<img src="/star-symbols/20.svg" alt="Symbol thal">
+<img src="/static/star-symbols/20.svg" alt="Symbol thal">
 <div class="symbol-sound">thal</div>
 <div class="symbol-pronunciation">thahl</div>
 <div class="symbol-meaning">guardian, concealment</div>
@@ -299,7 +299,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">21</div>
-<img src="/star-symbols/21.svg" alt="Symbol elu">
+<img src="/static/star-symbols/21.svg" alt="Symbol elu">
 <div class="symbol-sound">elu</div>
 <div class="symbol-pronunciation">eh-loo</div>
 <div class="symbol-meaning">sky-breath, open air</div>
@@ -308,7 +308,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">22</div>
-<img src="/star-symbols/22.svg" alt="Symbol nal">
+<img src="/static/star-symbols/22.svg" alt="Symbol nal">
 <div class="symbol-sound">nal</div>
 <div class="symbol-pronunciation">nahl</div>
 <div class="symbol-meaning">voice of water, flowing speech</div>
@@ -317,7 +317,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">23</div>
-<img src="/star-symbols/23.svg" alt="Symbol sko">
+<img src="/static/star-symbols/23.svg" alt="Symbol sko">
 <div class="symbol-sound">sko</div>
 <div class="symbol-pronunciation">skoh</div>
 <div class="symbol-meaning">belonging, rooted place</div>
@@ -335,7 +335,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">24</div>
-<img src="/star-symbols/24.svg" alt="Symbol lha">
+<img src="/static/star-symbols/24.svg" alt="Symbol lha">
 <div class="symbol-sound">lha</div>
 <div class="symbol-pronunciation">lhah</div>
 <div class="symbol-meaning">vast, awe-scale</div>
@@ -344,7 +344,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">25</div>
-<img src="/star-symbols/25.svg" alt="Symbol lhor">
+<img src="/static/star-symbols/25.svg" alt="Symbol lhor">
 <div class="symbol-sound">lhor</div>
 <div class="symbol-pronunciation">lhor</div>
 <div class="symbol-meaning">vast peace, silence between stars</div>
@@ -353,7 +353,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">26</div>
-<img src="/star-symbols/26.svg" alt="Symbol keth">
+<img src="/static/star-symbols/26.svg" alt="Symbol keth">
 <div class="symbol-sound">keth</div>
 <div class="symbol-pronunciation">kehth</div>
 <div class="symbol-meaning">eternal, without boundary</div>
@@ -362,7 +362,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">27</div>
-<img src="/star-symbols/27.svg" alt="Symbol thel">
+<img src="/static/star-symbols/27.svg" alt="Symbol thel">
 <div class="symbol-sound">thel</div>
 <div class="symbol-pronunciation">thehl</div>
 <div class="symbol-meaning">sky-guardian, held air</div>
@@ -371,7 +371,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">28</div>
-<img src="/star-symbols/28.svg" alt="Symbol oru">
+<img src="/static/star-symbols/28.svg" alt="Symbol oru">
 <div class="symbol-sound">oru</div>
 <div class="symbol-pronunciation">oh-roo</div>
 <div class="symbol-meaning">deep peace, interior</div>
@@ -380,7 +380,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">29</div>
-<img src="/star-symbols/29.svg" alt="Symbol ves">
+<img src="/static/star-symbols/29.svg" alt="Symbol ves">
 <div class="symbol-sound">ves</div>
 <div class="symbol-pronunciation">vehs</div>
 <div class="symbol-meaning">life belonging</div>
@@ -389,7 +389,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">30</div>
-<img src="/star-symbols/30.svg" alt="Symbol yel">
+<img src="/static/star-symbols/30.svg" alt="Symbol yel">
 <div class="symbol-sound">yel</div>
 <div class="symbol-pronunciation">yehl</div>
 <div class="symbol-meaning">breath-light</div>
@@ -398,7 +398,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">31</div>
-<img src="/star-symbols/31.svg" alt="Symbol shel">
+<img src="/static/star-symbols/31.svg" alt="Symbol shel">
 <div class="symbol-sound">shel</div>
 <div class="symbol-pronunciation">shehl</div>
 <div class="symbol-meaning">wisdom carried on air</div>
@@ -407,7 +407,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">32</div>
-<img src="/star-symbols/32.svg" alt="Symbol reth">
+<img src="/static/star-symbols/32.svg" alt="Symbol reth">
 <div class="symbol-sound">reth</div>
 <div class="symbol-pronunciation">rehth</div>
 <div class="symbol-meaning">help-life, the act of reaching</div>
@@ -416,7 +416,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">33</div>
-<img src="/star-symbols/33.svg" alt="Symbol alo">
+<img src="/static/star-symbols/33.svg" alt="Symbol alo">
 <div class="symbol-sound">alo</div>
 <div class="symbol-pronunciation">ah-loh</div>
 <div class="symbol-meaning">ancient peace</div>
@@ -425,7 +425,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">34</div>
-<img src="/star-symbols/34.svg" alt="Symbol vhei">
+<img src="/static/star-symbols/34.svg" alt="Symbol vhei">
 <div class="symbol-sound">vhei</div>
 <div class="symbol-pronunciation">vhee</div>
 <div class="symbol-meaning">quiet becoming</div>
@@ -434,7 +434,7 @@ Each symbol's **sound** is spoken when dialling from memory. The **root echo** s
 
 <div class="symbol-card">
 <div class="symbol-number">35</div>
-<img src="/star-symbols/35.svg" alt="Symbol miru">
+<img src="/static/star-symbols/35.svg" alt="Symbol miru">
 <div class="symbol-sound">miru</div>
 <div class="symbol-pronunciation">mee-roo</div>
 <div class="symbol-meaning">ground below ground, deep world</div>

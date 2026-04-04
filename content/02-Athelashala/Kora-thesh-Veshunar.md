@@ -52,11 +52,6 @@ The community, the ecosystem, the city — all are one system. No action exists 
 
 Justice is the completion of the other four. When life is tended, resources are shared, knowledge flows, and understanding is sought — and harm still occurs — justice is what restores the whole. It comes last because it only exists when everything else has been tried.
 
-## The Resonance of the Five
-
-Each principle carries within it a resonance with one of five specific districts in any Furling city of knowledge: Medical for the first, Power for the second, Archive and Education for the third, Science for the fourth, and Justice for the fifth. This connection is never stated explicitly in any document. It is understood.
-
-The through-line across all five principles is: *life, sustenance, knowledge, understanding, restoration.* They are not five separate ideas. They are one idea, seen from five angles.
 
 > [!connections]
 > **Connected Records**
