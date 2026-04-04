@@ -24,7 +24,7 @@ The wrist device translation function draws from this same vocabulary database. 
 
 The living voice reference opens in a dedicated viewer. Use the search field to find any word by its Furling sound or its meaning. Filter by category to browse related terms. The font toggle in the viewer cycles between romanised and Furling-script display.
 
-<a href="/rala-kethara/static/furling-dictionary.html" target="_blank" class="internal" style="display:inline-block;margin-top:1.5em;margin-bottom:0.5em;padding:14px 28px;background:rgba(74,184,196,0.08);border:1px solid rgba(74,184,196,0.3);border-radius:8px;color:#4ab8c4;text-decoration:none;font-size:0.95em;letter-spacing:0.06em;">Open the Living Voice — <span class="furling-pin">Rala'vel'keth</span> →</a>
+<a href="/static/furling-dictionary.html" target="_blank" class="internal" style="display:inline-block;margin-top:1.5em;margin-bottom:0.5em;padding:14px 28px;background:rgba(74,184,196,0.08);border:1px solid rgba(74,184,196,0.3);border-radius:8px;color:#4ab8c4;text-decoration:none;font-size:0.95em;letter-spacing:0.06em;">Open the Living Voice — <span class="furling-pin">Rala'vel'keth</span> →</a>
 
 > [!arc-note] On the Dictionary's Scope
 > This reference covers vocabulary at Visitor access level. Specialist technical vocabularies — portal engineering, advanced medicine, weapons systems — are held within their respective branch records at the appropriate access levels and are not included here.
