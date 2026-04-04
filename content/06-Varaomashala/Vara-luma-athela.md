@@ -37,19 +37,19 @@ Born in the generation after the Great War, when Mira was still scarred and the 
 Their music is spare, resonant, patient. Listen to it in a large space if you can.
 
 <audio controls>
-  <source src="/static/Luma/Thelo-Varamis/Korath-Vel-1.mp3" type="audio/mpeg">
+  <source src="/rala-kethara/static/Luma/Thelo-Varamis/Korath-Vel-1.mp3" type="audio/mpeg">
 </audio>
 
 <audio controls>
-  <source src="/static/Luma/Thelo-Varamis/Korath-Vel-2.mp3" type="audio/mpeg">
+  <source src="/rala-kethara/static/Luma/Thelo-Varamis/Korath-Vel-2.mp3" type="audio/mpeg">
 </audio>
 
 <audio controls>
-  <source src="/static/Luma/Thelo-Varamis/Vel-tharema-1.mp3" type="audio/mpeg">
+  <source src="/rala-kethara/static/Luma/Thelo-Varamis/Vel-tharema-1.mp3" type="audio/mpeg">
 </audio>
 
 <audio controls>
-  <source src="/static/Luma/Thelo-Varamis/Vel-tharema-2.mp3" type="audio/mpeg">
+  <source src="/rala-kethara/static/Luma/Thelo-Varamis/Vel-tharema-2.mp3" type="audio/mpeg">
 </audio>
 ---
 
@@ -60,7 +60,7 @@ The first Furling composer to spend extended time in contact with other species'
 *Rala'velun Kethavar* — "Signal-Eternal Across the Dark" — is their most performed work: a piece for solo voice with handpan, harp, and deep ambient resonance, written after their first encounter with a species whose entire language was music. There is a held silence in the middle of the piece, marked in the score with an ellipsis. Selethara never wrote what it means. Most performers hold it for longer each time they play it.
 
 <audio controls>
-  <source src="/static/Luma/Selethara-Oun-Mivelka/Rala-velun-Kethavar.mp3" type="audio/mpeg">
+  <source src="/rala-kethara/static/Luma/Selethara-Oun-Mivelka/Rala-velun-Kethavar.mp3" type="audio/mpeg">
 </audio>
 
 ---
@@ -74,21 +74,21 @@ Their final work, *Vetha'mai Nibiru* — "Life-Greetings, Nibiru" — was perfor
 Reva died in transit before reaching the Milky Way. She was thirty-four thara'keth old.
 
 <audio controls>
-  <source src="/static/Luma/Reva-Shola-Thareth/Vetha-mai-Nibiru.mp3" type="audio/mpeg">
+  <source src="/rala-kethara/static/Luma/Reva-Shola-Thareth/Vetha-mai-Nibiru.mp3" type="audio/mpeg">
 </audio>
 
 **Other works** 
 
 <audio controls>
-  <source src="/static/Luma/Vara-skar.mp3" type="audio/mpeg">
+  <source src="/rala-kethara/static/Luma/Vara-skar.mp3" type="audio/mpeg">
 </audio>
 
 <audio controls>
-  <source src="/static/Luma/Skar.mp3" type="audio/mpeg">
+  <source src="/rala-kethara/static/Luma/Skar.mp3" type="audio/mpeg">
 </audio>
 
 <audio controls>
-  <source src="/static/Luma/Lha-oma.mp3" type="audio/mpeg">
+  <source src="/rala-kethara/static/Luma/Lha-oma.mp3" type="audio/mpeg">
 </audio>
 
 > [!selavai] Selavai
