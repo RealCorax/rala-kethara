@@ -5,7 +5,7 @@ branch: 2
 section: "02"
 access: visitor
 type: index
-tags: [Furling, history, philosophy, language, daily-life]
+tags: [Furling, history, philosophy, biology, language, daily-life]
 ---
 
 <div class="room-header">
@@ -70,8 +70,8 @@ tags: [Furling, history, philosophy, language, daily-life]
 
 </div>
 
-> [!arc-note] On the Athel'kin contact
-> Several records in section 02.02 concerning the Athel'kin and what followed the vetha'meva are held at Deep Circle access or above. The visitor-level record acknowledges what happened: the gift we gave, and the crisis that arose from it. The full account is held carefully, not because we are ashamed to name what occurred, but because it requires context to be understood rather than simply learned.
+> [!arc-note] On the Athel'kin Contact
+> Several records in section 02.02 concerning the Athel'kin and what followed the Vetha'meva are held at Student access and above. The visitor-level record acknowledges what happened: the gift we gave, and the crisis that arose from it. The full account is held carefully, not because we are ashamed to name what occurred, but because it requires context to be understood rather than simply learned.
 
 > [!connections] Connected Branches
 > [[01-Thralashala/index|Thrala'shala]] — the science behind Furling biology
