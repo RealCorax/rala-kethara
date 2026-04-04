@@ -25,19 +25,20 @@ Each number carries a pattern-meaning alongside its quantity. These meanings are
 
 | Glyph | Furling | Pattern-Meaning |
 |:---:|---|---|
-| <span class="furling-pin-inline">0</span> | Nai | emptiness that enables, space before knowing |
-| <span class="furling-pin-inline">1</span> | Vel | the first, the beginning, what flows alone |
-| <span class="furling-pin-inline">2</span> | Mira | balance, the two things that hold each other |
-| <span class="furling-pin-inline">3</span> | Vela | breath, the space between, the opening |
-| <span class="furling-pin-inline">4</span> | Thara | the first completion, a cycle closed |
-| <span class="furling-pin-inline">5</span> | Meva | the giving, the halfway, what sustains |
-| <span class="furling-pin-inline">6</span> | Vetha | life in full, the living number |
-| <span class="furling-pin-inline">7</span> | Shala | wisdom, always seeking, never complete |
-| <span class="furling-pin-inline">8</span> | Vara | light doubled, abundance, illumination |
-| <span class="furling-pin-inline">9</span> | Ketha | the approach to fullness, what turns toward whole |
-| <span class="furling-pin-inline">10</span> | Vel'thara | one cycle complete, the return to beginning |
+| <span class="furling-pin">0</span> | Nai | emptiness that enables, space before knowing |
+| <span class="furling-pin">1</span> | Vel | the first, the beginning, what flows alone |
+| <span class="furling-pin">2</span> | Mira | balance, the two things that hold each other |
+| <span class="furling-pin">3</span> | Vela | breath, the space between, the opening |
+| <span class="furling-pin">4</span> | Thara | the first completion, a cycle closed |
+| <span class="furling-pin">5</span> | Meva | the giving, the halfway, what sustains |
+| <span class="furling-pin">6</span> | Vetha | life in full, the living number |
+| <span class="furling-pin">7</span> | Shala | wisdom, always seeking, never complete |
+| <span class="furling-pin">8</span> | Vara | light doubled, abundance, illumination |
+| <span class="furling-pin">9</span> | Ketha | the approach to fullness, what turns toward whole |
+| <span class="furling-pin">10</span> | Vel'thara | one cycle complete, the return to beginning |
 
-Large numbers use the scaling roots: *vora* <span class="furling-pin-inline">100</span>, *kora* <span class="furling-pin-inline">1000</span>, *lhaketh* <span class="furling-pin-inline">1'000'000'000</span>. Very large numbers use the prefix *lhā* (vast, of great scale) combined with the appropriate scaling root.
+
+Large numbers use the scaling roots: *vora* <span class="furling-pin">100</span>, *kora* <span class="furling-pin">1000</span>, *lhaketh* <span class="furling-pin">1'000'000'000</span>. Very large numbers use the prefix *lhā* (vast, of great scale) combined with the appropriate scaling root.
 
 ## Measurement Units
 
