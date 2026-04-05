@@ -1603,12 +1603,27 @@ render();
 <script>
 (function() {
   var LABELS = ['Aa', 'speak', 'read'];
-  var BASE = location.hostname === 'localhost' ? '' : '/rala-kethara';
 
+  /* This file lives at /rala-kethara/static/furling-dictionary.html.
+     Fonts are in the same folder. Use relative paths so this works
+     both on localhost and on GitHub Pages without any BASE detection. */
   var style = document.createElement('style');
   style.textContent = [
-    '@font-face{font-family:"Furling";src:url("' + BASE + '/static/Furling.ttf") format("truetype")}',
-    '@font-face{font-family:"Anquietas";src:url("' + BASE + '/static/Anquietas.ttf") format("truetype")}',
+    '@font-face{font-family:"Furling";src:url("./Furling.ttf") format("truetype")}',
+    '@font-face{font-family:"Anquietas";src:url("./Anquietas.ttf") format("truetype")}',
+
+    /* State 0: Latin/English UI font for all Furling-script elements */
+    'html[data-font="0"] .entry-furling,html[data-font="0"] .group-furling,html[data-font="0"] .dict-title-furling,html[data-font="0"] .kbd-trigger-furling,html[data-font="0"] .entry-type,html[data-font="0"] .fur-pill,html[data-font="0"] .compound-tag,html[data-font="0"] .empty-glyph{font-family:-apple-system,"Segoe UI",sans-serif!important}',
+
+    /* State 1: Furling script */
+    'html[data-font="1"] .entry-furling,html[data-font="1"] .group-furling,html[data-font="1"] .dict-title-furling,html[data-font="1"] .kbd-trigger-furling,html[data-font="1"] .entry-type,html[data-font="1"] .fur-pill,html[data-font="1"] .compound-tag,html[data-font="1"] .empty-glyph{font-family:"Furling",serif!important}',
+
+    /* State 2: Anquietas / Ancient script */
+    'html[data-font="2"] .entry-furling,html[data-font="2"] .group-furling,html[data-font="2"] .dict-title-furling,html[data-font="2"] .kbd-trigger-furling,html[data-font="2"] .entry-type,html[data-font="2"] .fur-pill,html[data-font="2"] .compound-tag,html[data-font="2"] .empty-glyph{font-family:"Anquietas",serif!important}',
+
+    /* Keyboard glyphs always Anquietas regardless of toggle state */
+    'html[data-font] .kbd-glyph{font-family:"Furling",serif!important}',
+
     '#rk-font-btn{position:fixed;top:14px;right:72px;z-index:9999;background:rgba(74,184,196,0.08);border:1px solid rgba(74,184,196,0.3);border-radius:6px;color:#4ab8c4;font-size:16px;padding:5px 12px;cursor:pointer;font-family:sans-serif;transition:background 0.2s}',
     '#rk-font-btn:hover{background:rgba(74,184,196,0.18)}'
   ].join('');
@@ -1618,14 +1633,19 @@ render();
   function setState(n) { localStorage.setItem('rk-font', n); }
 
   function applyFont(state) {
+    /* Set data-font on <html> — CSS rules above do the actual font switching */
+    document.documentElement.setAttribute('data-font', String(state));
+
+    /* Also update --font-ui for elements that use it (body, search input, filter buttons) */
     var root = document.documentElement;
     if (state === 0) {
-      root.style.setProperty('--font-ui', "-apple-system, 'Segoe UI', sans-serif");
+      root.style.setProperty('--font-ui', "-apple-system,'Segoe UI',sans-serif");
     } else if (state === 1) {
-      root.style.setProperty('--font-ui', "'Furling', serif");
+      root.style.setProperty('--font-ui', "'Furling',serif");
     } else {
-      root.style.setProperty('--font-ui', "'Anquietas', serif");
+      root.style.setProperty('--font-ui', "'Anquietas',serif");
     }
+
     var btn = document.getElementById('rk-font-btn');
     if (!btn) return;
     var next = (state + 1) % 3;
