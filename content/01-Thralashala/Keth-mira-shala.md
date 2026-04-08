@@ -5,7 +5,7 @@ branch: 1
 section: "01.03.04"
 access: visitor
 type: record
-tags: [science, technology, Furling, Nibiru, architecture]
+tags: [Thrala'shala, science, technology, Furling, Nibiru, architecture]
 ---
 
 > [!record-header]

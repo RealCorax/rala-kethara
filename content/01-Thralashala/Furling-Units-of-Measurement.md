@@ -5,7 +5,7 @@ branch: 1
 section: "01.01"
 access: visitor
 type: technical-spec
-tags: [science, mathematics, Furling, Mira, Vara]
+tags: [Thrala'shala, science, mathematics, Furling, Mira, Vara]
 ---
 
 > [!record-header]
@@ -16,32 +16,27 @@ tags: [science, mathematics, Furling, Mira, Vara]
 > *"To name a thing precisely is to understand it. To measure it is to honour it."*
 > — Archive inscription, Shala'kela entrance, Nibiru
 
->> All measurements across the Rala'Kethara Archive use these units. They are anchored to Mira and Vara — not to abstract physical constants, but to the world that gave us life and the star that warmed it. This is not imprecision. It is philosophy made practical.
+> All measurements across the Rala'Kethara Archive use these units. They are anchored to Mira and Vara not to abstract physical constants, but to the world that gave us life and the star that warmed it. This is not imprecision. It is philosophy made practical.
 
 ## Overview
 
-The Furling measurement system is built on a single principle: all units are anchored to Mira. Rather than abstract physical constants, we defined our standards through the world that gave us life — its size, its weight, its warmth, its rhythms.
+The Furling measurement system is built on a single principle: all units are anchored to Mira. Rather than abstract physical constants, we defined our standards through the world that gave us life its size, its weight, its warmth, its rhythms.
 
-The system has been in use for over 134,000 thara'keth. It is the standard across all Rala'Kethara records.
-
----
+The system has been in use for over 134,000 <span class="furling-pin">thara'keth</span>. It is the standard across all Rala'Kethara records.
 
 ## Length — Shael
 
 | Term | Symbol | Derivation |
 |---|---|---|
-| **shael** | *sl* | *shala* (wisdom) + *-el* (of) — "the wisdom-measure" |
+| **shael** | <span class="furling-pin">*sl*</span> | *shala* (wisdom) + *-el* (of) — "the wisdom-measure" |
 
-The shael was originally defined as the precise arm-span of a standing Furling adult — the distance from fingertip to fingertip with arms extended. It was later standardised against a specific bioluminescent emission wavelength from crystal-lattice technology, making it reproducible to any civilisation with access to Furling materials.
-
-**Approximate equivalent:** ~0.925 metres
+The shael was originally defined as the precise arm-span of a standing Furling adult  the distance from fingertip to fingertip with arms extended. It was later standardised against a specific bioluminescent emission wavelength from crystal-lattice technology, making it reproducible to any civilisation with access to Furling materials.
 
 | Compound | Use |
 |---|---|
 | *shelai³* | Cubic shael — unit of volume |
 | *shael'var* | "Star-shael" — used for very large astronomical distances within a system |
 
----
 
 ## Mass — Thal'keth
 
@@ -49,13 +44,9 @@ The shael was originally defined as the precise arm-span of a standing Furling a
 |---|---|---|
 | **thal'keth** | *tk* | *thrala* (force, contracted to *thal*) + *keth* (enduring) — "enduring substance" |
 
-We conceptualised mass not as weight but as *that which persists* — consistent with our cyclical view of the universe. The thal'keth is defined as one ten-billionth of Mira's total mass.
-
-**Approximate equivalent:** ~2.08 × 10¹⁴ kg
+We conceptualised mass not as weight but as *that which persists* consistent with our cyclical view of the universe. The thal'keth is defined as one ten-billionth of Mira's total mass.
 
 > *Shorthand: "keth" alone is used in density expressions (thal'keth per shelai³ → keth/shelai³)*
-
----
 
 ## Temperature — Lath
 
@@ -63,7 +54,7 @@ We conceptualised mass not as weight but as *that which persists* — consistent
 |---|---|---|
 | **lath** | *lth* | Ancient pre-classical root *la* (warmth) + *-th* (measure suffix) |
 
-The lath is one of our oldest units — its name predates formal language systematisation and does not follow standard compounding rules. It is anchored to a biological zero: **0 lath** is the temperature at which Mira's deep oceans begin to freeze solid. The scale is life-centred by design.
+The lath is one of our oldest units its name predates formal language systematisation and does not follow standard compounding rules. It is anchored to a biological zero: **0 lath** is the temperature at which Mira's deep oceans begin to freeze solid. The scale is life-centred by design.
 
 | Reference Point | Lath Value |
 |---|---|
@@ -73,13 +64,9 @@ The lath is one of our oldest units — its name predates formal language system
 | Comfortable Furling ambient | ~110–120 lath |
 | Warm summer maximum on Mira | ~160 lath |
 
-**Scale:** 1 lath ≈ 0.35°C (in relative terms) · **Zero point:** 0 lath ≈ −100°C
-
----
-
 ## Time — The Tael System
 
-The Furling time system is built upward from the **tael** — a word contracted from *thara* (cycles/time) over many millennia of spoken use. The full system reflects our view of time as nested cycles rather than a linear progression.
+The Furling time system is built upward from the **tael** a word contracted from *thara* (cycles/time) over many millennia of spoken use. The full system reflects our view of time as nested cycles rather than a linear progression.
 
 ### Base and Daily Units
 
@@ -102,8 +89,6 @@ The Furling time system is built upward from the **tael** — a word contracted 
 | **thara'athela** | 1,000 thara'keth — "ancient cycles" |
 | **tael'kora** | 1,000,000 thara'keth — "the great time" | 
 
----
-
 ## Orbital Distance — Skela'var
 
 | Term | Symbol | Derivation |
@@ -122,8 +107,6 @@ Defined as the mean orbital distance of Mira from Vara. It is our equivalent of 
 | Thalavar (Planet V) | 5.19 skela'var |
 | Velathara (Outer Disk) | ~22 skela'var |
 
----
-
 ## Stellar Reference — Vara Units
 
 When measuring stellar properties, we use [[Vara-Mira-shala|Vara]] itself as the reference standard. All values of 1.0 represent Vara's own measured quantity.
@@ -136,17 +119,13 @@ When measuring stellar properties, we use [[Vara-Mira-shala|Vara]] itself as the
 
 *Vara itself = 1.0 in all three units by definition.*
 
----
-
 ## Pressure — Vela'thrala
 
 | Term | Symbol | Derivation |
 |---|---|---|
-| **vela'thrala** | *vt* | *vela* (sky/breath) + *thrala* (force) — "sky-force" |
+| **vela'thrala** | *vt* | *vela* (sky/breath) + *thrala* (force) "sky-force" |
 
 Defined as Mira's mean sea-level atmospheric pressure. All atmospheric readings across the archive use this standard. Mira = 1.0 by definition.
-
----
 
 ## Gravity — Mira'thrala
 
@@ -155,8 +134,6 @@ Defined as Mira's mean sea-level atmospheric pressure. All atmospheric readings 
 | **mira'thrala** | *mt* | *mira* (earth) + *thrala* (force) — "earth-force" |
 
 Defined as Mira's own surface gravitational acceleration. All surface gravity readings are expressed as a ratio to this standard. Mira = 1.0 by definition.
-
----
 
 ## Quick Reference
 

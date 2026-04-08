@@ -5,7 +5,7 @@ branch: 1
 section: "01.04.01"
 access: visitor
 type: record
-tags: [biology, science, Furling, Mira]
+tags: [Thrala'shala, biology, science, Furling, Mira]
 ---
 
 > [!record-header]
@@ -22,7 +22,7 @@ Defining life precisely is harder than it appears. The archive uses a working de
 
 This definition covers everything in the archive's species catalogue and excludes non-living systems that share some but not all of these properties. Crystals maintain ordered structure, but do not actively use energy to do so. Fire responds to its environment and uses energy, but does not reproduce with heritable variation. Life, as we have encountered it across the Kigal Galaxy, always combines all four properties.
 
-Whether life forms are possible that operate by different principles — that we have simply not yet encountered — is an open question held in Branch 07.
+Whether life forms are possible that operate by different principles that we have simply not yet encountered is an open question held in Branch 07.
 
 ## The Cell
 
@@ -30,17 +30,17 @@ All known life in the archive is cellular: composed of one or more cells, where 
 
 The cell membrane is the fundamental boundary of life. It separates the cell's internal chemical environment from the outside world, controls what passes in and out, and maintains the concentration differences between inside and outside that make the cell's chemistry possible. A membrane is not a passive container. It is an active participant in the chemistry it encloses.
 
-Inside the membrane, the chemistry of life runs on two kinds of molecules: those that carry information (encoding what the cell is and how to make more of it) and those that carry out processes (doing the work the information specifies). The relationship between these two — information directing process, process maintaining the conditions that allow information to persist — is the self-maintaining loop that is life.
+Inside the membrane, the chemistry of life runs on two kinds of molecules: those that carry information (encoding what the cell is and how to make more of it) and those that carry out processes (doing the work the information specifies). The relationship between these two information directing process, process maintaining the conditions that allow information to persist is the self-maintaining loop that is life.
 
-This basic plan is shared by every form of life documented in the archive, across species as different from each other as it is possible to be while still sharing the category. The information molecules differ in their specific chemistry by species. The membrane compositions differ. The metabolic processes vary enormously. The basic architecture — information directing process within a membrane — does not.
+This basic plan is shared by every form of life documented in the archive, across species as different from each other as it is possible to be while still sharing the category. The information molecules differ in their specific chemistry by species. The membrane compositions differ. The metabolic processes vary enormously. The basic architecture information directing process within a membrane does not.
 
 ## Energy and Metabolism
 
 Living things require continuous energy input to maintain themselves. This is not a design flaw. It is a physical necessity: maintaining the organised state that is life requires continuous work against the tendency of any organised system to become less organised over time.
 
-Different species derive this energy from different sources. Most use chemical energy — breaking down complex molecules to release the energy stored in their chemical bonds, and using that energy to build the structures they need. Some supplement this with direct energy from light (photosynthesis in various forms). Some use thermal gradients or chemical gradients in their environment. The Furlings use chemical energy derived from food.
+Different species derive this energy from different sources. Most use chemical energy breaking down complex molecules to release the energy stored in their chemical bonds, and using that energy to build the structures they need. Some supplement this with direct energy from light (photosynthesis in various forms). Some use thermal gradients or chemical gradients in their environment. The Furlings use chemical energy derived from food.
 
-Whatever the source, the principle is the same: energy from outside the organism is captured, transformed, and used to do the work of being alive. Every other biological process — movement, growth, reproduction, response, thought — depends on this continuous energy transformation. Metabolism is not one of the things life does. It is what makes everything else possible.
+Whatever the source, the principle is the same: energy from outside the organism is captured, transformed, and used to do the work of being alive. Every other biological process movement, growth, reproduction, response, thought depends on this continuous energy transformation. Metabolism is not one of the things life does. It is what makes everything else possible.
 
 ## What Connects All Known Life
 
@@ -48,7 +48,7 @@ The discovery that all known life shares a common basic architecture was, for th
 
 Instead, across every inhabited world the archive documents, life uses recognisably similar chemistry: the same classes of information molecules, the same basic metabolic pathways, the same membrane architecture. The differences are extensive and important. But the similarities are more extensive still.
 
-The most plausible interpretation — and the one the archive treats as working consensus, marked as inference rather than established fact — is that life in the Kigal Galaxy shares a common origin. Not that life arose once and all current species descend directly from that origin, but that the conditions that produced life on Mira were similar enough to the conditions on other life-bearing worlds that the same chemical systems were produced repeatedly. What works, works.
+The most plausible interpretation and the one the archive treats as working consensus, marked as inference rather than established fact is that life in the Kigal Galaxy shares a common origin. Not that life arose once and all current species descend directly from that origin, but that the conditions that produced life on Mira were similar enough to the conditions on other life-bearing worlds that the same chemical systems were produced repeatedly. What works, works.
 
 > [!connections] Connected Records
 > [[Veth-thara-shala|Veth'thara'shala]] — how this life changes over time

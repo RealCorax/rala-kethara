@@ -5,7 +5,7 @@ branch: 1
 section: "01"
 access: visitor
 type: index
-tags: [science, astronomy, biology, mathematics, Furling]
+tags: [Thrala'shala, science, astronomy, biology, mathematics, Furling]
 ---
 
 <div class="room-header">
@@ -17,47 +17,44 @@ tags: [science, astronomy, biology, mathematics, Furling]
 <div class="guide-thread">
 <span class="gt-label">Suggested path</span>
 <span>Begin with</span> <a href="./Vel-shala" class="internal">the foundations of number and logic</a>
-<span class="gt-sep">then</span> <a href="./Furling-Units-of-Measurement" class="internal">how we measure everything</a>
+<span class="gt-sep">then</span> <a href="./Furling-Units-of-Measurement" class="internal">The measured Sciences</a>
 <span class="gt-sep">then</span> <a href="./Varaskela-System-Data" class="internal">our home system in numbers</a>
-<span class="gt-sep">then</span> <a href="./Vel-vetha-shala" class="internal">the foundations of biology</a>
+<span class="gt-sep">then</span> <a href="./Vel-vetha-shala" class="internal">foundations of biology</a>
 </div>
 
 <div class="section-grid">
 
 <div class="section-card">
 <div class="sc-label">01.01</div>
-<div class="sc-title"><a href="./Vel-shala" class="internal">Thael'shala</a></div>
-<div class="sc-desc">The Shape of All Things — mathematics. Number, logic, geometry, and the formal systems that make everything else possible. Includes the units of measurement reference.</div>
+<div class="sc-title"><a href="./Vel-shala" class="internal">Mira'thrala</a></div>
+<div class="sc-desc">Classical mechanics is the science of how objects move, why they move, and what causes them to change their motion. It operates at the scales of everyday life and the astronomical: from a tool falling from a workbench to the orbital path of Thalavar around Vara.</div>
 </div>
 
 <div class="section-card">
 <div class="sc-label">01.02</div>
-<div class="sc-title"><a href="./Mira-thrala" class="internal">Thralavetha'shala</a></div>
-<div class="sc-desc">How Force Moves the World — physics. Mechanics, motion, energy, and the laws that govern how matter and force behave across all scales.</div>
+<div class="sc-title"><a href="./Mira-thrala" class="internal">Keth'mira'shala</a></div>
+<div class="sc-desc">Materials science occupies the boundary between chemistry and engineering: it asks not only what materials are made of but what they can do, and how the relationship between structure and property can be understood well enough to develop materials with specific desired qualities.</div>
 </div>
 
 <div class="section-card">
 <div class="sc-label">01.03</div>
-<div class="sc-title"><a href="./Keth-mira-shala" class="internal">Miravel'shala</a></div>
-<div class="sc-desc">What Things Are Made Of — chemistry and materials science. The elements, their combinations, and the remarkable materials — including living crystal — that Furling science developed from them.</div>
+<div class="sc-title"><a href="./Keth-mira-shala" class="internal">Vel'vetha'shala</a></div>
+<div class="sc-desc">Biology. Defining life precisely is harder than it appears. The archive uses a working definition developed across several generations of debate: a living system is one that maintains its own chemical organisation against the tendency toward disorder, uses energy from its environment to do so, reproduces itself with variation, and responds to its environment.</div>
 </div>
 
 <div class="section-card">
 <div class="sc-label">01.04</div>
-<div class="sc-title"><a href="./Vel-vetha-shala" class="internal">Vethathrala'shala</a></div>
-<div class="sc-desc">The Science of Living Things — biology. How life works, how it evolved, how ecosystems sustain it. The foundation beneath everything in the medicine and agriculture sections.</div>
+<div class="sc-title"><a href="./Vara'skela" class="internal">Vara'skela</a></div>
+<div class="sc-desc">The Vara’skela System — Complete Data. </div>
 </div>
 
 <div class="section-card">
 <div class="sc-label">01.05</div>
-<div class="sc-title"><a href="./Varaskela-System-Data" class="internal">Skelavara'shala</a></div>
-<div class="sc-desc">The Homes That Circle Every Star — cosmography. The Vara'skela system, stellar classification, planetary science, and the broader survey of the Kigal Galaxy. Includes full system data tables and the Vara stellar record.</div>
+<div class="sc-title"><a href="./Vel’shala" class="internal">Vel’shala</a></div>
+<div class="sc-desc">Foundations of Number and Logic. The Furling number system emerged from crystal geometry from the study of how crystals grow and the internal lattice structures they form</div>
 </div>
 
 </div>
-
-> [!arc-note] On the Units System
-> All measurements throughout this archive use Furling standard units anchored to Mira and Vara. The units reference document in section 01.01 explains each unit, its derivation, and its approximate equivalent in other measurement systems. It is worth reading early.
 
 > [!connections] Connected Branches
 > [[04-Mevashala/index|Meva'shala]] — where the science in this branch becomes technology

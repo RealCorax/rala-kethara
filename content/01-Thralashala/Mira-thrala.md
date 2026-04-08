@@ -5,7 +5,7 @@ branch: 1
 section: "01.02.01"
 access: visitor
 type: record
-tags: [science, physics, Furling, mathematics]
+tags: [Thrala'shala, science, physics, Furling, mathematics]
 ---
 
 > [!record-header]

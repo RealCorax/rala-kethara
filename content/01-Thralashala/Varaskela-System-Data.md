@@ -5,7 +5,7 @@ branch: 1
 section: "01.05"
 access: visitor
 type: technical-spec
-tags: [astronomy, Mira, Vara, Vara-skela, Furling]
+tags: [Thrala'shala, astronomy, Mira, Vara, Vara-skela, Furling]
 ---
 
 > [!record-header]
