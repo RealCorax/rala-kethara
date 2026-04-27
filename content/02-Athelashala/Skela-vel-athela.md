@@ -45,8 +45,8 @@ A building that requires constant maintenance to survive is a burden on the comm
 
 > [!connections]
 > **Connected Records**
-> [[Furling-Technology-Bio-organic]] — the technology principles behind living architecture
-> [[Furling-Society-Greater-Family]] — how architecture reflects and supports communal living
-> [[Furling-Daily-Timekeeping]] — how Furling architecture integrates with natural and artificial light cycles
+> [[04-Mevashala/index|Meva'shala]] — the applied technology underlying bio-organic building
+> [[02-Athelashala/Maha-skela-athela|Maha'skela'athela]] — how architecture reflects and supports communal living
+> [[02-Athelashala/Vel-thara-athela|Vel'thara'athela]] — how Furling architecture integrates with natural and artificial light cycles
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

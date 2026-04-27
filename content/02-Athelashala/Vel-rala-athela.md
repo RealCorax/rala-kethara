@@ -51,9 +51,9 @@ Whether this reflects the actual order in which Furling speakers first named thi
 
 > [!connections]
 > **Connected Records**
-> [[Modern-High-Furling-Grammar]] — the complete grammar of the living language
-> [[Furling-Language-Across-Eras]] — how the language changed from Proto-Furling through the eras to modern form
-> [[Furling-Lost-Archaic-Forms]] — extinct dialects, the Stone Register, and how to recognise archaic text
-> [[Furling-History-Great-War]] — the event that made writing urgent
+> [[02-Athelashala/Rala-shala-athela|Rala'shala'athela]] — the complete grammar of the living language
+> [[02-Athelashala/Rala-thara-athela|Rala'thara'athela]] — how the language changed from Proto-Furling through the eras to modern form
+> [[02-Athelashala/Rala-thala-athela|Rala'thala'athela]] — extinct dialects, the Stone Register, and how to recognise archaic text
+> [[02-Athelashala/Thara-vel-keth-athela|Thara'vel'keth'athela]] — the early eras in which writing became urgent
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

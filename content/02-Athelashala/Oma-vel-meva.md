@@ -51,9 +51,9 @@ The intention behind all of them is the same: to make visible, at regular interv
 
 > [!connections]
 > **Connected Records**
-> [[Furling-Life-Stages]] — the life events that ceremonies mark
-> [[Furling-Vel-shora-Ceremony]] — the coming-of-age ceremony in full
-> [[Furling-Spirituality-Afterlife]] — the four afterlife traditions held at death ceremonies
-> [[Furling-Daily-Food-Eating]] — communal eating as the daily expression of the same impulse
+> [[02-Athelashala/Veth-thara-athela|Veth'thara'athela]] — the life events that ceremonies mark
+> [[02-Athelashala/Vel-shora-oma|Vel'shora'oma]] — the coming-of-age ceremony in full
+> [[02-Athelashala/Rhoma-vetha-athela|Rhoma'vetha'athela]] — the four afterlife traditions held at death ceremonies
+> [[02-Athelashala/Meva-vel-athela|Meva'vel'athela]] — communal eating as the daily expression of the same impulse
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

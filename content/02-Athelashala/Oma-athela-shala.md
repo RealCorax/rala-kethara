@@ -87,7 +87,7 @@ tags: [Furling, governance, philosophy, ethics]
 
 > [!connections] Connected Branches
 > [[02-Athelashala/index|Athela'shala]] — return to the Furling civilisation branch
-> [[02-Athelashala/02-04-Shala-oma-athela/index|Shala'oma'athela]] — the philosophy that underlies these social structures
-> [[02-Athelashala/02-02-Thara-athela-shala/index|Thara'athela'shala]] — the history from which these structures grew
+> [[02-Athelashala/Shala-oma-athela|Shala'oma'athela]] — the philosophy that underlies these social structures
+> [[02-Athelashala/Thara-athela-shala|Thara'athela'shala]] — the history from which these structures grew
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

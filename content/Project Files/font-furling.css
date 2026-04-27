@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Furling";
+  src: url("/home/steve/.fonts/Furling.ttf") format("truetype");
+}
+
+body, body *:not(.furling-pin):not(.furling-pin-inline):not(.furling-pin-small) {
+  font-family: "Furling", sans-serif !important;
+}

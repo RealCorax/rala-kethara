@@ -16,18 +16,12 @@ tags: [Furling, history, philosophy]
 
 <div class="guide-thread">
 <span class="gt-label">Suggested path</span>
-<span>Begin with</span> <a href="./Rala-vetha-athela" class="internal">an introduction to this section</a>
-<span class="gt-sep">then</span> <a href="./Tharuven-Kora-thesh" class="internal">Tharúven Kora'thesh</a>
+<span>Begin with</span> <a href="./Tharuven-Kora-thesh" class="internal">Tharúven Kora'thesh</a>
 <span class="gt-sep">then</span> <a href="./Bulutha" class="internal">Bulutha</a>
+<span class="gt-sep">then</span> <a href="./Rala-thrala-athela" class="internal">eyewitness accounts</a>
 </div>
 
 <div class="section-grid">
-
-<div class="section-card">
-<div class="sc-label">02.06</div>
-<div class="sc-title"><a href="./Rala-vetha-athela" class="internal">Introduction</a></div>
-<div class="sc-desc">What this section holds and why personal records have the same standing in this archive as official scholarship. An open invitation for new contributors.</div>
-</div>
 
 <div class="section-card">
 <div class="sc-label">02.06.01</div>
@@ -87,7 +81,7 @@ tags: [Furling, history, philosophy]
 
 > [!connections] Connected Branches
 > [[02-Athelashala/index|Athela'shala]] — return to the Furling civilisation branch
-> [[02-Athelashala/02-02-Thara-athela-shala/index|Thara'athela'shala]] — the official history these personal records complement
+> [[02-Athelashala/Thara-athela-shala|Thara'athela'shala]] — the official history these personal records complement
 > [[08-Ralaketharashala/Meva-rala-keth|Meva'rala'keth]] — how to add your own voice to this section
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

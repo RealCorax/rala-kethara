@@ -81,7 +81,7 @@ tags: [Furling, philosophy, ethics]
 
 > [!connections] Connected Branches
 > [[02-Athelashala/index|Athela'shala]] — return to the Furling civilisation branch
-> [[02-Athelashala/02-03-Oma-athela-shala/index|Oma'athela'shala]] — society and governance, where philosophy becomes practice
-> [[02-Athelashala/02-07-Rala-athela-shala/index|Rala'vel'athela]] — language, whose structure reflects this philosophy
+> [[02-Athelashala/Oma-athela-shala|Oma'athela'shala]] — society and governance, where philosophy becomes practice
+> [[02-Athelashala/Rala-vel-athela|Rala'vel'athela]] — language, whose structure reflects this philosophy
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

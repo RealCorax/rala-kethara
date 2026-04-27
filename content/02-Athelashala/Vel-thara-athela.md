@@ -51,8 +51,8 @@ The full archive timeline — when each section was compiled, which scholars con
 
 > [!connections]
 > **Connected Records**
-> [[Furling-Numbers-Measurement]] — the full measurement system including time units
-> [[Furling-History-Deep-Time]] — the era system applied to the full span of our history
-> [[Furling-Architecture]] — how the daily cycle is built into living spaces
+> [[02-Athelashala/Thael-rala-athela|Thael'rala'athela]] — the full measurement system including time units
+> [[02-Athelashala/Vel-thara-vetha-athela|Vel'thara'vetha'athela]] — the era system applied to the full span of our history
+> [[02-Athelashala/Skela-vel-athela|Skela'vel'athela]] — how the daily cycle is built into living spaces
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

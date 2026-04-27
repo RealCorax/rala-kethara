@@ -49,9 +49,9 @@ It does not excuse past harm because of good intentions. The history of our cont
 
 > [!connections]
 > **Connected Records**
-> [[Five-Principles]] — the principles from which this ethical practice grows
-> [[Furling-Philosophy-Knowledge]] — the specific ethics of knowledge and teaching
-> [[Furling-Society-Justice]] — how ethics becomes practice in the justice system
-> [[Furling-History-Athel-kin-Contact]] — the hardest case in Furling ethical history
+> [[02-Athelashala/Kora-thesh-Veshunar|Kora'thesh Veshúnar]] — the principles from which this ethical practice grows
+> [[02-Athelashala/Shala-oma-vel|Shala'oma'vel]] — the specific ethics of knowledge and teaching
+> [[02-Athelashala/Ketha-oma-athela|Ketha'oma'athela]] — how ethics becomes practice in the justice system
+> [[02-Athelashala/Thara-athel-kin|Thara'athel'kin]] — the hardest case in Furling ethical history
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

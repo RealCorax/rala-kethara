@@ -1,13 +1,14 @@
 ---
-title: "Thara'meva'schism - The Veth'meva Schism"
+title: "Rala'thara'athela — Memoirs and Life Histories"
+cssclass: archive-content
 branch: 2
-section: "02.02.04"
+section: "02.06.02"
 access: student
 type: locked
-tags: [Furling, history, philosophy]
+tags: [Furling, personal-records, memoirs]
 ---
 
-# <span class="furling-pin">Thara'meva'schism</span> | The Veth'meva Schism
+# <span class="furling-pin">Rala'thara'athela</span> | Memoirs and Life Histories
 
 > [!selavai] Selavai
 > "This knowledge is held carefully, not hidden from you. When you are ready, it will be here."

@@ -53,9 +53,9 @@ Multi-generational overlap is the norm in Furling families. It is not unusual fo
 
 > [!connections]
 > **Connected Records**
-> [[Furling-Life-Stages]] — how a Furling life unfolds from kinara through to senior
-> [[Furling-Vel-shora-Ceremony]] — the coming-of-age ceremony and the vel'thara tradition in full
-> [[Furling-Senses-Perception]] — the extended biology of Furling hearing and colour vision
-> [[Furling-Medicine]] — how we understand and treat the body
+> [[02-Athelashala/Veth-thara-athela|Veth'thara'athela]] — how a Furling life unfolds from kinara through to senior
+> [[02-Athelashala/Vel-shora-oma|Vel'shora'oma]] — the coming-of-age ceremony and the vel'thara tradition in full
+> [[02-Athelashala/Vela-vetha-athela|Vela'vetha'athela]] — the extended biology of Furling hearing and colour vision
+> [[04-Mevashala/index|Meva'shala]] — how we understand and treat the body
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

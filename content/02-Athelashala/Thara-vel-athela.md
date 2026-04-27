@@ -81,7 +81,7 @@ tags: [Furling, daily-life, philosophy]
 
 > [!connections] Connected Branches
 > [[02-Athelashala/index|Athela'shala]] — return to the Furling civilisation branch
-> [[02-Athelashala/02-01-Vetha-athela-shala/index|Vetha'athela'shala]] — the biology that daily life is lived in
+> [[02-Athelashala/Vetha-athela-shala|Vetha'athela'shala]] — the biology that daily life is lived in
 > [[04-Mevashala/index|Meva'shala]] — the applied technology that sustains daily life
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

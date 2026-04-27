@@ -49,8 +49,8 @@ We do not treat the appearance of justice as equivalent to justice itself. A pro
 
 > [!connections]
 > **Connected Records**
-> [[Five-Principles]] — the fifth principle from which Furling justice grows
-> [[Furling-Society-Council]] — the Council's role in the most serious justice processes
-> [[Furling-Philosophy-Ethics]] — the philosophical foundations of Furling ethics
+> [[02-Athelashala/Kora-thesh-Veshunar|Kora'thesh Veshúnar]] — the fifth principle from which Furling justice grows
+> [[02-Athelashala/Oma-vel-athela|Oma'vel'athela]] — the Council's role in the most serious justice processes
+> [[02-Athelashala/Shala-oma-athela|Shala'oma'athela]] — the philosophical foundations of Furling ethics
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

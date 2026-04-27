@@ -51,9 +51,9 @@ Status and respect within the community are earned through contribution and wisd
 
 > [!connections]
 > **Connected Records**
-> [[Five-Principles]] — the Kora'thesh Veshúnar from which the Council system grows
-> [[Tharúven Kora'thesh]] — the founder who designed this system and then refused to lead it
-> [[Furling-Society-Justice]] — how the justice system relates to the Council structure
-> [[Furling-History-Deep-Time]] — the Great War that made this governance necessary
+> [[02-Athelashala/Kora-thesh-Veshunar|Kora'thesh Veshúnar]] — the Five Principles from which the Council system grows
+> [[02-Athelashala/Tharuven-Kora-thesh|Tharúven Kora'thesh]] — the founder who designed this system and then refused to lead it
+> [[02-Athelashala/Ketha-oma-athela|Ketha'oma'athela]] — how the justice system relates to the Council structure
+> [[02-Athelashala/Thara-vel-keth-athela|Thara'vel'keth'athela]] — the early eras and the Great War that made this governance necessary
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

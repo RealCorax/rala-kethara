@@ -103,8 +103,8 @@ Each of these verbs is irregular for the same reason: it describes something so 
 
 > [!connections]
 > **Connected Records**
-> [[Modern-High-Furling-Grammar]] — the complete grammar of which this is a companion
-> [[Furling-Language-Origins]] — the pre-class stage from which the irregulars come
-> [[Furling-Dictionary]] — the full vocabulary organised by root, showing verb compounds in context
+> [[02-Athelashala/Rala-shala-athela|Rala'shala'athela]] — the complete grammar of which this is a companion
+> [[02-Athelashala/Vel-rala-athela|Vel'rala'athela]] — the pre-class stage from which the irregulars come
+> [[02-Athelashala/Rala-vel-keth|Rala'vel'keth]] — the full vocabulary organised by root, showing verb compounds in context
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

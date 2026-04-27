@@ -55,7 +55,7 @@ Colony organism. Individual members are small but form larger coordinated struct
 
 ## <span class="furling-pin-inline">Mirathi</span>
 
-Twin-evolved. The Mirathi are not a single species but two that evolved on the same world in a state of biological interdependence — each producing compounds the other requires. They are inseparable not by social preference but by biology. Their civilisation is built entirely around this duality. The Furlings found them philosophically instructive on the subject of dependency, cooperation, and what it means for two different things to be genuinely necessary to each other.
+Twin-evolved. The Mirathi are not a single species but two that exisited on the same world in a state of biological interdependence each producing compounds the other requires. They are inseparable not by social preference but by biology. Their civilisation is built entirely around this duality. The Furlings found them philosophically instructive on the subject of dependency, cooperation, and what it means for two different things to be genuinely necessary to each other.
 
 ## <span class="furling-pin-inline">Thalveni</span>
 

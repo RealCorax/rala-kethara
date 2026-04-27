@@ -56,8 +56,8 @@ This is not a dish with a fixed recipe. It is an approach. What goes into it dep
 
 > [!connections]
 > **Connected Records**
-> [[Furling-Society-Greater-Family]] — communal eating as the daily expression of greater-family life
-> [[Furling-Agriculture-Thara-kela]] — the agricultural systems that produce what we eat
-> [[Furling-Daily-Ceremonies]] — how meals connect to the wider ceremonial life of the community
+> [[02-Athelashala/Maha-skela-athela|Maha'skela'athela]] — communal eating as the daily expression of greater-family life
+> Agricultural systems — documented in Division 04, Meva'shala
+> [[02-Athelashala/Oma-vel-meva|Oma'vel'meva]] — how meals connect to the wider ceremonial life of the community
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

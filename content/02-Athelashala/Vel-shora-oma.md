@@ -55,8 +55,8 @@ This is considered natural and right. The inner self changes. The marks follow. 
 
 > [!connections]
 > **Connected Records**
-> [[Furling-Life-Stages]] — the full arc of a Furling life and where this ceremony sits within it
-> [[Furling-Biology-Appearance]] — the bioluminescent biology underlying the vel'shora
-> [[Furling-Ceremonies-Communal]] — other ceremonies of Furling life, including birth and death celebrations
+> [[02-Athelashala/Veth-thara-athela|Veth'thara'athela]] — the full arc of a Furling life and where this ceremony sits within it
+> [[02-Athelashala/Vetha-skal-athela|Vetha'skal'athela]] — the bioluminescent biology underlying the vel'shora
+> [[02-Athelashala/Oma-vel-meva|Oma'vel'meva]] — other ceremonies of Furling life, including birth and death celebrations
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

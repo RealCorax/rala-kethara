@@ -47,9 +47,9 @@ For visitors from species with different social structures, this can feel like a
 
 > [!connections]
 > **Connected Records**
-> [[Five-Principles]] — the fifth principle that grounds the greater-family in our identity
-> [[Furling-Life-Stages]] — how the greater-family functions at each stage of life
-> [[Furling-Society-Council]] — the governance structure that coordinates the greater-family at scale
-> [[Furling-Daily-Food-Eating]] — communal eating as the daily expression of greater-family life
+> [[02-Athelashala/Kora-thesh-Veshunar|Kora'thesh Veshúnar]] — the fifth principle that grounds the greater-family in our identity
+> [[02-Athelashala/Veth-thara-athela|Veth'thara'athela]] — how the greater-family functions at each stage of life
+> [[02-Athelashala/Oma-vel-athela|Oma'vel'athela]] — the governance structure that coordinates the greater-family at scale
+> [[02-Athelashala/Meva-vel-athela|Meva'vel'athela]] — communal eating as the daily expression of greater-family life
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

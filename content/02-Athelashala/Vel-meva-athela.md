@@ -49,9 +49,9 @@ The craft traditions are where the knowledge of how things work becomes visible 
 
 > [!connections]
 > **Connected Records**
-> [[Furling-Technology-Bio-organic]] — the technology principles underlying Furling making
-> [[Furling-Wrist-Device]] — the full record of the rala'vetha'skal in Division 04
-> [[Furling-Daily-Food-Eating]] — craft traditions in food preparation
-> [[Furling-Architecture]] — the largest-scale expression of Furling making
+> [[04-Mevashala/index|Meva'shala]] — the applied technology underlying Furling making
+> Rala'vetha'skal wrist device — full record in Division 04, Meva'shala
+> [[02-Athelashala/Meva-vel-athela|Meva'vel'athela]] — craft traditions in food preparation
+> [[02-Athelashala/Skela-vel-athela|Skela'vel'athela]] — the largest-scale expression of Furling making
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

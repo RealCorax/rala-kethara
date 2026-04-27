@@ -51,9 +51,9 @@ The archive is not a monument to what we knew. It is a living commitment to what
 
 > [!connections]
 > **Connected Records**
-> [[Five-Principles]] — the third principle in its full context
-> [[Archive-Founding]] — the founding commission and the philosophy behind the archive's design
-> [[Meva-rala-keth]] — the practical standards for contributing new knowledge to the archive
-> [[Furling-Philosophy-Ethics]] — the broader ethical framework within which knowledge philosophy sits
+> [[02-Athelashala/Kora-thesh-Veshunar|Kora'thesh Veshúnar]] — the third principle in its full context
+> Archive founding commission — documented in Division 08, Rala'kethara'shala
+> [[08-Ralaketharashala/Meva-rala-keth|Meva'rala'keth]] — the practical standards for contributing new knowledge to the archive
+> [[02-Athelashala/Shala-oma-athela|Shala'oma'athela]] — the broader ethical framework within which knowledge philosophy sits
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

@@ -50,9 +50,9 @@ What followed is documented in the records below. What the Athel'kin became, and
 
 > [!connections]
 > **Connected Records**
-> [[Furling-History-Golden-Age]] — the period during which the Athel'kin were first encountered
-> [[Athel-kin-Profile]] — the Athel'kin species profile in Division 03, pre-transformation
-> [[Five-Principles]] — the ethical framework through which the Vetha'meva decision was considered
-> [[Furling-History-Exodus]] — what ultimately followed
+> [[02-Athelashala/Thara-vara-athela|Thara'vara'athela]] — the period during which the Athel'kin were first encountered
+> Athel'kin species profile — documented in Division 03, Veth'kela'shala
+> [[02-Athelashala/Kora-thesh-Veshunar|Kora'thesh Veshúnar]] — the ethical framework through which the Vetha'meva decision was considered
+> [[02-Athelashala/Thara-vena-athela|Thara'vena'athela]] — what ultimately followed
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

@@ -46,9 +46,9 @@ If you are reading this, something has changed. The archive is open to new voice
 
 > [!connections]
 > **Connected Records**
-> [[Furling-History-Athel-kin-Contact]] — who the Athel'kin were and the gift that preceded the crisis
-> [[Bulutha]] — the full record of the Mesopotamia visit
-> [[Archive-Founding]] — the founding and purpose of this archive
-> [[Meva-rala-keth]] — how to add new records to this archive
+> [[02-Athelashala/Thara-athel-kin|Thara'athel'kin]] — who the Athel'kin were and the gift that preceded the crisis
+> [[02-Athelashala/Bulutha|Bulutha]] — the full record of the Mesopotamia visit
+> Archive founding — documented in Division 08, Rala'kethara'shala
+> [[08-Ralaketharashala/Meva-rala-keth|Meva'rala'keth]] — how to add new records to this archive
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

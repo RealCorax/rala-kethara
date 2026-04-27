@@ -19,7 +19,7 @@ tags: [uplift, Shal'kora, Vethari, Lumenari, Aethen, Furling]
 
 ## <span class="furling-pin-inline">Shal'kora</span> — the Communal People
 
-The Shal'kora are amphibious, evolved on a world of shallow inland seas and dense riverine forest. They do not thrive alone — communal living is not a preference for them but a biological reality. Their social structures are built around large extended family groups who share not just space but decision-making, care, and memory.
+The Shal'kora are amphibious, living on a world of shallow inland seas and dense riverine forest. They do not thrive alone — communal living is not a preference for them but a biological reality. Their social structures are built around large extended family groups who share not just space but decision-making, care, and memory.
 
 Before Furling contact they had developed sophisticated percussion-based communication across water, capable of transmitting complex meaning over long distances. This communication system was, in certain technical respects, more precise than early Furling long-range communication methods. The Furlings studied it with genuine interest.
 

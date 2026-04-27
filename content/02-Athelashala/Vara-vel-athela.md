@@ -47,8 +47,8 @@ Long periods of wakeful rest — neither sleep nor active engagement, but a quie
 
 > [!connections]
 > **Connected Records**
-> [[Furling-Daily-Ceremonies]] — how leisure connects to the larger rhythms of communal life
-> [[Furling-Architecture]] — how living spaces are designed to support leisure and rest
-> [[Furling-Spirituality-Afterlife]] — the contemplative traditions that inform Furling rest practices
+> [[02-Athelashala/Oma-vel-meva|Oma'vel'meva]] — how leisure connects to the larger rhythms of communal life
+> [[02-Athelashala/Skela-vel-athela|Skela'vel'athela]] — how living spaces are designed to support leisure and rest
+> [[02-Athelashala/Rhoma-vetha-athela|Rhoma'vetha'athela]] — the contemplative traditions that inform Furling rest practices
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

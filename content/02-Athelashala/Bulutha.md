@@ -47,8 +47,8 @@ The archive is here because she stayed long enough to ensure it would be.
 
 > [!connections]
 > **Connected Records**
-> [[Furling-History-Exodus]] — the departure during which Bulutha remained as Keeper
-> [[Oma'thesh'rala]] — Bulutha's personal memory crystal, held at Keeper access
-> [[Five-Principles]] — the principles that shaped how she chose to spend her time
+> [[02-Athelashala/Thara-vena-athela|Thara'vena'athela]] — the departure during which Bulutha remained as Keeper
+> [[02-Athelashala/Oma-thesh-rala|Oma'thesh'rala]] — Bulutha's personal memory crystal, held at Keeper access
+> [[02-Athelashala/Kora-thesh-Veshunar|Kora'thesh Veshúnar]] — the principles that shaped how she chose to spend her time
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

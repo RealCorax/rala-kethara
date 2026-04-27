@@ -46,8 +46,8 @@ The most often quoted line from the fragments of his personal record:
 
 > [!connections]
 > **Connected Records**
-> [[Five-Principles]] — the Kora'thesh Veshúnar he created
-> [[Furling-Society-Council]] — the Council of 3 system he designed
-> [[Furling-History-Deep-Time]] — the Great War and Reconstruction he lived through
+> [[02-Athelashala/Kora-thesh-Veshunar|Kora'thesh Veshúnar]] — the Five Principles he created
+> [[02-Athelashala/Oma-vel-athela|Oma'vel'athela]] — the Council of 3 system he designed
+> [[02-Athelashala/Vel-thara-vetha-athela|Vel'thara'vetha'athela]] — the Great War and Reconstruction he lived through
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

@@ -42,7 +42,7 @@ The shael was originally defined as the precise arm-span of a standing Furling a
 
 | Term | Symbol | Derivation |
 |---|---|---|
-| **thal'keth** | *tk* | *thrala* (force, contracted to *thal*) + *keth* (enduring) — "enduring substance" |
+| **thal'keth** | <span class="furling-pin">*tk*</span> | *thrala* (force, contracted to *thal*) + *keth* (enduring) — "enduring substance" |
 
 We conceptualised mass not as weight but as *that which persists* consistent with our cyclical view of the universe. The thal'keth is defined as one ten-billionth of Mira's total mass.
 
@@ -52,7 +52,7 @@ We conceptualised mass not as weight but as *that which persists* consistent wit
 
 | Term | Symbol | Derivation |
 |---|---|---|
-| **lath** | *lth* | Ancient pre-classical root *la* (warmth) + *-th* (measure suffix) |
+| **lath** | <span class="furling-pin">lth</span> | Ancient pre-classical root *la* (warmth) + *-th* (measure suffix) |
 
 The lath is one of our oldest units its name predates formal language systematisation and does not follow standard compounding rules. It is anchored to a biological zero: **0 lath** is the temperature at which Mira's deep oceans begin to freeze solid. The scale is life-centred by design.
 

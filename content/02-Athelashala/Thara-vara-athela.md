@@ -47,9 +47,9 @@ The Athel'kin were first observed during this period. Their full story is held i
 
 > [!connections]
 > **Connected Records**
-> [[Furling-History-Expansion]] — the expansion era that built toward this period
-> [[Furling-History-Athel-kin-Contact]] — the contact with the Athel'kin and the gift that followed
-> [[Furling-History-Veth-meva-Schism]] — the internal fracture of the Golden Age
-> [[Four-Great-Races-Alliance]] — the full Alliance record in Division 03
+> [[02-Athelashala/Thara-vel-keth-athela|Thara'vel'keth'athela]] — the earlier eras that built toward this period
+> [[02-Athelashala/Thara-athel-kin|Thara'athel'kin]] — the contact with the Athel'kin and the gift that followed
+> Veth'meva Schism — the internal philosophical fracture of the Golden Age, held at Student access
+> Four Great Races alliance record — documented in Division 03, Veth'kela'shala
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

@@ -1,13 +1,14 @@
 ---
-title: "Rala'vel'athela - Personal Journals and Diaries"
+title: "Shala'oma'thara — Applied Ethics, Historical Case Studies"
+cssclass: archive-content
 branch: 2
-section: "02.06.01"
+section: "02.04.07"
 access: student
 type: locked
-tags: [Furling, history]
+tags: [Furling, philosophy, ethics, history]
 ---
 
-# <span class="furling-pin">Rala'vel'athela</span> | Personal Journals and Diaries
+# <span class="furling-pin">Shala'oma'thara</span> | Applied Ethics — Historical Case Studies
 
 > [!selavai] Selavai
 > "This knowledge is held carefully, not hidden from you. When you are ready, it will be here."

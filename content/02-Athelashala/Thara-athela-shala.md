@@ -16,8 +16,8 @@ tags: [Furling, history, philosophy]
 
 <div class="guide-thread">
 <span class="gt-label">Suggested path</span>
-<span>Begin with</span> <a href="./Vel-thara-athela" class="internal">the deep time</a>
-<span class="gt-sep">then</span> <a href="./Thara-vel-athela" class="internal">the founding</a>
+<span>Begin with</span> <a href="./Vel-thara-vetha-athela" class="internal">the deep time</a>
+<span class="gt-sep">then</span> <a href="./Thara-vel-keth-athela" class="internal">the founding</a>
 <span class="gt-sep">then</span> <a href="./Thara-vara-athela" class="internal">the golden age</a>
 <span class="gt-sep">then</span> <a href="./Thara-athel-kin" class="internal">the contact</a>
 <span class="gt-sep">then</span> <a href="./Thara-vena-athela" class="internal">the exodus</a>
@@ -27,13 +27,13 @@ tags: [Furling, history, philosophy]
 
 <div class="section-card">
 <div class="sc-label">02.02.01</div>
-<div class="sc-title"><a href="./Vel-thara-athela" class="internal">Vel'thara'athela</a></div>
+<div class="sc-title"><a href="./Vel-thara-vetha-athela" class="internal">Vel'thara'vetha'athela</a></div>
 <div class="sc-desc">Pre-history and the proto-Furling eras. The archaeological record, the Two Beings tradition, and the origins of language, agriculture, and early construction on Mira.</div>
 </div>
 
 <div class="section-card">
 <div class="sc-label">02.02.02</div>
-<div class="sc-title"><a href="./Thara-vel-athela" class="internal">Thara'vel'athela</a></div>
+<div class="sc-title"><a href="./Thara-vel-keth-athela" class="internal">Thara'vel'keth'athela</a></div>
 <div class="sc-desc">The early eras — from tribal society to unified civilisation. The emergence of the Council model, the development of writing and mathematics, and the long path to what we became.</div>
 </div>
 
@@ -95,7 +95,7 @@ tags: [Furling, history, philosophy]
 
 > [!connections] Connected Branches
 > [[02-Athelashala/index|Athela'shala]] — return to the Furling civilisation branch
-> [[02-Athelashala/02-03-Oma-athela-shala/index|Oma'athela'shala]] — society and governance that grew from this history
-> [[02-Athelashala/02-06-Rala-vetha-athela/index|Rala'vetha'athela]] — personal records from those who lived through these events
+> [[02-Athelashala/Oma-athela-shala|Oma'athela'shala]] — society and governance that grew from this history
+> [[02-Athelashala/Rala-vetha-athela|Rala'vetha'athela]] — personal records from those who lived through these events
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

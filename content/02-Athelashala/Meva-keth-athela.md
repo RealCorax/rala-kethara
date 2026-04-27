@@ -43,8 +43,8 @@ The archive holds extensive records of clothing across eras and worlds in the Va
 
 > [!connections]
 > **Connected Records**
-> [[Furling-Vel-shora-Ceremony]] — the marks that clothing complements
-> [[Furling-Daily-Crafts-Tools]] — clothing-making within the broader craft tradition
-> [[Furling-Architecture]] — how interior spaces are designed with Furling comfort in mind
+> [[02-Athelashala/Vel-shora-oma|Vel'shora'oma]] — the marks that clothing complements
+> [[02-Athelashala/Vel-meva-athela|Vel'meva'athela]] — clothing-making within the broader craft tradition
+> [[02-Athelashala/Skela-vel-athela|Skela'vel'athela]] — how interior spaces are designed with Furling comfort in mind
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

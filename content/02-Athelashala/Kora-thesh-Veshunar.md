@@ -55,9 +55,9 @@ Justice is the completion of the other four. When life is tended, resources are 
 
 > [!connections]
 > **Connected Records**
-> [[Tharúven Kora'thesh]] — the Unifier who wrote these principles in the ash of the Great War
-> [[Furling-Philosophy-Ethics]] — the philosophical foundations and debates around each principle
-> [[Furling-Society-Council]] — the governance system that grew from these principles
-> [[Furling-Society-Justice]] — the fifth principle in practice
+> [[02-Athelashala/Tharuven-Kora-thesh|Tharúven Kora'thesh]] — the Unifier who wrote these principles in the ash of the Great War
+> [[02-Athelashala/Shala-oma-athela|Shala'oma'athela]] — the philosophical foundations and debates around each principle
+> [[02-Athelashala/Oma-vel-athela|Oma'vel'athela]] — the governance system that grew from these principles
+> [[02-Athelashala/Ketha-oma-athela|Ketha'oma'athela]] — the fifth principle in practice
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

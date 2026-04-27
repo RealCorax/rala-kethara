@@ -69,8 +69,8 @@ Numbers in Furling grammar are adjectives and follow the noun they modify. *Kina
 This is one of the places where the language's refusal to separate practical meaning from deeper meaning is most visible. We count. And in counting, we also say something about the nature of what we count.
 
 > [!connections] Connected Records
-> [[Rala-shala-athela|Rala'shala'athela]] — the grammar record of which numbers are one part
-> [[Furling-Units-of-Measurement|Thael'vel'shala]] — the full reference for all measurement standards
+> [[02-Athelashala/Rala-shala-athela|Rala'shala'athela]] — the grammar record of which numbers are one part
+> [[02-Athelashala/Rala-vel-keth|Rala'vel'keth]] — the complete dictionary, with measurement vocabulary in context
 > [[02-Athelashala/index|Athela'shala]] — return to the branch index
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

@@ -55,9 +55,9 @@ This assessment proved accurate. The boundary held, but required continuous dipl
 
 > [!connections]
 > **Connected Records**
-> [[Furling-History-Deep-Time]] — the earlier history from which this era grew
-> [[Furling-History-Golden-Age]] — what the expansion era built toward
-> [[Shal-kora-Profile]] — the Shal'kora species record
-> [[Furling-Uplift-Philosophy]] — the full uplift methodology and criteria
+> [[02-Athelashala/Vel-thara-vetha-athela|Vel'thara'vetha'athela]] — the earlier history from which this era grew
+> [[02-Athelashala/Thara-vara-athela|Thara'vara'athela]] — what the expansion era built toward
+> Shal'kora species profile — documented in Division 03, Veth'kela'shala
+> [[02-Athelashala/Shala-oma-vel|Shala'oma'vel]] — the philosophy of knowledge and teaching, including uplift ethics
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

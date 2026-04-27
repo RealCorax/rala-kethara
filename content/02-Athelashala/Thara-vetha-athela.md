@@ -59,9 +59,9 @@ The dead are present too, in a sense. The four afterlife traditions — the Retu
 
 > [!connections]
 > **Connected Records**
-> [[Furling-Biology-Appearance]] — the physical form and the vel'shora marks
-> [[Furling-Vel-shora-Ceremony]] — the coming-of-age ceremony in full
-> [[Furling-Society-Greater-Family]] — how the greater-family structure works in practice
-> [[Furling-Spirituality-Afterlife]] — the four afterlife traditions examined
+> [[02-Athelashala/Vetha-skal-athela|Vetha'skal'athela]] — the physical form and the vel'shora marks
+> [[02-Athelashala/Vel-shora-oma|Vel'shora'oma]] — the coming-of-age ceremony in full
+> [[02-Athelashala/Maha-skela-athela|Maha'skela'athela]] — how the greater-family structure works in practice
+> [[02-Athelashala/Rhoma-vetha-athela|Rhoma'vetha'athela]] — the four afterlife traditions examined
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*

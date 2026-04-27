@@ -49,8 +49,8 @@ What all four share is the sense that a life matters — that what is done in it
 
 > [!connections]
 > **Connected Records**
-> [[Furling-Daily-Ceremonies]] — how the afterlife traditions are honoured in death ceremonies
-> [[Furling-Life-Stages]] — the full arc of a Furling life of which death is the final stage
-> [[Furling-History-Deep-Time]] — the Vel'athara tradition and its historical roots
+> [[02-Athelashala/Oma-vel-meva|Oma'vel'meva]] — how the afterlife traditions are honoured in death ceremonies
+> [[02-Athelashala/Veth-thara-athela|Veth'thara'athela]] — the full arc of a Furling life of which death is the final stage
+> [[02-Athelashala/Vel-thara-vetha-athela|Vel'thara'vetha'athela]] — the Vel'athara tradition and its historical roots
 
 *Rala'kethara Archive · Athela'shala · Access: Visitor*
